@@ -39,11 +39,19 @@
     width: 45px;
 }
 
+svg{
+    height: 35px;
+    width: 35px;
+    fill: #ffffff;
+}
+
 svg:hover{
     /* fill: #ffffff; */
     fill: #61DD00;
 
 }
+
+
 
 .section-content div{
     display: flex;
@@ -60,4 +68,30 @@ svg:hover{
 .active{
     border-bottom: 2px solid var(--green);
     display: inline;
+}
+
+.explore-link{
+    color:var(--green);
+    padding:10px;
+    /* border-radius: .3em; */
+    /* border: none; */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    cursor:pointer;
+    animation: light 1s infinite;
+}
+
+.explore-link:hover{
+    color: white;
+    
+}
+
+@keyframes light {
+    from {
+        border-bottom: none;
+    }
+    to {
+        border-bottom: 1px solid var(--green);
+    }
 }
