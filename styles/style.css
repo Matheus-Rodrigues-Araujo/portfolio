@@ -8,18 +8,23 @@
     --orange: rgb(255, 98, 0);
 }
 
+
+
+
+
+
 #logo-img{
     height: 60px;
     max-width: 100%;
     object-fit: contain;
 }
 
-.nav-link{
+.nav-item{
     color: white;
     transition: .3s ease-in-out;
 }
 
-.nav-link:hover{
+.nav-item:hover{
     color: #61DD00
 }
 
@@ -34,6 +39,15 @@
 .icons svg{
     /* fill: #61DD00; */
     fill: #ffffff;
+
+    transition: .2s ease-in;
+    height: 45px;
+    width: 45px;
+}
+
+.dark-icon svg{
+    /* fill: #61DD00; */
+    fill: #000000;
 
     transition: .2s ease-in;
     height: 45px;
@@ -111,13 +125,6 @@ svg:hover{
     font-size:2.5rem;
 }
 
-.career-contaier{
-    border-radius: .3rem; border: 15px outset var(--green);
-}
-
-.projects{
-    min-height: 80vh; border: 15px outset var(--green);
-}
 
 @keyframes light {
     from {
@@ -164,3 +171,4 @@ svg:hover{
         border: none;
     }
 }
+

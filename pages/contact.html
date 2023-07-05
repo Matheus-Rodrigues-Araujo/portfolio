@@ -15,7 +15,8 @@
 
 <body style="background: #212529;"" >
     
-    <nav class="navbar navbar-dark" aria-label="First navbar example" >
+  <nav class="navbar navbar-dark bg-dark fixed-top" aria-label="First navbar example" >
+
       <div class="container-fluid mx-5">
         <a class="navbar-brand" href="/index.html">
           <img src="/assets/logo_official.png" alt="Logo" srcset="" id="logo-img">
@@ -51,11 +52,11 @@
     </nav>
 
     
-    <div class="container p-5" style="min-height: 80vh;">
-      <section class="section-preview  p-3">
+    <div class="container p-5" style="min-height: 80vh; margin-top: 100px;" >
+      <section class="section-preview bg-white p-3 mx-5-md rounded-4 w-100">
 
         <!--Section: Contact v.2-->
-        <section class="mb-4 text-white" style="border: 15px outset var(--green);" >
+        <section class="mb-4 text-dark mx-5-md">
   
             <h2 class="h1-responsive font-weight-bold text-center my-4"><span style="color: var(--green);" >Contact</span> me</h2>
             
@@ -66,22 +67,22 @@
                     <form id="contact-form" name="contact-form" action="mail.php" method="POST">
   
                         <!--Grid row-->
-                        <div class="row">
+                        <div class="row justify-content-center">
   
                             <!--Grid column-->
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="md-form mb-0">
-                                    <input type="text" id="name" name="name" class="form-control">
-                                    <label for="name" class="">Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Name" class="form-control m-2">
+                                    <!-- <label for="name" class="">Name</label> -->
                                 </div>
                             </div>
                             <!--Grid column-->
   
                             <!--Grid column-->
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="md-form mb-0">
-                                    <input type="text" id="email" name="email" class="form-control">
-                                    <label for="email" class="">Email</label>
+                                    <input type="text" id="email" placeholder="Email" name="email" class="form-control m-2">
+                                    <!-- <label for="email" class="">Email</label> -->
                                 </div>
                             </div>
                             <!--Grid column-->
@@ -90,25 +91,25 @@
                         <!--Grid row-->
   
                         <!--Grid row-->
-                        <div class="row">
-                            <div class="col-md-12">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
                                 <div class="md-form mb-0">
-                                    <input type="text" id="subject" name="subject"  class="form-control">
-                                    <label for="subject"  >Subject</label>
+                                    <input type="text" id="subject" placeholder="Subject" name="subject"  class="form-control m-2">
+                                    <!-- <label for="subject"  >Subject</label> -->
                                 </div>
                             </div>
                         </div>
                         <!--Grid row-->
   
                         <!--Grid row-->
-                        <div class="row">
+                        <div class="row justify-content-center">
   
                             <!--Grid column-->
-                            <div class="col-md-12">
+                            <div class="col-md-8">
   
                                 <div class="md-form">
-                                    <textarea type="text" id="message" name="message" rows="3" class="form-control md-textarea"></textarea>
-                                    <label for="message">Write your message here</label>
+                                    <textarea type="text" id="message" name="message" placeholder="Your message" rows="5" class="form-control md-textarea m-2"></textarea>
+                                    <!-- <label for="message">Write your message here</label> -->
                                 </div>
   
                             </div>
