@@ -115,6 +115,10 @@ svg:hover{
     border-radius: .3rem; border: 15px outset var(--green);
 }
 
+.projects{
+    min-height: 80vh; border: 15px outset var(--green);
+}
+
 @keyframes light {
     from {
         border-bottom: none;
@@ -154,5 +158,9 @@ svg:hover{
 
     .career p{
         font-size: 1.5rem;
+    }
+
+    .projects{
+        border: none;
     }
 }
