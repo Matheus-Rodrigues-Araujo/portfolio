@@ -8,17 +8,17 @@
 }
 
 #logo-img{
-    height: 40px;
+    height: 60px;
     max-width: 100%;
     object-fit: contain;
 }
 
-.links{
+.nav-link{
     color: white;
     transition: .3s ease-in-out;
 }
 
-.links:hover{
+.nav-link:hover{
     color: #61DD00
 }
 
@@ -28,4 +28,36 @@
 
 .icons a{
     text-decoration: none;
+}
+
+.icons svg{
+    /* fill: #61DD00; */
+    fill: #ffffff;
+
+    transition: .2s ease-in;
+    height: 45px;
+    width: 45px;
+}
+
+svg:hover{
+    /* fill: #ffffff; */
+    fill: #61DD00;
+
+}
+
+.section-content div{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link{
+    font-size: 1.5rem;
+    margin-left: 5px;
+}
+
+.active{
+    border-bottom: 2px solid var(--green);
+    display: inline;
 }
