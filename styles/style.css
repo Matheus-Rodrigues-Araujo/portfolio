@@ -91,7 +91,28 @@ svg:hover{
 .project-link svg{
     /* margin-top: 10px; */
     fill: black
+}
 
+
+
+.greetings h1{
+    color: var(--green);
+    text-align: center;
+    font-weight: 400;
+    font-size: 5.5rem;
+
+}
+
+
+.greetings h2{
+    color: var(--green); 
+    font-weight: 200;
+    text-align: center; 
+    font-size:2.5rem;
+}
+
+.career-contaier{
+    border-radius: .3rem; border: 15px outset var(--green);
 }
 
 @keyframes light {
@@ -100,5 +121,38 @@ svg:hover{
     }
     to {
         border-bottom: 1px solid var(--green);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .greetings h1{
+        font-size: 3.5rem;
+    }
+
+    .greetings h2{
+        font-size: 2rem;
+    }
+
+
+    .graduation h1, .graduation p{
+        font-size: 2rem;
+    }
+
+    .career-container{
+        border: 5px solid var(--green);
+        padding: 0;
+    }
+
+    .career{
+        padding: 0;
+        margin: 0;
+    }
+
+    .career h1{
+        font-size: 2rem;
+    }
+
+    .career p{
+        font-size: 1.5rem;
     }
 }
