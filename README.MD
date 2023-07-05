@@ -2,4 +2,9 @@ PORTFOLIO
 
 - Projeto criado com HTML, CSS, Javascript, Bootstrap
 
-- Imagens
+- Imagens![Alt text]
+
+![Alt text](assets/proj1.png)
+
+![Alt text](assets/proj2.png)
+
