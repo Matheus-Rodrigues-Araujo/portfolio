@@ -14,3 +14,4 @@ window.addEventListener('visibilitychange', function() {
     video.play();
     }
 });
+

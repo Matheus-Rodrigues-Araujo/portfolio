@@ -22,8 +22,12 @@
 /* #video-background video{
 
 }
+
  */
-.main{
+
+
+
+ .main{
     z-index: 1;
 }
 
@@ -136,9 +140,9 @@ svg:hover{
 
 .greetings h1{
     color: var(--green);
-    text-align: center;
+    /* text-align: center;
     font-weight: 400;
-    font-size: 5.5rem;
+    font-size: 5.5rem; */
 
 }
 
