@@ -6,6 +6,7 @@
     --green: #61DD00;
     --white: white;
     --orange: rgb(255, 98, 0);
+    font-size: 8px;
 }
 
 #video-background {
@@ -20,16 +21,33 @@
   }
 
 
- .main{
+.main{
     z-index: 1;
 }
 
-
-
-#logo-img{
-    height: 60px;
-    max-width: 100%;
+#brand{
+    height: 50px;
+    max-width: 50px;
     object-fit: contain;
+}
+.navbar{
+    font-size: 3rem;
+    /* margin-left: 5px; */
+    position: relative;
+}
+
+.navbar-toggler{
+    font-size: 2rem;
+    position: relative;
+    border: none;
+    outline: 1px solid white;
+}
+.navbar-toggler:hover{
+    outline: 2px solid var(--green);
+}
+
+.navbar-toggler-icon{
+    color: var(--green);
 }
 
 .nav-item{
@@ -39,6 +57,47 @@
 
 .nav-item:hover{
     color: #61DD00
+}
+
+.greetings-container{
+    min-height: 80vh;
+    z-index: 1;
+    position: fixed;
+    margin-inline: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.greetings-container h1{
+    color: var(--green);
+    font-size: 6rem; /* 48px */
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.greetings-container h2{
+    color: var(--green); 
+    font-weight: 600;
+    text-align: center; 
+    font-size:5rem; /* 32px */
+}
+
+.greetings-container .explore-link{
+    color:white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 3rem; /* 20px */
+    cursor:pointer;
+    animation: light 1s infinite;
+    transition: .2s ease-in-out;
+}
+
+.greetings-container .explore-link:hover{
+    color: var(--green);
+    
 }
 
 .icons{
@@ -67,6 +126,10 @@
     width: 45px;
 }
 
+footer{
+    font-size: 2rem;
+}
+
 footer svg{
     height: 35px;
     width: 35px;
@@ -74,12 +137,8 @@ footer svg{
 }
 
 svg:hover{
-    /* fill: #ffffff; */
     fill: #61DD00;
-
 }
-
-
 
 .section-content div{
     display: flex;
@@ -88,63 +147,15 @@ svg:hover{
     align-items: center;
 }
 
-.nav-link{
-    font-size: 1.5rem;
-    margin-left: 5px;
-}
 
 .active{
     border-bottom: 1px solid var(--green);
     display: inline;
 }
 
-.explore-link{
-    color:var(--green);
-    padding:10px;
-    /* border-radius: .3em; */
-    /* border: none; */
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.2rem;
-    cursor:pointer;
-    animation: light 1s infinite;
-}
-
-.explore-link:hover{
-    color: white;
-    
-}
-
 .project-link svg{
     /* margin-top: 10px; */
     fill: black
-}
-
-.greetings-container{
-    min-height: 80vh;
-    z-index: 1;
-    position: fixed;
-    margin-inline: auto;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-
-.greetings h1{
-    color: var(--green);
-    /* text-align: center;
-    font-weight: 400;
-    font-size: 5.5rem; */
-
-}
-
-
-.greetings h2{
-    color: var(--green); 
-    font-weight: 200;
-    text-align: center; 
-    font-size:2.5rem;
 }
 
 
@@ -159,23 +170,32 @@ svg:hover{
 
 @media screen and (max-width: 700px) {
 
-    .greetings-container{
-        min-height: 80vh;
-        z-index: 1;
-        position: fixed;
-        margin-inline: auto;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -75%);
+    .navbar{
+        font-size: 2.5rem;
+    }
+    
+    .greetings-container h1{
+        font-size: 4.5rem;
+        text-align: justify;
     }
 
-
-    .greetings h1{
+    .greetings-container h2{
         font-size: 3.5rem;
     }
 
-    .greetings h2{
-        font-size: 2rem;
+    .greetings-container .explore-link{
+        font-size: 2.5rem;
+    }
+
+
+    footer{
+        font-size: 2.2rem;
+        bottom:20;
+    }
+
+    footer svg{
+        height: 28px;
+        width: 28px;
     }
 
 
@@ -183,12 +203,14 @@ svg:hover{
         font-size: 2rem;
     }
 
-    .career-container{
+    /* .career-container{
         border: 5px solid var(--green);
         padding: 0;
-    }
+    } */
 
-    .career{
+
+
+    /* .career{
         padding: 0;
         margin: 0;
     }
@@ -199,7 +221,7 @@ svg:hover{
 
     .career p{
         font-size: 1.5rem;
-    }
+    } */
 
     .projects{
         border: none;
