@@ -1,6 +1,7 @@
 .about-container div{
     background-color: white;
     width: 60vw;
+    padding: 50px;
 }
 .about-container h1{
     font-size: 6rem;
@@ -12,7 +13,7 @@
 .about-container p{
     text-align: justify;
     margin-inline: auto;
-    font-size: 2.2518rem; /* 18px */
+    font-size: 2.5rem; /* 20px */
 }
 
 

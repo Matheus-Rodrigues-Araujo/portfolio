@@ -59,7 +59,7 @@
     color: #61DD00
 }
 
-.greetings-container{
+.main-content{
     min-height: 80vh;
     z-index: 1;
     position: fixed;
@@ -70,7 +70,7 @@
 }
 
 
-.greetings-container h1{
+.main-content h1{
     color: var(--green);
     font-size: 6rem; /* 48px */
     font-weight: 700;
@@ -78,14 +78,14 @@
 }
 
 
-.greetings-container h2{
+.main-content h2{
     color: var(--green); 
     font-weight: 600;
     text-align: center; 
     font-size:5rem; /* 32px */
 }
 
-.greetings-container .explore-link{
+.main-content .explore-link{
     color:white;
     text-decoration: none;
     font-weight: 500;
@@ -95,7 +95,7 @@
     transition: .2s ease-in-out;
 }
 
-.greetings-container .explore-link:hover{
+.main-content .explore-link:hover{
     color: var(--green);
     
 }
@@ -174,16 +174,16 @@ svg:hover{
         font-size: 2.5rem;
     }
     
-    .greetings-container h1{
+    .main-content h1{
         font-size: 4.5rem;
         text-align: justify;
     }
 
-    .greetings-container h2{
+    .main-content h2{
         font-size: 3.5rem;
     }
 
-    .greetings-container .explore-link{
+    .main-content .explore-link{
         font-size: 2.5rem;
     }
 
