@@ -1,9 +1,13 @@
+import logo from '../assets/images/logo_official.png'
+
 const Navbar = () => {
     return (
-        <nav class="navbar navbar-dark fixed-top" aria-label="First navbar example" style="background-color: black; opacity: .9;">
+        <nav class="navbar navbar-dark fixed-top" aria-label="First navbar example" 
+        style={{backgroundColor: "black", opacity: .9}}     
+        >
             <div class="container-fluid mx-5">
-                <a class="navbar-brand" href="/index.html">
-                <img src="/assets/logo_official.png" alt="Logo" srcset="" id="logo-img">
+                <a class="navbar-brand" href="/">
+                 <img src={logo} alt="Logo" srcset="" id="logo-img" />
                 </a>
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -37,3 +41,5 @@ const Navbar = () => {
             </nav>
     )
 }
+
+export default Navbar
