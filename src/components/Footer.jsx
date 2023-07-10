@@ -7,7 +7,7 @@ const Footer = () => {
         d-flex flex-wrap 
         justify-content-between align-items-center 
         py-3 px-5 
-        position-absolute bottom-0"
+        "
         style={{width: "100"}}
         >
           <div className="col-md-4 d-flex align-items-center">
