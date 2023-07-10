@@ -1,4 +1,6 @@
-import './App.css';
+import './styles/App.scss';
+import { Outlet } from 'react-router-dom';
+
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import BackgroundVideo from './components/BackgroundVideo';
@@ -6,11 +8,12 @@ import BackgroundVideo from './components/BackgroundVideo';
 function App() {
   return (
     <div className="App">
-      {/* <BackgroundVideo /> */}
+      <BackgroundVideo />
       <Navbar/>
-      
+      <Outlet/>
       <Footer/>
     </div>
+
   );
 }
 

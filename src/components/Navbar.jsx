@@ -1,38 +1,39 @@
+import { Link } from 'react-router-dom'
 import logo from '../assets/images/logo_official.png'
 
 const Navbar = () => {
     return (
-        <nav class="navbar navbar-dark fixed-top" aria-label="First navbar example" 
+        <nav className="navbar navbar-dark fixed-top" aria-label="First navbar example" 
         style={{backgroundColor: "black", opacity: .9}}     
         >
-            <div class="container-fluid mx-5">
-                <a class="navbar-brand" href="/">
+            <div className="container-fluid mx-5">
+                <Link className="navbar-brand" to="/">
                  <img src={logo} alt="Logo" srcset="" id="logo-img" />
-                </a>
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                </Link>
+                <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
                 </button>
 
                 
-                <div class="navbar-collapse collapse " id="navbarsExample01">
-                <ul class="navbar-nav me-auto mb-2">
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                <div className="navbar-collapse collapse " id="navbarsExample01">
+                <ul className="navbar-nav me-auto mb-2">
+                    <li className="nav-item">
+                    <Link className="nav-link active" aria-current="page" to="/">Home</Link>
                     </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="./pages/aboutme.html">About me</a>
+                    <li className="nav-item">
+                    <Link className="nav-link" to="/about">About me</Link>
                     </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="./pages/graduation.html">Graduation</a>
+                    <li className="nav-item">
+                    <Link className="nav-link" to="/graduation">Graduation</Link>
                     </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="./pages/career.html">Career</a>
+                    <li className="nav-item">
+                    <Link className="nav-link" to="/career">Career</Link>
                     </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="./pages/projects.html">Projects</a>
+                    <li className="nav-item">
+                    <Link className="nav-link" to="/projects">Projects</Link>
                     </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="./pages/contact.html">Contact</a>
+                    <li className="nav-item">
+                    <Link className="nav-link" to="/contact">Contact</Link>
                     </li>
                 </ul>
                 
