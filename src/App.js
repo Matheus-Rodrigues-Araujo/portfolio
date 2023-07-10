@@ -1,4 +1,5 @@
 import './styles/App.scss';
+import './styles/Contact.scss';
 import { Outlet } from 'react-router-dom';
 
 import Navbar from './components/Navbar';

@@ -1,6 +1,6 @@
 const Career = () =>{
     return (
-        <>Career</>
+        <>career</>
     )
 }
 

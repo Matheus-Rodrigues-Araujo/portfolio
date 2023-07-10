@@ -26,51 +26,51 @@ const router = createBrowserRouter([
     ]
   },
   {
-    path: 'about',
+    path: '/about',
     element: <App/>,
     children:[
       {
-        path:'about',
+        path:'/about',
         element: <About/>
       }
     ]
   },
   {
-    path: 'graduation',
+    path: '/graduation',
     element: <App/>,
     children:[
       {
-        path:'about',
+        path:'/graduation',
         element: <Graduation/>
       }
     ]
   },
   {
-    path: 'career',
+    path: '/career',
     element: <App/>,
     children:[
       {
-        path:'career',
+        path:'/career',
         element: <Career/>
       }
     ]
   },
   {
-    path: 'projects',
+    path: '/projects',
     element: <App/>,
     children:[
       {
-        path:'projects',
+        path:'/projects',
         element: <Projects/>
       }
     ]
   },
   {
-    path: 'contact',
+    path: '/contact',
     element: <App/>,
     children:[
       {
-        path:'contact',
+        path:'/contact',
         element: <Contact/>
       }
     ]
