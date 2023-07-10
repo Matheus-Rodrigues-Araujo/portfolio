@@ -2,6 +2,7 @@
     font-family: 'Inter', sans-serif;
     font-family: 'Nunito Sans', sans-serif;
     --green: #61DD00;
+    --light-green: #7aff15;
     --white: white;
     --orange: rgb(255, 98, 0);
     font-size: 8px;
@@ -44,25 +45,26 @@ body{
 
 
 .main{
-    background-color: white;
+    // background-color: white;
     border-radius: 3rem;
     z-index: 1;
     padding: 50px;
     min-width: 45vw;
     min-height: 40vh;
-    display: inline-block;
-    
+    // display: block;
+    margin-inline: auto;
+    margin-block: 10px;
 
     h1{
         color: var(--green);
         /* text-align: center;
         font-weight: 400;
         font-size: 5.5rem; */
-        font-size: 4rem;
+        font-size: 7rem;
         font-weight: 700;
         text-align: center;
         span{
-            color: black;
+            color: rgb(255, 255, 255);
         }
     }
 
@@ -71,24 +73,29 @@ body{
         color: var(--green); 
         font-weight: 200;
         text-align: center; 
-        font-size:3rem;
+        font-size:6rem;
     }
 }
 
 .explore-link{
-    color:var(--green);
+    color:black;
+    
+    // color: black;
     padding:10px;
-    background-color: black;
+    // background-color: rgb(48, 48, 48);
+    border: .5px solid var(--green);
     border-radius: .3em;
+    background-color: var(--green);
     /* border: none; */
     text-decoration: none;
-    font-weight: 600;
-    font-size: 2.0rem;
+    font-weight: 700;
+    font-size: 2rem;
     cursor:pointer;
     animation: light 1s infinite;
 
 
     &:hover{
-        color: white;
+        font-weight: 700;
+        background-color: var(--light-green);
     }    
 }

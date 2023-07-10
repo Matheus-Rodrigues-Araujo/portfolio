@@ -2,8 +2,8 @@ import { Link } from "react-router-dom"
 
 const Home = () =>{
     return (
-        <div className="container">
-            <div className="main m-5"> 
+        // <div className="container">
+            <div className="main container"> 
                 <h1  >Hey, I'm <span  >Matheus</span></h1>
                 <h2 >A front-end developer that designs and build beautiful websites.</h2>
 
@@ -13,7 +13,7 @@ const Home = () =>{
             </div>
         
 
-         </div>
+        //  </div>
     )
 }
 
