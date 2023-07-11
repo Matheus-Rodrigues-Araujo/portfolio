@@ -2,8 +2,8 @@ import { Link } from "react-router-dom"
 
 const Contact = () =>{
     return (
-        <div className="main contact container">
-        <section className="section-preview p-3 mx-5-md rounded-4 w-100">
+        // <div className="main contact container">
+        <section className="main section-preview p-3 mx-5-md rounded-4 w-50 bg-white" style={{height:'50vh', margin: 'auto auto',}}>
 
             <section className="mb-4 text-dark mx-5-md">
     
@@ -74,7 +74,7 @@ const Contact = () =>{
             </section>
     
         </section>
-    </div>
+    // </div>
     )
 }
 

@@ -5,6 +5,7 @@ import { Outlet } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import BackgroundVideo from './components/BackgroundVideo';
+import About from './routes/About';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <BackgroundVideo />
       <Navbar/>
       <Outlet/>
+      {/* <About/> */}
       <Footer/>
     </div>
 

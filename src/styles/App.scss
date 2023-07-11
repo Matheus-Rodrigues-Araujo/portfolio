@@ -49,32 +49,29 @@ body{
 
 .main{
     background-image: linear-gradient(180deg, black, rgb(6 6 6));
-    border: 6px outset var(--light-green);
+    border: 2px outset var(--light-green);
     z-index: 1;
     flex: 1;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    height: 500px;
+    width: 90vw;
+    // width: auto;
     // width: 70vw;
     // height: 30vw;
-    width: 90%;
+    // width: 90%;
     margin-block: auto;
-    padding: 85px;
+    // padding: 85px;
     // border-radius: 10em;
     h1{
         color: var(--green);
-        // color: white;
         font-size: 6rem; /* 56px */
         font-weight: 600;
         text-align: center;
-        // border-bottom: 4px solid var(--green);
-        // border-left: 4px solid var(--green);
-        // padding: 5px;
-        // background-color: var(--green);
         span{
             color: white;
-            // text-decoration: underline;
         }
     }
 
@@ -88,7 +85,7 @@ body{
 
     p{
         color: var(--white);
-        font-size: 2.5rem;
+        font-size: 3.5rem;
         text-align: justify;
         font-weight:600;
     }
@@ -168,7 +165,8 @@ footer{
     }
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 580px) {
+
     .brand{
         width: 50px;
         height: 50px;
@@ -178,14 +176,17 @@ footer{
     }
 
     .main {
-        margin-bottom: 50px;
+        height: 250px;
+        width: 90%;
+        margin-block: 30vh;
+        // margin-bottom: 0px;
 
         h1{
-            font-size: 4.5rem; 
+            font-size: 3.5rem; 
         }
 
         h2{
-            font-size: 3.5rem;
+            font-size: 2.5rem;
             text-align: center;
             padding: 0 10px;
         }
