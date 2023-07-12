@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 
+
+
 const Inbox = () => {
     const [dados, setDados] = useState([])
 
@@ -20,10 +22,11 @@ const Inbox = () => {
             <h1>Inbox</h1>
 
             <div className="messages-list d-flex justify-content-center gap-5 position-relative" >
-            <ul >
+            <ul className="d-grid gap-3">
             {dados.map((item, index) => (
-            <li key={index}>
+            <li className="text-dark bg-white" p-5 key={index}>
                 <strong>Nome:</strong> {item.name}, <strong>Assunto:</strong> {item.subject}, <strong>Email:</strong> {item.message}
+                <button >Delete</button>
             </li>
             ))}
       </ul>

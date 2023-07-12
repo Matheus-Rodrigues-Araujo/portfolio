@@ -1,15 +1,17 @@
 :root{
     font-family: 'Inter', sans-serif;
     font-family: 'Nunito Sans', sans-serif;
+    font-size: 8px;
+    --red: #ff0000;
     --green: #61DD00;
     --light-green: #89ff21;
     --white: white;
     --orange: rgb(255, 98, 0);
     --blue: #00ffec;
     --purple: rgb(187, 46, 187);
+    --dark-purple: rgb(67 55 157);
     --light-pink: rgb(255, 47, 255);
     --light-dark: rgb(32, 32, 32);
-    font-size: 8px;
 }
 
 body{
@@ -36,7 +38,7 @@ body{
 }
 
 .navbar{
-    background-image: linear-gradient(90deg, var(--blue), var(--purple));
+    background-image: linear-gradient(90deg, var(--red), var(--purple));
     opacity: .98;
 
     .brand{
@@ -57,7 +59,7 @@ body{
         text-align: center;
         &.active{
             padding: 2px;
-            background-color: var(--light-green);
+            background-color: var(--dark-purple);
         }
     }
 }
@@ -133,6 +135,7 @@ body{
 footer{
     font-size: 2rem; /* 16px */
     // background-image: linear-gradient(270deg, var(--blue), var(--purple));
+    background-image: linear-gradient(270deg, var(--red), var(--purple));
     z-index: 1;
 
     .svg-icon{
@@ -178,9 +181,9 @@ footer{
     }
 
     .main {
-        height: 250px;
-        width: 90%;
-        margin-block: 30vh;
+        // height: 250px;
+        // width: 90%;
+        // margin-block: 30vh;
 
         h1{
             font-size: 3.5rem; 
