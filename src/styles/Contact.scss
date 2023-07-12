@@ -5,10 +5,12 @@
 
     .explore-link{
         width: 100px;
-        margin-inline: auto;
+        // margin-inline: auto;
         background-color: transparent;
       
-        // margin: 0 auto;
+        &.reset{
+            background-color: rgb(255, 0, 76);
+        }
     }
 
 }

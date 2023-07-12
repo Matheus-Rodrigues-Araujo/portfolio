@@ -1,7 +1,7 @@
 import project1 from '../assets/images/project-1.png'
 import project2 from '../assets/images/project-2.png'
 import project3 from '../assets/images/project-3.png'
-
+import { Link } from 'react-router-dom'
 
 const Projects = () =>{
     return (
@@ -26,7 +26,7 @@ const Projects = () =>{
                             <a className='text-decoration-none' target='_blank' href='https://github.com/Matheus-Rodrigues-Araujo/soccer-website' >Github</a>
                         </button>
                         <button type="button" class="btn btn-sm   techs">
-                            <a className='text-decoration-none' target='_blank' href='#' >Techs</a>
+                            <Link className='text-decoration-none'  to={'/project1'} >Techs</Link>
                         </button>
                     </div>
                 </div>
@@ -50,7 +50,8 @@ const Projects = () =>{
                             <a className='text-decoration-none' target='_blank' href='https://github.com/Matheus-Rodrigues-Araujo/Training-Gym' >Github</a>
                         </button>
                         <button type="button" class="btn btn-sm   techs">
-                            <a className='text-decoration-none' target='_blank' href='#' >Techs</a>
+                        <Link className='text-decoration-none' to={'/project2'} >Techs</Link>
+
                         </button>
                     </div>
                 </div>

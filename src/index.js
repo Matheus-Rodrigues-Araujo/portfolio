@@ -13,6 +13,8 @@ import Projects from './routes/Projects'
 import Contact from './routes/Contact';
 import ErrorPage from './routes/ErrorPage';
 import Inbox from './routes/inbox';
+import Project1 from './routes/techs/project1';
+import Project2 from './routes/techs/project2';
 
 const router = createBrowserRouter([
   {
@@ -83,6 +85,26 @@ const router = createBrowserRouter([
       {
         path:'/inbox',
         element: <Inbox/>
+      }
+    ]
+  },
+  {
+    path: '/project1',
+    element: <App/>,
+    children:[
+      {
+        path:'/project1',
+        element: <Project1/>
+      }
+    ]
+  },
+  {
+    path: '/project2',
+    element: <App/>,
+    children:[
+      {
+        path:'/project2',
+        element: <Project2/>
       }
     ]
   },
