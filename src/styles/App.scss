@@ -133,12 +133,12 @@ footer{
     z-index: 1;
 
     .svg-icon{
-        fill: var(--white);
+        fill: var(--purple);
         width: 30px;
         height: 30px;
 
         &:hover{
-            fill: var(--green);
+            fill: white;
         }
     }
 
