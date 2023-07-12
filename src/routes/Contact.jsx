@@ -79,7 +79,7 @@ const Contact = () =>{
                             <div className="row justify-content-center">
                                 <div className="col-md-8">
                                     <div className="md-form">
-                                        <textarea type="text" value={message} onChange={setMessage} required name="message" placeholder="Your message" rows="5" className="form-control md-textarea m-2"></textarea>
+                                        <textarea type="text" value={message} onChange={e => setMessage(e.target.value)} required name="message" placeholder="Your message" rows="5" className="form-control md-textarea m-2"></textarea>
                                     </div>
                                 </div>
                             </div>
