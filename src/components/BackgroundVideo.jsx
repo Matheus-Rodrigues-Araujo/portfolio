@@ -5,7 +5,7 @@ import media from '../assets/videos/blue_purple.mp4'
 
 const BackgroundVideo = () => {
   return (
-      <video className='bg-video' controls="false" autoPlay loop muted preload='auto'>
+      <video className='bg-video' controls={false} autoPlay loop muted preload='auto'>
         <source src={media} type="video/mp4" />
         Desculpe, seu navegador não suporta vídeos HTML5.
       </video>

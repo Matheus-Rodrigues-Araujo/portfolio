@@ -4,7 +4,7 @@ const Career = () =>{
       
         <div className="main career container">
           <div className="d-grid p-5">
-            <h1 >My <span style={{color:"var(--green)"}} >Career</span></h1>
+            <h1 >My  Career</h1>
             <p >I've been working as a front-end programmer, using React and Angular, for 6 months. In it, I create new features, fix bugs and improve the ergonomics and usability of the system with UX and UI knowledge.</p>
             <p className="text-center" ><span style={{color: "var(--green)"}} >01/01/2023</span> - <span style={{color: "var(--green)"}} >Now</span></p>
             

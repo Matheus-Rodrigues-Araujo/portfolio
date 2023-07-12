@@ -36,7 +36,7 @@ const Projects = () =>{
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="card shadow-sm">
-          <img src={project3} class="bd-placeholder-img card-img-top object-fit-cover img-responsive"  width="50%" height="225" />
+          <img src={project3} class="bd-placeholder-img card-img-top object-fit-cover img-responsive" width="50%" height="225" />
             
           <div class="card-body">
               <div class="d-grid">

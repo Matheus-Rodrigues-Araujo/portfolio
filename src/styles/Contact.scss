@@ -5,7 +5,10 @@
 
     .explore-link{
         width: 100px;
-        margin: 0 auto;
+        margin-inline: auto;
+        background-color: transparent;
+      
+        // margin: 0 auto;
     }
 
 }
@@ -20,14 +23,21 @@
     box-shadow: 0px 2px 10px 0px var(--white);
 
         padding: 10px;
-        height: 500px;
+        // height: 500px;
         width: 50vw;
     }
 
     .form-control{
         font-size: 2.5rem;
     }
+
+}
+
+@media screen and (max-width: 550px){
     
-
-
+    .contact{
+        // section{
+            margin-block: 250px;
+        // }
+    }
 }

@@ -1,0 +1,19 @@
+.main.inbox{
+    // display: flex;
+//    justify-content: flex-start;
+   background-image: none;
+   box-shadow: none;
+}
+
+.inbox {
+
+    .inbox-container {
+        background-color: black;
+    }
+    .messages-list{
+        li{
+            color: white;
+            font-size: 2.5rem;
+        }
+    }
+}

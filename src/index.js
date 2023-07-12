@@ -12,6 +12,7 @@ import Career from './routes/Career'
 import Projects from './routes/Projects'
 import Contact from './routes/Contact';
 import ErrorPage from './routes/ErrorPage';
+import Inbox from './routes/inbox';
 
 const router = createBrowserRouter([
   {
@@ -72,6 +73,16 @@ const router = createBrowserRouter([
       {
         path:'/contact',
         element: <Contact/>
+      }
+    ]
+  },
+  {
+    path: '/inbox',
+    element: <App/>,
+    children:[
+      {
+        path:'/inbox',
+        element: <Inbox/>
       }
     ]
   },
