@@ -3,8 +3,8 @@ import logo from '../assets/images/logo_official.png'
 
 const Navbar = () => {
     return (
-        <nav className="navbar navbar-dark fixed-top " aria-label="First navbar example" 
-        style={{backgroundColor: "black", opacity: .9}}     
+        <nav className="navbar navbar-dark fixed-top" aria-label="First navbar example" 
+        // style={{backgroundColor: "black", opacity: .9}}     
         >
             <div className="container-fluid mx-5">
                 <Link className="navbar-brand" to="/">

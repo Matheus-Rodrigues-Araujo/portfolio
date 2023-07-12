@@ -63,7 +63,7 @@ const Contact = () =>{
     
                         </form>
     
-                        <div className="styled-btn text-center text-md-left my-2">
+                        <div className="explore-link submit-btn text-center text-md-left my-2">
                             <a >Send</a>
                         </div>
                         <div id="status"></div>
