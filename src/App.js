@@ -1,6 +1,7 @@
 import './styles/App.scss';
 import './styles/Contact.scss';
 import './styles/Career.scss';
+import './styles/Projects.scss';
 
 import { Outlet } from 'react-router-dom';
 

@@ -7,6 +7,8 @@
     --orange: rgb(255, 98, 0);
     --blue: #00ffec;
     --purple: rgb(187, 46, 187);
+    --light-pink: rgb(255, 47, 255);
+    --light-dark: rgb(32, 32, 32);
     font-size: 8px;
 }
 
@@ -104,6 +106,8 @@ body{
         font-weight:600;
     }
 
+    
+
 }
 
 .explore-link{
@@ -194,10 +198,9 @@ footer{
             text-align: justify;
         }
 
-        .explore-link{
+        a, .explore-link{
             font-size: 1.8rem;
         }
-
 
     }
 
