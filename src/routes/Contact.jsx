@@ -3,9 +3,9 @@ import { Link } from "react-router-dom"
 const Contact = () =>{
     return (
         // <div className="main contact container">
-        <section className="main section-preview p-3 mx-5-md rounded-4 w-50 bg-white" style={{height:'50vh', margin: 'auto auto',}}>
+        <section className="main contact section-preview p-3 mx-5-md rounded-4 w-50 mx-auto">
 
-            <section className="mb-4 text-dark mx-5-md">
+            <section className="d-grid text-white mx-5-md">
     
                 <h1 className="h1-responsive font-weight-bold text-center my-4">Contact me</h1>
                 
@@ -63,7 +63,7 @@ const Contact = () =>{
     
                         </form>
     
-                        <div className="styled-btn text-center text-md-left">
+                        <div className="styled-btn text-center text-md-left my-2">
                             <a >Send</a>
                         </div>
                         <div id="status"></div>

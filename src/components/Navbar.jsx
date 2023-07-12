@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import logo from '../assets/images/logo_official.png'
 
 const Navbar = () => {
@@ -18,22 +18,22 @@ const Navbar = () => {
                 <div className="navbar-collapse collapse " id="navbarsExample01">
                 <ul className="navbar-nav me-auto mb-2">
                     <li className="nav-item">
-                    <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+                        <NavLink className="nav-link" activeClassName="active" aria-current="page" to="/">Home</NavLink>
                     </li>
                     <li className="nav-item">
-                    <Link className="nav-link" to="/about">About me</Link>
+                        <NavLink className="nav-link" to="/about">About me</NavLink>
                     </li>
                     <li className="nav-item">
-                    <Link className="nav-link" to="/graduation">Graduation</Link>
+                        <NavLink className="nav-link" to="/graduation">Graduation</NavLink>
                     </li>
                     <li className="nav-item">
-                    <Link className="nav-link" to="/career">Career</Link>
+                        <NavLink className="nav-link" to="/career">Career</NavLink>
                     </li>
                     <li className="nav-item">
-                    <Link className="nav-link" to="/projects">Projects</Link>
+                        <NavLink className="nav-link" to="/projects">Projects</NavLink>
                     </li>
                     <li className="nav-item">
-                    <Link className="nav-link" to="/contact">Contact</Link>
+                        <NavLink className="nav-link" to="/contact">Contact</NavLink>
                     </li>
                 </ul>
                 
