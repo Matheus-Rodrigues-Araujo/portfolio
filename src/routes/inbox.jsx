@@ -10,6 +10,12 @@ const Inbox = () => {
         setDados(mensagens)
     }
 
+    const deleteAllMessages = () =>{
+        // mensagens.splice(index,1)
+        localStorage.setItem('mensagens', JSON.stringify([]))
+        setDados(mensagens)
+    }
+
     useEffect(()=>{
         mensagens && setDados(mensagens);   
     }, [])
@@ -27,6 +33,7 @@ const Inbox = () => {
                     <button onClick={()=> deleteMessage(index)} >Delete</button>
                 </li>
             ))}
+            <button className="fs-3" onClick={() => deleteAllMessages()} >Delete all messages</button>
       </ul>
             </div>
         </div>
