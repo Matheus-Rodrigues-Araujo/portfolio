@@ -1,19 +1,17 @@
 import { useState, useEffect } from "react";
 
-
-
 const Inbox = () => {
     const [dados, setDados] = useState([])
+    const mensagens = JSON.parse(localStorage.getItem('mensagens'))
 
-    const checkMessages = () =>{
-        const mensagens = localStorage.getItem('mensagens');
-        if (mensagens) {
-        setDados(JSON.parse(mensagens));
-        }
+    const deleteMessage = (index) =>{
+        mensagens.splice(index,1)
+        localStorage.setItem('mensagens', JSON.stringify(mensagens))
+        setDados(mensagens)
     }
 
     useEffect(()=>{
-        checkMessages()
+        mensagens && setDados(mensagens);   
     }, [])
 
     return (
@@ -23,11 +21,11 @@ const Inbox = () => {
 
             <div className="messages-list d-flex justify-content-center gap-5 position-relative" >
             <ul className="d-grid gap-3">
-            {dados.map((item, index) => (
-            <li className="text-dark bg-white" p-5 key={index}>
-                <strong>Nome:</strong> {item.name}, <strong>Assunto:</strong> {item.subject}, <strong>Email:</strong> {item.message}
-                <button >Delete</button>
-            </li>
+            {dados && dados.map( (item, index) => (
+                <li className="text-dark bg-white p-5" key={index} >
+                    <strong>Nome:</strong> {item.name}, <strong>Assunto:</strong> {item.subject}, <strong>Email:</strong> {item.message}
+                    <button onClick={()=> deleteMessage(index)} >Delete</button>
+                </li>
             ))}
       </ul>
             </div>
