@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Message from "../components/Message";
 
 const Inbox = () => {
     const [dados, setDados] = useState([])
@@ -21,20 +22,26 @@ const Inbox = () => {
     }, [])
 
     return (
-        <div className="main inbox container" > 
+        <div className="main inbox container" style={{marginBlock: '100px'}}> 
         <div className="inbox-container d-grid p-5" >
             <h1>Inbox</h1>
 
             <div className="messages-list d-flex justify-content-center gap-5 position-relative" >
-            <ul className="d-grid gap-3">
-            {dados && dados.map( (item, index) => (
-                <li className="text-dark bg-white p-5" key={index} >
-                    <strong>Nome:</strong> {item.name}, <strong>Assunto:</strong> {item.subject}, <strong>Email:</strong> {item.message}
-                    <button onClick={()=> deleteMessage(index)} >Delete</button>
-                </li>
-            ))}
-            <button className="fs-3" onClick={() => deleteAllMessages()} >Delete all messages</button>
-      </ul>
+            <ul className="gap-1 list-inline" >
+                {/* {dados && dados.map( (item, index) => (
+                    <li className="p-5 my-1 bg-white list-item " key={index} >
+                        <p className="text-dark" ><strong>Name:</strong> {item.name} <br/></p>
+                        <p className="text-dark"><strong>Subject:</strong> {item.subject}<br/></p>
+                        <p className="text-dark" ><strong>Message:</strong> {item.message}<br/></p>
+                        <button onClick={()=> deleteMessage(index)} >Delete</button>
+                    </li>
+                ))} */}
+            
+                <Message/>
+              
+
+                <button className="btn btn-danger fs-3" onClick={() => deleteAllMessages()} >Delete all messages</button>
+            </ul>
             </div>
         </div>
     </div>
