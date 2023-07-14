@@ -3,14 +3,19 @@
 //    justify-content: flex-start;
    background-image: none;
    box-shadow: none;
+   opacity: 1;
 }
 
 .inbox {
     font-size: 3rem;
-    .inbox-container {
-        background-color: black;
-    }
+    .inbox-container {background-color: black;}
+
+    .btn-primary:hover{ background-color: #01c0ff; }
+    .btn-danger:hover{background-color: red;}
+    
     .messages-list{
+        p{font-size:2.5rem;}
+
 
         .message-container{
             width: 30vw;
@@ -19,21 +24,14 @@
             border-radius: .3rem;
 
             .message-data{
-                p{
-                    font-size:3rem;
-                }
+                p{font-size:3rem;}
 
                 .btn-container{
-                    button{
-                        font-size: 2rem;
-                    }
+                    button{ font-size: 2rem;}
                 }
-
              }
 
-            button:hover{
-                background-color: gray;
-            }
+            
 
             .message-content{
                 .user-data{

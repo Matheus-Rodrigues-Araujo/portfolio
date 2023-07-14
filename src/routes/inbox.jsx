@@ -14,8 +14,10 @@ const Inbox = () => {
     const deleteAllMessages = () =>{
         // mensagens.splice(index,1)
         localStorage.setItem('mensagens', JSON.stringify([]))
-        setDados(mensagens)
+        setDados([])
     }
+
+   
 
     useEffect(()=>{
         mensagens && setDados(mensagens);   
@@ -26,22 +28,19 @@ const Inbox = () => {
         <div className="inbox-container d-grid p-5" >
             <h1>Inbox</h1>
 
-            <div className="messages-list d-flex justify-content-center gap-5 position-relative" >
-            <ul className="gap-1 list-inline" >
-                {/* {dados && dados.map( (item, index) => (
-                    <li className="p-5 my-1 bg-white list-item " key={index} >
-                        <p className="text-dark" ><strong>Name:</strong> {item.name} <br/></p>
-                        <p className="text-dark"><strong>Subject:</strong> {item.subject}<br/></p>
-                        <p className="text-dark" ><strong>Message:</strong> {item.message}<br/></p>
-                        <button onClick={()=> deleteMessage(index)} >Delete</button>
-                    </li>
-                ))} */}
-            
-                <Message/>
-              
+            <div className="d-flex justify-content-center gap-5 position-relative" >
+                <ul className="messages-list gap-1 list-inline" >
+                    {dados && dados.map( (item, index) => (
+                        
+                        <Message message={item} index={index} deleteItem={()=> deleteMessage(index)} />
+                    ))}
 
-                <button className="btn btn-danger fs-3" onClick={() => deleteAllMessages()} >Delete all messages</button>
-            </ul>
+                    {dados.length >=1 ? 
+                        <button className="btn btn-danger fs-3" onClick={deleteAllMessages} >Delete all messages</button>
+                    :
+                        <p>Inbox is empty</p>
+                    }
+                </ul>
             </div>
         </div>
     </div>
