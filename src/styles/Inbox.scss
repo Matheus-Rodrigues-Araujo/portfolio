@@ -1,12 +1,13 @@
 .main.inbox{
-    // display: flex;
-//    justify-content: flex-start;
    background-image: none;
    box-shadow: none;
    opacity: 1;
+   width: auto;
 }
 
 .inbox {
+    margin-top: 150px;
+    margin-bottom: 50px;
     font-size: 3rem;
     .inbox-container {background-color: black;}
 
@@ -15,7 +16,6 @@
     
     .messages-list{
         p{font-size:2.5rem;}
-
 
         .message-container{
             width: 50vw;
@@ -53,11 +53,7 @@
     }
 }
 
-@media screen and (max-width: 580px) {
-    .message-container{
-        width: 60vw;
-    }
-}
+
 
 @media screen and (max-width: 767px){
     .message-content{
@@ -72,5 +68,16 @@
             border-bottom: 1px solid black;
             text-align: center;
         }
+    }
+}
+
+@media screen and (max-width: 580px) {
+    
+    .inbox .messages-list .message-container {
+        margin-block: 50px;
+        width: 80vw;
+        color: black;
+        font-weight: 600;
+        border-radius: 0.3rem;
     }
 }
