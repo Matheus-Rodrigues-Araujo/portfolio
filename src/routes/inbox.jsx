@@ -24,7 +24,7 @@ const Inbox = () => {
     }, [])
 
     return (
-        <div className="main inbox container" style={{marginBlock: '100px'}}> 
+        <div className="main inbox container" > 
         <div className="inbox-container d-grid p-5" >
             <h1>Inbox</h1>
 

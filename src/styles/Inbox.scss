@@ -18,13 +18,13 @@
 
 
         .message-container{
-            width: 30vw;
+            width: 50vw;
             color:black;
             font-weight: 600;
             border-radius: .3rem;
 
             .message-data{
-                p{font-size:3rem;}
+                p{font-size:2rem;}
 
                 .btn-container{
                     button{ font-size: 2rem;}
@@ -38,7 +38,7 @@
                     border-right: 1px solid black;
                 }
 
-                div p{
+                p{
                     color: rgb(61, 62, 65);
                     font-size: 2rem;
                     font-weight: 400;
@@ -50,17 +50,27 @@
             }
 
         }
-    //     li{
-    //         color: white;
-    //         border-radius: .3em;
-    //         font-size: 3rem;
-    //         p{
-    //             font-size: 1.8rem;
-    //         }
+    }
+}
 
-    //         button{
-    //             font-size: 2rem;
-    //         }
-    //     }
+@media screen and (max-width: 580px) {
+    .message-container{
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .message-content{
+        .user-email{
+            border-top: 1px solid #dee2e6;
+        }
+    }
+
+    .message-data{
+        p{
+            width: 100%;
+            border-bottom: 1px solid black;
+            text-align: center;
+        }
     }
 }

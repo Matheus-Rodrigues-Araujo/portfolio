@@ -1,14 +1,27 @@
+import { useState } from "react"
+
 const Message = ({message, index, deleteItem}) => {
+    const [open, setOpen] = useState(true)
 
     return (
         <div className="message-container bg-white my-3"  >
-            <div className="message-data d-flex justify-content-between">
-                <p className="text-dark my-auto" >
-                    @{message.name}
+            <div className="
+                message-data d-flex  
+                flex-column align-items-center 
+                flex-md-row  justify-content-md-between p-md-3"
+            >
+                <p className="text-dark my-auto  text-md-auto border-none-md p-5" >
+                    @{message.name.split(' ')[0]}
                 </p>               
-                <div className="btn-container " >
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target={`#message${index}`} aria-expanded="false" aria-controls={`message${index}`}>
-                        open
+                <div className="btn-container my-2" >
+                    <button 
+                    class="btn btn-primary" type="button"
+                    data-bs-toggle="collapse" data-bs-target={`#message${index}`}
+                    aria-expanded="false" aria-controls={`message${index}`}
+                    onClick={() => {
+                        open ? setOpen(false) : setOpen(true)
+                    }} >
+                        {open ? 'Open' : 'Close'}
                     </button>
 
                     <button 
@@ -23,11 +36,11 @@ const Message = ({message, index, deleteItem}) => {
                 <div class="card card-body fs-5 p-0 border">
                     <div className="message-content container align-items-center " >
                         <div className="row " >
-                            <div className="col-6 user-data" >
-                                <p><strong>Name</strong>{message.name}</p>
+                            <div className="col-md-6 user-data" >
+                                <p><strong>Name: </strong>{message.name}</p>
                             </div>
-                            <div className="col-6 " >
-                             <p><strong>Email</strong>{message.email}</p>
+                            <div className="col-md-6 user-email" >
+                                 <p><strong>Email: </strong>{message.email}</p>
 
                             </div>
                         </div>
