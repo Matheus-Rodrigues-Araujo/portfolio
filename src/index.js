@@ -6,13 +6,8 @@ import App from './App';
 import {createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import Home from './routes/Home';
-import About from './routes/About';
-import Graduation from './routes/Graduation'
-import Career from './routes/Career'
-import Projects from './routes/Projects'
-import Contact from './routes/Contact';
 import ErrorPage from './routes/ErrorPage';
-import Inbox from './routes/inbox';
+import Projects from './routes/Projects';
 import Project1 from './routes/techs/project1';
 import Project2 from './routes/techs/project2';
 
@@ -29,62 +24,12 @@ const router = createBrowserRouter([
     ]
   },
   {
-    path: '/about',
-    element: <App/>,
-    children:[
-      {
-        path:'/about',
-        element: <About/>
-      }
-    ]
-  },
-  {
-    path: '/graduation',
-    element: <App/>,
-    children:[
-      {
-        path:'/graduation',
-        element: <Graduation/>
-      }
-    ]
-  },
-  {
-    path: '/career',
-    element: <App/>,
-    children:[
-      {
-        path:'/career',
-        element: <Career/>
-      }
-    ]
-  },
-  {
     path: '/projects',
     element: <App/>,
     children:[
       {
         path:'/projects',
         element: <Projects/>
-      }
-    ]
-  },
-  {
-    path: '/contact',
-    element: <App/>,
-    children:[
-      {
-        path:'/contact',
-        element: <Contact/>
-      }
-    ]
-  },
-  {
-    path: '/inbox',
-    element: <App/>,
-    children:[
-      {
-        path:'/inbox',
-        element: <Inbox/>
       }
     ]
   },
