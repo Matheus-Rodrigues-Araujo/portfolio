@@ -1,9 +1,7 @@
-
-
 :root{
     font-family: 'Inter', sans-serif;
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 8px;
+    font-size: 6px;
     --red: #ff0000;
     --green: #61DD00;
     --light-green: #89ff21;
@@ -16,7 +14,18 @@
     --light-dark: rgb(32, 32, 32);
 }
 
-body{
-    font-family: 'Inter';
+html{
+    scroll-behavior: smooth;
 }
 
+body{
+    font-family: 'Inter';
+    overflow-x: hidden;
+}
+
+.personal-img{
+    border-radius: 25em;
+    padding: 30px;
+    width: 400px;
+    height: 400px;
+}
