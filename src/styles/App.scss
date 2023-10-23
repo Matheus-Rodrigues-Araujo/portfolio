@@ -26,6 +26,24 @@ body{
 .personal-img{
     border-radius: 25em;
     padding: 30px;
-    width: 400px;
-    height: 400px;
+    width: 420px;
+    height: 420px;
+}
+
+.navbar{
+    color: white;
+    font-size: 3.5rem;
+    font-weight:500;
+    padding-block: 20px;
+
+    div a:first-child{
+        background-color: white;
+        color: #ff0000;
+        font-weight: 700;
+        padding: 0px 5px;
+    }
+}
+
+.comments{
+    color: #c3a4af;
 }
