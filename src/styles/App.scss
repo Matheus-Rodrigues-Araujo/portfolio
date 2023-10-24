@@ -24,24 +24,28 @@ body{
 }
 
 .personal-img{
-    border-radius: 25em;
+    // border-radius: 25em;
     padding: 30px;
     width: 420px;
     height: 420px;
+    border: 12px solid #FB3137;
+
 }
 
 .navbar{
     color: white;
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight:500;
-    padding-block: 20px;
 
-    div a:first-child{
-        background-color: white;
-        color: #ff0000;
-        font-weight: 700;
-        padding: 0px 5px;
-    }
+   .nav-links{
+        svg{
+            height: 30px;
+            width: 30px;
+        }
+   }
+
+
+
 }
 
 .comments{
