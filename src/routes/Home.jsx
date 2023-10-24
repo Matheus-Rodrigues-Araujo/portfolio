@@ -13,31 +13,25 @@ const Home = () =>{
             <p className='text-white p-0 text-[11rem]'>atheus.<span style={{color:'#FB3137'}} >dev</span></p>
           </div>
 
-          <div className='grid grid-cols-2 gap-20 px-64 pt-14' >
-            <div className='grid grid-rows-2 grid-flow-col gap-20' >
+          <div className='grid grid-cols-2 grid-rows-2  gap-40 px-64 pt-14' >
               <div>
                 <h1 className='text-[10rem] font-bold text-left'  style={{width:'50%', color: '#FB3137'}} >Front-end Developer.</h1>
-                <p className='text-white text-[5rem] font-light text-left' >"I'm deeply passionate about meticulously crafting visually stunning and highly functional websites that leave a lasting impression."</p>
+                <p className='text-white text-[5rem] font-light text-left' >I'm deeply passionate about meticulously crafting visually stunning and highly functional websites that leave a lasting impression.</p>
               </div>
-              <div className='comments absolute flex gap-5 bottom-20  px-64' >
+
+              <div className='personal-img flex justify-center items-center rounded-full bg-white' >
+                  <img src={draw} className='' height={220} width={220} alt="Personal drawn"/>
+              </div>
+              
+              
+              <div className='comments  flex gap-5 bottom-20 self-center w-75' >
+                <p className='text-[3.5rem] font-light text-left' >Solid problem-solving and code debugging skills to create effective and efficient solutions.</p>
+              </div>
+
+              <div className='comments flex gap-5 bottom-20  self-center' >
                 <p className='text-[3.5rem] font-light text-left' >I like to design and build beautiful websites</p>
               </div>
-            </div>
-
-            <div className='' >
-            <div className=' personal-img flex justify-center items-center rounded-full bg-white' >
-                <img src={draw} className='' height={220} width={220} alt="Personal drawn"/>
-            </div>
-              <div className='comments absolute flex gap-5 bottom-20  px-64' >
-                <p className='text-[3.5rem] font-light text-left' >I like to design and build beautiful websites</p>
-              </div>
-            </div>
-
-            {/* <div className='flex justify-end pt-20 px-64' style={{backgroundColor: '#FB3137'}}>
-              <div className=' personal-img flex justify-center items-center mt-80  rounded-full bg-white' >
-                <img src={draw} className='' height={250} width={250} alt="Personal drawn"/>
-            </div>
-            </div> */}
+        
           </div>
 
         </section>

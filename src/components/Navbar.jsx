@@ -5,11 +5,11 @@ import { BsBriefcaseFill } from 'react-icons/bs'
 
 const Navbar = () => {
     return (
-        <nav className="navbar fixed-top grid-cols-2 h-screen flex flex-column w-72 items-center justify-start" style={{backgroundColor: '#FB3137'}} >
-            <Link to={'/'} className='active mt-10'>
+        <nav className="navbar fixed-top h-screen flex flex-column w-72 pt-36 items-center justify-start" style={{backgroundColor: '#FB3137'}} >
+            <Link to={'/'} className='active'>
                 <img src={logo} height={50} width={50}  alt="" />
             </Link>
-            <div className='nav-links grid gap-32 justify-center text-center mt-60 uppercase' >
+            <div className='nav-links grid gap-64 justify-center text-center mt-60 uppercase' >
                 <Link to="/" >
                     <AiFillHome/>
                 </Link> 
