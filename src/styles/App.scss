@@ -47,3 +47,36 @@ body{
 .comments{
     color: #c3a4af;
 }
+
+.links{
+    svg{
+        fill: white;
+        height: 50px;
+        width: 50px;
+    }
+}
+
+.toggle{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: end;
+    gap: 5px;
+    
+    .first{
+        background-color: white;
+        height: 8px;
+        width: 40px;
+    }
+
+    .second{
+        background-color: white;
+        height: 8px;
+        width: 30px;
+    }
+
+    .third{
+        background-color: white;
+        height: 8px;
+        width: 20px;
+    }
+}

@@ -1,6 +1,7 @@
 import '../index.css'
 import './../styles/App.scss'
 import draw from '../assets/images/draw.jpg'
+import { AiFillLinkedin, AiFillGithub, AiFillMail  } from "react-icons/ai"
 
 const Home = () =>{
     return (
@@ -18,10 +19,23 @@ const Home = () =>{
               </div>
             </div>
 
-            <div className='flex justify-end pt-20 px-64' style={{backgroundColor: '#FB3137', width: '50vw'}}>
+            <div className='relative flex justify-end pt-20 px-64' style={{backgroundColor: '#FB3137', width: '50vw'}}>
               <div className=' personal-img flex justify-center items-center mt-80  rounded-full bg-white' >
                 <img src={draw} className='' height={250} width={250} alt="Personal drawn"/>
-            </div>
+              </div>
+
+              <div className='absolute links flex justify-between gap-20 bottom-20 right-0 px-64' >
+                <a href="">
+                  <AiFillLinkedin  />
+                </a>
+                <a href="">
+                  <AiFillGithub />
+                </a>
+                <a href="">
+                  <AiFillMail />
+                </a>
+             </div>
+            
             </div>
           </div>
 
