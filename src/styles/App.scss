@@ -2,16 +2,11 @@
     font-family: 'Inter', sans-serif;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 6px;
-    --red: #ff0000;
-    --green: #61DD00;
-    --light-green: #89ff21;
-    --white: white;
-    --orange: rgb(255, 98, 0);
-    --blue: #00ffec;
-    --purple: rgb(187, 46, 187);
-    --dark-purple: rgb(67 55 157);
-    --light-pink: rgb(255, 47, 255);
-    --light-dark: rgb(32, 32, 32);
+    --dark-purple: #110927;
+    --custom-red: #FB3137;
+    --custom-dark:#080808;
+    --custom-gray:#85828e;
+    --dark-red: #270414;
 }
 
 html{
@@ -23,13 +18,35 @@ body{
     overflow-x: hidden;
 }
 
+.line{
+    width: 100%;
+    background-color: var(--custom-red);
+    height: 2px;
+}
+
 .main-section{
     // background-image: linear-gradient(45deg, black, #110927);
     // background-image: linear-gradient(16deg, black, #110927, rgb(100, 2, 76));
-    background-image: linear-gradient(16deg, black, #110927, #490709);
+    // background-image: linear-gradient(16deg, black, #110927, #490709);
+    // background-image: linear-gradient(4deg, black, #110927, #490709);
+    // background-image: linear-gradient(35deg,  #110927, #490709);
+    background-color: var(--dark-purple);
 
+}
 
+.about-section{
+    background-color: var(--custom-dark);
+    p{
+        color: var(--custom-gray);
+    }
+}
 
+.projects-section{
+    background-color: var(--dark-purple);
+    
+    p{
+        color: white;
+    }
 }
 
 .personal-img{
@@ -46,7 +63,8 @@ body{
     font-size: 3rem;
     font-weight:500;
     // background-color: #270414;
-    background-image: linear-gradient(152deg, #270414, black);
+    background-color: var(--dark-red);
+    // background-image: linear-gradient(152deg, #270414, black);
     box-shadow: 0px 0px 7px 0px rgba(251, 49, 56, 0.8901960784);
 
    .nav-links{
@@ -54,8 +72,13 @@ body{
             height: 35px;
             width: 35px;
             fill: #fb3138e3;
+        
+            &:hover{
+                fill: white;
+            }
         }
-   }
+   
+    }
 }
 
 .comments{
@@ -70,5 +93,8 @@ body{
     text-decoration: underline;
     a{
         color: #FB3137;
+        &:hover{
+            color: var(--custom-red);
+        }
     }
 }
