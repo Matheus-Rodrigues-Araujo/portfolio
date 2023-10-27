@@ -2,7 +2,7 @@
     font-family: 'Inter', sans-serif;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 6px;
-    --dark-purple: #110927;
+    --purple: #170056;
     --custom-red: #FB3137;
     --custom-dark:#080808;
     --custom-gray:#85828e;
@@ -18,6 +18,7 @@ body{
     overflow-x: hidden;
 }
 
+
 .line{
     width: 100%;
     background-color: var(--custom-red);
@@ -30,7 +31,7 @@ body{
     // background-image: linear-gradient(16deg, black, #110927, #490709);
     // background-image: linear-gradient(4deg, black, #110927, #490709);
     // background-image: linear-gradient(35deg,  #110927, #490709);
-    background-color: var(--dark-purple);
+    background-color: var(--purple);
 
 }
 
@@ -42,36 +43,91 @@ body{
 }
 
 .projects-section{
-    background-color: var(--dark-purple);
+
+    background-color: var(--purple);
+    border-radius: .7em;
     
+    div > div{
+        h1{
+            color: var(--custom-red);
+        }
+    }
+
     p{
+        color: var(--purple);
+    }
+
+    // .btn-container{
+    //     border: 2px solid var(--custom-red);
+    //     color: #FB3137;
+    //     cursor: pointer;
+    //     transition: .2s ease-in;
+    //     font-weight: 700;
+    //     &:hover{
+    //         background-color: #FB3137;
+    //         color: white;
+    //     }
+    // }
+
+}
+
+.contact-section{
+    background-color: var(--custom-dark);
+
+    .contact-form{
+        background-color: var(--custom-red);
+        background-color: white;
+        border-radius: .7em;
+
+        h1{
+            color: var(--custom-red);
+        }
+
+        input, textarea{
+            font-size: 3rem;
+            padding: 5px;
+            border-radius: .3em;
+            border: 1px solid var(--custom-gray);
+        }
+    }
+}
+
+.btn-container{
+    border: 2px solid var(--custom-red);
+    color: #FB3137;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: .2s ease-in;
+    font-weight: 700;
+    &:hover{
+        background-color: #FB3137;
         color: white;
     }
 }
 
 .personal-img{
-    // border-radius: 25em;
     padding: 30px;
     width: 420px;
     height: 420px;
     border: 12px solid #FB3137;
-
 }
 
 .navbar{
     color: white;
     font-size: 3rem;
     font-weight:500;
-    // background-color: #270414;
-    background-color: var(--dark-red);
-    // background-image: linear-gradient(152deg, #270414, black);
+    background-color: white;
     box-shadow: 0px 0px 7px 0px rgba(251, 49, 56, 0.8901960784);
 
+    img{
+        filter: invert(1);
+    }
    .nav-links{
+
         svg{
             height: 35px;
             width: 35px;
-            fill: #fb3138e3;
+            fill: var(--custom-red);
         
             &:hover{
                 fill: white;
