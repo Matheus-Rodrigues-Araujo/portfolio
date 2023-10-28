@@ -5,7 +5,7 @@ import { BsBriefcaseFill } from 'react-icons/bs'
 
 const Navbar = () => {
     return (
-        <nav className="navbar fixed-top h-screen flex flex-column w-72 pt-36 items-center justify-start" 
+        <nav className="navbar fixed-top md: h-screen flex flex-column w-72 pt-36 items-center justify-start" 
         >
             <Link to={'/'} className='active'>
                 <img src={logo} className='logo'  alt="" />
