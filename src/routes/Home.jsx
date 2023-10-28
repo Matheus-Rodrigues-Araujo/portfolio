@@ -105,7 +105,7 @@ const Home = () =>{
 
         {/* Contact section */}
         <section className='contact-section relative flex items-center justify-center  h-100 p-20' >
-          <div className='contact-form flex flex-column justify-start pt-60 px-64 h-auto w-50'>
+          <div className='contact-form flex flex-column justify-start p-32 h-auto w-50'>
 
             <h1 className='text-[8rem] font-bold text-center py-2' >Contact me</h1>
             
@@ -125,7 +125,7 @@ const Home = () =>{
               </label>
               <textarea cols={10} rows={10} placeholder='Write your message' ></textarea>
 
-              <div className='btn-container mt-10 w-50 p-5 mx-auto flex justify-center' >
+              <div className='btn-container mt-16 w-50 p-5 mx-auto flex justify-center' >
                 <button className='uppercase' >
                   Send message
                 </button>

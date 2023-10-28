@@ -26,19 +26,15 @@ body{
 }
 
 .main-section{
-    // background-image: linear-gradient(45deg, black, #110927);
-    // background-image: linear-gradient(16deg, black, #110927, rgb(100, 2, 76));
-    // background-image: linear-gradient(16deg, black, #110927, #490709);
-    // background-image: linear-gradient(4deg, black, #110927, #490709);
-    // background-image: linear-gradient(35deg,  #110927, #490709);
     background-color: var(--purple);
-
 }
 
 .about-section{
-    background-color: var(--custom-dark);
+    // background-color: var(--custom-dark);
+    background-color: white;
     p{
         color: var(--custom-gray);
+        font-weight: 600;
     }
 }
 
@@ -57,35 +53,38 @@ body{
         color: var(--purple);
     }
 
-    // .btn-container{
-    //     border: 2px solid var(--custom-red);
-    //     color: #FB3137;
-    //     cursor: pointer;
-    //     transition: .2s ease-in;
-    //     font-weight: 700;
-    //     &:hover{
-    //         background-color: #FB3137;
-    //         color: white;
-    //     }
-    // }
+    .btn-container{
+        border: 2px solid var(--custom-red);
+        color: #FB3137;
+        &:hover{
+            background-color: #FB3137;
+            color: white;
+        }
+    }
 
 }
 
 .contact-section{
-    background-color: var(--custom-dark);
+    // background-color: var(--custom-dark);
+    background-color: white;
 
     .contact-form{
         background-color: var(--custom-red);
-        background-color: white;
+        // background-color: white;
         border-radius: .7em;
-
         h1{
-            color: var(--custom-red);
+            // color: var(--custom-red);
+            color: white;
+        }
+
+        label{
+            font-weight: 600;
         }
 
         input, textarea{
             font-size: 3rem;
             padding: 5px;
+            margin-block: 5px;
             border-radius: .3em;
             border: 1px solid var(--custom-gray);
         }
@@ -93,15 +92,15 @@ body{
 }
 
 .btn-container{
-    border: 2px solid var(--custom-red);
-    color: #FB3137;
+    border: 2px solid white;
+    color: white;
     font-size: 3rem;
     cursor: pointer;
     transition: .2s ease-in;
     font-weight: 700;
     &:hover{
-        background-color: #FB3137;
-        color: white;
+        background-color: white;
+        color: var(--custom-red);
     }
 }
 
@@ -150,7 +149,7 @@ body{
     a{
         color: #FB3137;
         &:hover{
-            color: var(--custom-red);
+            color: white;
         }
     }
 }
