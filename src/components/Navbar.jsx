@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom'
 import logo from '../assets/images/logo_official.png'
-import { AiFillHome, AiFillBook, AiFillPhone } from 'react-icons/ai'
+import { AiFillHome, AiFillBook, AiFillPhone, AiFillMail } from 'react-icons/ai'
 import { BsBriefcaseFill } from 'react-icons/bs'
 
 const Navbar = () => {
@@ -8,22 +8,21 @@ const Navbar = () => {
         <nav className="navbar fixed-top h-screen flex flex-column w-72 pt-36 items-center justify-start" 
         >
             <Link to={'/'} className='active'>
-                <img src={logo} height={50} width={50}  alt="" />
+                <img src={logo} className='logo'  alt="" />
             </Link>
             <div className='nav-links grid gap-64 justify-center text-center mt-60 uppercase' >
-                <Link to="/" title='H
-                ome' >
+                <a href="#main" title='Home' >
                     <AiFillHome/>
-                </Link> 
-                <Link to="/" title="About">
+                </a> 
+                <a href="#about" title="About">
                     <AiFillBook/>
-                </Link>
-                <Link to="/" title="Projects" >
+                </a>
+                <a href="#projects" title="Projects" >
                     <BsBriefcaseFill/>
-                </Link>
-                <Link to="/" title="Contact" >
-                    <AiFillPhone/>
-                </Link>
+                </a>
+                <a href="#contact" title="Contact" >
+                    <AiFillMail/>
+                </a>
             </div>
         </nav>
     )

@@ -18,6 +18,15 @@ body{
     overflow-x: hidden;
 }
 
+.logo{
+    width: 50px;
+    height: 50px;
+}
+
+.logo-name{
+    width: 55px;
+    height:55px;
+}
 
 .line{
     width: 100%;
@@ -91,6 +100,7 @@ body{
     }
 }
 
+
 .btn-container{
     border: 2px solid white;
     color: white;
@@ -116,24 +126,60 @@ body{
     font-size: 3rem;
     font-weight:500;
     background-color: white;
-    box-shadow: 0px 0px 7px 0px rgba(251, 49, 56, 0.8901960784);
+    box-shadow: 0px 0px 7px 0px var(--purple);
 
     img{
         filter: invert(1);
+ 
     }
    .nav-links{
 
         svg{
             height: 35px;
             width: 35px;
-            fill: var(--custom-red);
-        
+            fill: var(--purple);
+            transition: .2s ease-in-out;
             &:hover{
-                fill: white;
+                fill: #f55356;
             }
         }
    
     }
+}
+
+footer{
+    background-color: var(--purple);
+    color: white;
+
+    .container-1{
+        border-bottom: 1px solid white;
+
+        a{
+            transition: .2s ease-in-out;
+        }
+        a:hover{
+            color: var(--custom-red);
+        }
+    }
+
+    .container-2{
+        svg{
+            height: 35px;
+            width: 35px;
+            fill: white;
+            transition: .2s ease-in-out;
+            &:hover{
+                fill: #f55356;
+            }
+        }
+    }
+
+    .container-1, .container-2{
+        a, p{
+            font-size: 3rem;
+        }
+    }
+
 }
 
 .comments{

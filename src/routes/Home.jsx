@@ -4,14 +4,15 @@ import draw from '../assets/images/draw.jpg'
 import cartoon from '../assets/images/cartoon.jpg'
 import logo from '../assets/images/logo_official.png'
 import { AiFillLinkedin, AiFillGithub, AiFillMail } from 'react-icons/ai'
+import { Link } from 'react-router-dom'
 
 const Home = () =>{
     return (
       <main className='top-0 ml-[108px] h-screen ' >
 
-        <section className="relative main-section h-100 p-20" >
+        <section id='main' className="relative main-section h-100 p-20" >
           <div className='flex items-center justify-start px-64' >
-            <img src={logo} width={75} height={75} alt="logo" />
+            <img className='logo-name' src={logo} alt="logo" />
             <p className='text-white font-bold p-0 text-[11rem]'>atheus.<span style={{color:'#FB3137'}} >dev</span></p>
           </div>
 
@@ -32,24 +33,21 @@ const Home = () =>{
               </div>
 
               <div className='links flex gap-5  self-start' >
-                <a href="#" >
+                <a href="https://www.linkedin.com/in/matheus-rodrigues-araujo/" target='_blank'  >
                   Linkedin
                 </a>
-                <a href="#">
+                <a href="https://github.com/Matheus-Rodrigues-Araujo" target='_blank' >
                   Github
                 </a>
                 <a href="#">
                   Contact
                 </a>
               </div>
-        
           </div>
-          
-
         </section>
 
         {/*About section  */}
-        <section className='relative about-section h-100 p-20' >
+        <section id='about' className='relative about-section h-100 p-20' >
           <div className='grid grid-cols-2 gap-40 px-64 pt-14 '>
             <div>
               <h1 className='text-[8rem] font-bold text-left py-2 font-bold'  style={{color: '#FB3137'}} >Hello,</h1>
@@ -87,7 +85,7 @@ const Home = () =>{
         </section>
         
         {/* Projects section */}
-        <section className='relative flex items-center justify-center projects-section h-100 p-20' >
+        <section id='projects' className='relative flex items-center justify-center projects-section h-100 p-20' >
           <div className='flex flex-column justify-center gap-36 px-64 h-75 w-50 bg-white font-bold'>
             {/* <div className='h-100' > */}
               <div className='p-5 '>
@@ -104,7 +102,7 @@ const Home = () =>{
         </section>
 
         {/* Contact section */}
-        <section className='contact-section relative flex items-center justify-center  h-100 p-20' >
+        <section id='contact' className='contact-section relative flex items-center justify-center  h-100 p-20' >
           <div className='contact-form flex flex-column justify-start p-32 h-auto w-50'>
 
             <h1 className='text-[8rem] font-bold text-center py-2' >Contact me</h1>
@@ -134,10 +132,40 @@ const Home = () =>{
             </form>  
           </div>
         </section>
+
+        <footer className='relative grid gap-10 p-20 w-100'>
+            <div className='container-1 p-4 flex justify-start items-center' >
+              <div className='flex items-center   w-100' >
+                <div className='w-50' >
+                  <Link to="/">
+                    <img src={logo} alt="Logo" className='logo' />
+                  </Link>
+                </div>
+                <a href="#projects"  className='underline' >My Projects</a>
+              </div>
+            </div>
+
+            <div className='container-2 flex justify-between' >
+              <p>© Matheus.dev 2023</p>
+              <div className='flex gap-5' >
+              <a href="https://www.linkedin.com/in/matheus-rodrigues-araujo/" target='_blank'  >
+                <AiFillLinkedin/>
+              </a>
+
+              <a href="https://www.linkedin.com/in/matheus-rodrigues-araujo/" target='_blank'  >
+                <AiFillGithub/>
+              </a>
+
+              <a href="https://www.linkedin.com/in/matheus-rodrigues-araujo/" target='_blank'  >
+                <AiFillMail/>
+              </a>
+              </div>
+            </div>
+        
+        </footer>
         
       </main>
     )
 }
 
 export default Home
-//style="background-color: rgb(17, 9, 39);background-image: linear-gradient(45deg, black, transparent);" 
