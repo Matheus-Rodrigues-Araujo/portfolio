@@ -8,13 +8,13 @@ import { Link } from 'react-router-dom'
 
 const Home = () =>{
     return (
-      <main className='md:top-0 h-screen mt-32' >
+      <main className='md:top-0 h-screen mt-40' >
 
-        <section id='main' className="relative main-section h-100 p-20" >
+        <section id='main' className="relative main-section h-auto p-10 py-40 md:p-20" >
           
-          <div className='flex items-center justify-start md:px-64' >
+          <div className='flex items-center justify- md:px-64' >
             <img className='logo-name' src={logo} alt="logo"   />
-            <p className='text-white font-bold sm:p-0 text-[8rem] md:text-[11rem]'>atheus.<span style={{color:'#FB3137'}} >dev</span></p>
+            <p className='text-white font-bold sm:p-0 text-[9rem] md:text-[11rem]'>atheus.<span style={{color:'#FB3137'}} >dev</span></p>
           </div>
 
           <div className='grid grid-cols-1 grid-rows-2 gap-0 mt-14 md:px-64 ' >
@@ -35,7 +35,7 @@ const Home = () =>{
                 <p className='text-[2.5rem] font-light md:text-[3.5rem]' >Solid problem-solving and code debugging skills to create effective and efficient solutions.</p>
               </div>
 
-              <div className='links flex justify-between w-100 ml-0  self-start ' >
+              <div className='links flex justify-start gap-5 w-100 ml-0   ' >
                 <a href="https://www.linkedin.com/in/matheus-rodrigues-araujo/" target='_blank'  >
                   Linkedin
                 </a>
@@ -50,34 +50,35 @@ const Home = () =>{
         </section>
 
         {/*About section  */}
-        <section id='about' className='relative about-section h-100 p-20' >
-          <div className='grid grid-cols-2 gap-40 px-64 pt-14 '>
+        <section id='about' className='relative about-section px-10 py-20' >
+          <div className='grid grid-cols-1 pt-0 md:px-64 pt-14 '>
             <div>
-              <h1 className='text-[8rem] font-bold text-left py-2 font-bold'  style={{color: '#FB3137'}} >Hello,</h1>
+              <h1 className='text-[6rem] font-bold text-left py-2 font-bold md:text-[8rem]'  style={{color: '#FB3137'}} >Hello,</h1>
             
-              <div className='grid grid-rows-3 gap-12 ' >
-                <p className='text-[3rem] ' >
+              <div className='grid grid-rows-5 gap-3 md:gap-12 ' >
+                
+                <p className='text-[2.5rem] md:text-[3rem]' >
                 i'm Matheus, a passionate front-end developer rooted in Brazil. Currently, I'm pursuing a Bachelor's degree in Information Systems, and my journey in the world of programming began with an unwavering quest to merge creativity and technology. 
                 </p>
                 
-                <p className='text-[3rem]' >
+                <p className='text-[2.5rem] md:text-[3rem]' >
                 Over the years, I've honed my skills to create engaging and functional interfaces that go beyond mere aesthetics. I believe that user experience is the essence of any successful project, which is why I'm constantly exploring new techniques and trends to deliver innovative solutions. 
                 </p>
                 
-                <p className='text-[3rem]' >
+                <p className='text-[2.5rem] md:text-[3rem]' >
                 My background in Information Systems not only provides me with a solid foundation in computer theory but also gives me a holistic view of systems, allowing me to understand not only the visual layer but also the underlying infrastructure that brings each project to life.
                 </p>
 
-                <p className='text-[3rem]' >
+                <p className='text-[2.5rem] md:text-[3rem]' >
                 In addition to my dedication to code, I'm an enthusiastic collaborator and an effective communicator. I value teamwork and am always ready to contribute ideas and solutions, striving for excellence in every detail. 
                 </p>
 
-                <p className='text-[3rem]'>
+                <p className='text-[2.5rem] md:text-[3rem]'>
                   Here in Brazil, I find inspiration in our rich culture and diversity, driving me to create digital experiences that resonate with our local and global audience. Each project is an opportunity to explore new horizons and provide solutions that positively impact people's lives.
                 </p>
 
-                <p className='text-[3rem]'>I'm excited to continue my journey as a front-end developer, always seeking challenges that allow me to grow and evolve. If you're looking for a dedicated professional who is passionate about creating exceptional digital experiences, I'm ready to embark on this journey with you.</p>
-                <p className='text-[3rem]'>Let's create something amazing together!</p>
+                <p className='text-[2.5rem] md:text-[3rem]'>I'm excited to continue my journey as a front-end developer, always seeking challenges that allow me to grow and evolve. If you're looking for a dedicated professional who is passionate about creating exceptional digital experiences, I'm ready to embark on this journey with you.</p>
+                <p className='text-[2.5rem] md:text-[3rem]'>Let's create something amazing together!</p>
               </div>
             </div>
             
@@ -85,15 +86,15 @@ const Home = () =>{
         </section>
         
         {/* Projects section */}
-        <section id='projects' className='relative flex items-center justify-center projects-section h-100 p-20' >
-          <div className='flex flex-column justify-center gap-36 px-64 h-75 w-50 bg-white font-bold'>
+        <section id='projects' className='relative flex items-center justify-center projects-section h-auto px-10 py-20 md:p-20' >
+          <div className='flex flex-column justify-center bg-white font-bold w-100 py-32 md:px-64 w-50'>
               <div className='p-5 '>
-                <h1 className='text-[8rem] font-bold text-center py-2 font-bold'>I build awesome stuff</h1>
-                <p className='text-[4rem] text-center w-75 mx-auto'>Web apps, landing pages and fullstack apps.</p>
+                <h1 className='text-[5rem] font-bold text-center py-2 font-bold md:text-[8rem]'>I build awesome stuff</h1>
+                <p className='text-[3rem] text-center w-75 mx-auto md:text-[4rem]'>Web apps, landing pages and fullstack apps.</p>
               </div>
 
-              <div className='btn-container mt-10 w-50 p-5 mx-auto flex justify-center' >
-                <button className='uppercase' >
+              <div className='btn-container mt-10 w-50 p-5 mx-auto flex justify-center md:' >
+                <button className='uppercase  text-[2rem] md:text-[3rem]' >
                   See my projects
                 </button>
               </div>
@@ -101,29 +102,29 @@ const Home = () =>{
         </section>
 
         {/* Contact section */}
-        <section id='contact' className='contact-section relative flex items-center justify-center  h-100 p-20' >
-          <div className='contact-form flex flex-column justify-start p-32 h-auto w-50'>
+        <section id='contact' className='contact-section relative flex items-center justify-center h-auto px-10 py-20 md:p-20 h-screen' >
+          <div className='contact-form flex flex-column w-100 justify-start py-32  h-auto md:w-auto '>
 
-            <h1 className='text-[8rem] font-bold text-center py-2' >Contact me</h1>
+            <h1 className='text-[6rem] font-bold text-center py-2 md:text-[8rem]' >Contact me</h1>
             
             <form action="" className='flex flex-column p-10'>
-              <label htmlFor="" className="text-[3rem] text-white ">
+              <label htmlFor="" className="text-[2.5rem] text-white md:text-[3rem] ">
                 Name
               </label>
-              <input type="text" placeholder='Name' />
+              <input type="text" placeholder='Name' className='text-[2.5rem] md:text-[3rem]' />
 
-              <label htmlFor="" className="text-[3rem] text-white">
+              <label htmlFor="" className="text-[2.5rem] text-white md:text-[3rem]">
                 Email
               </label>
-              <input type="Email" placeholder='Email' />
+              <input type="Email" placeholder='Email' className='text-[2.5rem] md:text-[3rem]' />
 
-              <label htmlFor="" className="text-[3rem] text-white">
+              <label htmlFor="" className="text-[2.5rem] text-white md:text-[3rem]">
                 Message
               </label>
-              <textarea cols={10} rows={10} placeholder='Write your message' ></textarea>
+              <textarea cols={10} rows={10} className='text-[2.5rem] md:text-[3rem]' placeholder='Write your message' ></textarea>
 
               <div className='btn-container mt-16 w-50 p-5 mx-auto flex justify-center' >
-                <button className='uppercase' >
+                <button className='uppercase text-[2rem] md:text-[3rem]' >
                   Send message
                 </button>
               </div>              
@@ -134,18 +135,18 @@ const Home = () =>{
 
         <footer className='relative grid gap-10 p-20 w-100'>
             <div className='container-1 p-4 flex justify-start items-center' >
-              <div className='flex items-center   w-100' >
-                <div className='w-50' >
+              <div className='flex items-center justify-between w-100' >
+                <div className='md:w-50' >
                   <Link to="/">
                     <img src={logo} alt="Logo" className='logo' />
                   </Link>
                 </div>
-                <a href="#projects"  className='underline' >My Projects</a>
+                <a href="#projects"  className='underline text-[2.5rem] md:text-[3rem]' >My Projects</a>
               </div>
             </div>
 
-            <div className='container-2 flex justify-between' >
-              <p>© Matheus.dev 2023</p>
+            <div className='container-2 flex justify-between items-center' >
+              <p className='text-[2.5rem] md:text-[3rem]' >© Matheus.dev 2023</p>
               <div className='flex gap-5' >
               <a href="https://www.linkedin.com/in/matheus-rodrigues-araujo/" target='_blank'  >
                 <AiFillLinkedin/>
