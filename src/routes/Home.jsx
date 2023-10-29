@@ -8,31 +8,34 @@ import { Link } from 'react-router-dom'
 
 const Home = () =>{
     return (
-      <main className='top-0 ml-[108px] h-screen ' >
+      <main className='md:top-0 h-screen mt-32' >
 
         <section id='main' className="relative main-section h-100 p-20" >
-          <div className='flex items-center justify-start px-64' >
-            <img className='logo-name' src={logo} alt="logo" />
-            <p className='text-white font-bold p-0 text-[11rem]'>atheus.<span style={{color:'#FB3137'}} >dev</span></p>
+          
+          <div className='flex items-center justify-start md:px-64' >
+            <img className='logo-name' src={logo} alt="logo"   />
+            <p className='text-white font-bold sm:p-0 text-[8rem] md:text-[11rem]'>atheus.<span style={{color:'#FB3137'}} >dev</span></p>
           </div>
 
-          <div className='grid grid-cols-2 grid-rows-2  gap-40 px-64 pt-14' >
-              <div>
-                <h1 className='text-[10rem] font-bold text-left'  style={{width:'50%', color: '#FB3137',
-              }} >Front-end Developer.</h1>
-                <p className='text-white font-bold text-[5rem] font-light text-left' >I'm deeply passionate about meticulously crafting visually stunning and highly functional websites that leave a lasting impression.</p>
-              </div>
+          <div className='grid grid-cols-1 grid-rows-2 gap-0 mt-14 md:px-64 ' >
+                <div>
+                  <h1 className='text-[6rem] font-bold text-left w-100 md:text-[10rem] '  style={{color: '#FB3137'}} >Front-end Developer.</h1>
+                  <p className='text-white font-bold font-light text-left text-[3rem]  md:text-[5rem] ' >I'm deeply passionate about meticulously crafting visually stunning and highly functional websites that leave a lasting impression.</p>
+                </div>
 
-              <div className='personal-img flex justify-center items-center rounded-full bg-white font-bold' >
-                  <img src={draw} className='' height={220} width={220} alt="Personal drawn"/>
+                {/* <div className='personal-img flex justify-center items-center rounded-full bg-white font-bold' >
+                  <img src={draw} className="h-[80px] w-[80px]  md:h-[220px] w-[220px]" alt="Personal drawn"/>
+                </div> */}
+
+              <div className='hidden md:personal-img flex justify-center items-center rounded-full bg-white font-bold' >
+                  <img src={draw} className="h-[80px] w-[80px]  md:h-[220px] w-[220px]" alt="Personal drawn"/>
               </div>
               
-              
-              <div className='comments  flex gap-5 bottom-20 self-center w-75' >
-                <p className='text-[3.5rem] font-light text-left' >Solid problem-solving and code debugging skills to create effective and efficient solutions.</p>
+              <div className='comments flex gap-5 bottom-20 self-center w-75' >
+                <p className='text-[2.5rem] font-light md:text-[3.5rem]' >Solid problem-solving and code debugging skills to create effective and efficient solutions.</p>
               </div>
 
-              <div className='links flex gap-5  self-start' >
+              <div className='links flex justify-between w-100 ml-0  self-start ' >
                 <a href="https://www.linkedin.com/in/matheus-rodrigues-araujo/" target='_blank'  >
                   Linkedin
                 </a>
@@ -77,17 +80,13 @@ const Home = () =>{
                 <p className='text-[3rem]'>Let's create something amazing together!</p>
               </div>
             </div>
-            {/* <div>
-            <img src={cartoon} className='' height={220} width={220} alt="Personal drawn"/>
-
-            </div> */}
+            
           </div>
         </section>
         
         {/* Projects section */}
         <section id='projects' className='relative flex items-center justify-center projects-section h-100 p-20' >
           <div className='flex flex-column justify-center gap-36 px-64 h-75 w-50 bg-white font-bold'>
-            {/* <div className='h-100' > */}
               <div className='p-5 '>
                 <h1 className='text-[8rem] font-bold text-center py-2 font-bold'>I build awesome stuff</h1>
                 <p className='text-[4rem] text-center w-75 mx-auto'>Web apps, landing pages and fullstack apps.</p>

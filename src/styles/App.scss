@@ -115,24 +115,28 @@ body{
 }
 
 .personal-img{
-    padding: 30px;
-    width: 420px;
-    height: 420px;
-    border: 12px solid #FB3137;
+    padding: 15px;
+    width: 150px;
+    height: 150px;
+    border: 6px solid #FB3137;
+
+    @media screen and (min-width:640px) and (max-width:767px) {
+        padding: 30px;
+        width: 420px;
+        height: 420px;
+        border: 12px solid #0a0006;
+    }
 }
 
 .navbar{
     color: white;
     font-size: 3rem;
     font-weight:500;
-    background-color: white;
     box-shadow: 0px 0px 7px 0px var(--purple);
 
-    img{
-        filter: invert(1);
- 
-    }
-   .nav-links{
+    img {filter: invert(1);}
+   
+    .nav-links{
 
         svg{
             height: 35px;
@@ -143,7 +147,6 @@ body{
                 fill: #f55356;
             }
         }
-   
     }
 }
 
@@ -189,8 +192,8 @@ footer{
 .links{
     font-size: 3.5rem;
     // margin-inline:100px;
-    margin-left: 15%;
-    align-self: center;
+    // margin-left: 15%;
+    // align-self: center;
     text-decoration: underline;
     a{
         color: #FB3137;
