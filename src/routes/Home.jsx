@@ -103,7 +103,7 @@ const Home = () =>{
 
         {/* Contact section */}
         <section id='contact' className='contact-section relative flex items-center justify-center h-auto px-10 py-20 md:p-20 h-screen' >
-          <div className='contact-form flex flex-column w-100 justify-start py-32  h-auto md:w-auto '>
+          <div className='contact-form flex flex-column w-100 justify-start py-20  h-auto md:w-auto '>
 
             <h1 className='text-[6rem] font-bold text-center py-2 md:text-[8rem]' >Contact me</h1>
             
