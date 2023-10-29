@@ -10,22 +10,22 @@ const Home = () =>{
     return (
       <main className='md:top-0 h-screen mt-40' >
 
-        <section id='main' className="relative main-section h-auto p-10 py-40 md:p-20" >
+        <section id='main' className="relative main-section h-auto pt-5  md:p-20" >
           
-          <div className='flex items-center justify- md:px-64' >
+          <div className='flex items-center px-20 md:px-64' >
             <img className='logo-name' src={logo} alt="logo"   />
             <p className='text-white font-bold sm:p-0 text-[9rem] md:text-[11rem]'>atheus.<span style={{color:'#FB3137'}} >dev</span></p>
           </div>
 
-          <div className='grid grid-cols-1 grid-rows-2 gap-0 mt-14 md:px-64 ' >
+          <div className='px-20 grid grid-cols-1 grid-rows-2 gap-0 mt-14 md:px-64 ' >
                 <div>
                   <h1 className='text-[6rem] font-bold text-left w-100 md:text-[10rem] '  style={{color: '#FB3137'}} >Front-end Developer.</h1>
                   <p className='text-white font-bold font-light text-left text-[3rem]  md:text-[5rem] ' >I'm deeply passionate about meticulously crafting visually stunning and highly functional websites that leave a lasting impression.</p>
                 </div>
 
-                {/* <div className='personal-img flex justify-center items-center rounded-full bg-white font-bold' >
+                <div className='sm: hidden personal-img flex justify-center items-center rounded-full bg-white font-bold' >
                   <img src={draw} className="h-[80px] w-[80px]  md:h-[220px] w-[220px]" alt="Personal drawn"/>
-                </div> */}
+                </div> 
 
               <div className='hidden md:personal-img flex justify-center items-center rounded-full bg-white font-bold' >
                   <img src={draw} className="h-[80px] w-[80px]  md:h-[220px] w-[220px]" alt="Personal drawn"/>
@@ -35,22 +35,29 @@ const Home = () =>{
                 <p className='text-[2.5rem] font-light md:text-[3.5rem]' >Solid problem-solving and code debugging skills to create effective and efficient solutions.</p>
               </div>
 
-              <div className='links flex justify-start gap-5 w-100 ml-0   ' >
+              <div className='links flex justify-start gap-5 py-5 w-100 ml-0   ' >
                 <a href="https://www.linkedin.com/in/matheus-rodrigues-araujo/" target='_blank'  >
-                  Linkedin
+                  <AiFillLinkedin className='w-[50px] h-[45px]' />
                 </a>
                 <a href="https://github.com/Matheus-Rodrigues-Araujo" target='_blank' >
-                  Github
+                  <AiFillGithub className='w-[50px] h-[45px]' />
                 </a>
                 <a href="#">
-                  Contact
+                  <AiFillMail className='w-[50px] h-[45px]  ' />
                 </a>
               </div>
+
+              {/* <div className='w-100 bg-white w-screen ' >
+                  <img src={draw} className="h-auto w-[40%] rounded-md mx-auto bg-white p-5 md:h-[220px] w-[220px]" alt="Personal drawn"/>
+              </div>  */}
           </div>
+          <div className='w-100 bg-red-500 p-5 w-screen ' >
+                  <img src={draw} className="h-auto w-[40%] rounded-md mx-auto bg-white p-5 rounded-[4em] md:h-[220px] w-[220px]" alt="Personal drawn"/>
+              </div> 
         </section>
 
         {/*About section  */}
-        <section id='about' className='relative about-section px-10 py-20' >
+        <section id='about' className='relative about-section p-20' >
           <div className='grid grid-cols-1 pt-0 md:px-64 pt-14 '>
             <div>
               <h1 className='text-[6rem] font-bold text-left py-2 font-bold md:text-[8rem]'  style={{color: '#FB3137'}} >Hello,</h1>
@@ -86,8 +93,8 @@ const Home = () =>{
         </section>
         
         {/* Projects section */}
-        <section id='projects' className='relative flex items-center justify-center projects-section h-auto px-10 py-20 md:p-20' >
-          <div className='flex flex-column justify-center bg-white font-bold w-100 py-32 md:px-64 w-50'>
+        <section id='projects' className='relative flex items-center justify-center projects-section my-20 h-[50%] p-20 md:p-20' >
+          <div className='project-content flex flex-column justify-center bg-white font-bold w-100 py-32 md:px-64 w-50'>
               <div className='p-5 '>
                 <h1 className='text-[5rem] font-bold text-center py-2 font-bold md:text-[8rem]'>I build awesome stuff</h1>
                 <p className='text-[3rem] text-center w-75 mx-auto md:text-[4rem]'>Web apps, landing pages and fullstack apps.</p>
@@ -102,12 +109,14 @@ const Home = () =>{
         </section>
 
         {/* Contact section */}
-        <section id='contact' className='contact-section relative flex items-center justify-center h-auto px-10 py-20 md:p-20 h-screen' >
-          <div className='contact-form flex flex-column w-100 justify-start py-20  h-auto md:w-auto '>
+        <section id='contact' className='contact-section relative flex items-center justify-center my-20 h-[50%] p-20 md:p-20 h-screen' >
+          {/* <div className='contact-form flex flex-column justify-start py-20  h-auto md:w-auto '> */}
 
-            <h1 className='text-[6rem] font-bold text-center py-2 md:text-[8rem]' >Contact me</h1>
+            {/* <h1 className='text-[6rem] font-bold text-center py-2 md:text-[8rem]' >Contact me</h1> */}
             
-            <form action="" className='flex flex-column p-10'>
+            <form action="" className='contact-form flex w-100 flex-column mx-auto p-20'>
+            <h1 className='text-[6rem] font-bold text-center py-2 md:text-[8rem]' >Contact me</h1>
+
               <label htmlFor="" className="text-[2.5rem] text-white md:text-[3rem] ">
                 Name
               </label>
@@ -121,7 +130,7 @@ const Home = () =>{
               <label htmlFor="" className="text-[2.5rem] text-white md:text-[3rem]">
                 Message
               </label>
-              <textarea cols={10} rows={10} className='text-[2.5rem] md:text-[3rem]' placeholder='Write your message' ></textarea>
+              <textarea cols={10} rows={4} className='text-[2.5rem] md:text-[3rem]' placeholder='Write your message' ></textarea>
 
               <div className='btn-container mt-16 w-50 p-5 mx-auto flex justify-center' >
                 <button className='uppercase text-[2rem] md:text-[3rem]' >
@@ -130,7 +139,7 @@ const Home = () =>{
               </div>              
 
             </form>  
-          </div>
+          {/* </div> */}
         </section>
 
         <footer className='relative grid gap-10 p-20 w-100'>

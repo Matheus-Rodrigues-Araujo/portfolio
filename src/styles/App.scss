@@ -52,7 +52,9 @@ body{
     background-color: var(--purple);
     border-radius: .7em;
     
-    div > div{
+    .project-content{
+        // width: calc(100vw - 30%);
+
         h1{
             color: var(--custom-red);
         }
@@ -80,6 +82,8 @@ body{
     .contact-form{
         background-color: var(--custom-red);
         // background-color: white;
+        // width: calc(100vw - 30%);
+        border-radius: 1em;
         border-radius: .7em;
         h1{
             // color: var(--custom-red);

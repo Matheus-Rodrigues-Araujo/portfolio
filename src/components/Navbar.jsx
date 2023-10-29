@@ -11,7 +11,7 @@ const Navbar = () => {
                 <img src={logo} className='logo' alt=""  />
             </Link>
             <div className='
-            nav-links flex justify-between items-center mt-0 gap-32
+            nav-links flex justify-between items-center mt-0 gap-[20px]
             
             md:grid gap-64 justify-center text-center mt-60 uppercase'
              >
