@@ -1,12 +1,29 @@
+import { useState, useEffect } from "react";
+
 export default function Contact(){
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+      const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768); // Define o breakpoint para "md" como 768 pixels
+      };
+
+      window.addEventListener('resize', handleResize);
+      handleResize();
+
+      return () => {
+      window.removeEventListener('resize', handleResize);
+      };
+  }, []);
+
     return (
-        <section id='contact' className='contact-section relative flex items-center justify-center my-20  p-20 md:p-20 ' >
+        <section id='contact' className={`contact-section relative flex ${isMobile ? 'items-center justify-center my-20 p-20' : 'h-screen p-20  items-center'}`} >
         {/* <div className='contact-form flex flex-column justify-start py-20  h-auto md:w-auto '> */}
 
           {/* <h1 className='text-[6rem] font-bold text-center py-2 md:text-[8rem]' >Contact me</h1> */}
           
-          <form action="" className='contact-form flex w-100 flex-column mx-auto p-20'>
-          <h1 className='text-[6rem] font-bold text-center py-2 md:text-[8rem]' >Contact me</h1>
+          <form className={`${isMobile ? 'contact-form flex w-100 flex-column mx-auto p-20' : 'contact-form flex w-50 h-50 flex-column mx-auto p-20'}`}>
+            <h1 className='text-[6rem] font-bold text-center py-2 md:text-[8rem] ' >Contact me</h1>
 
             <label htmlFor="" className="text-[2.5rem] text-white md:text-[3rem] ">
               Name

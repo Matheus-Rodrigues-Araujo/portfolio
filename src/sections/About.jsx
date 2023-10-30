@@ -1,11 +1,28 @@
+import { useState, useEffect } from "react";
+
 export default function About(){
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+      const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768); // Define o breakpoint para "md" como 768 pixels
+      };
+
+      window.addEventListener('resize', handleResize);
+      handleResize();
+
+      return () => {
+      window.removeEventListener('resize', handleResize);
+      };
+  }, []);
     return(
-        <section id='about' className='relative about-section p-20' >
-          <div className='grid grid-cols-1 pt-0 md:px-64 pt-14 '>
-            <div>
+        <section id='about' className='relative about-section p-20 py-20 h-auto' >
+          <div className={`${isMobile ? 'grid grid-cols-1 pt-0' : 'h-100 px-64 pt-14'}`}>
+            <div >
               <h1 className='text-[6rem] font-bold text-left py-2 font-bold md:text-[8rem]'  style={{color: '#FB3137'}} >Hello,</h1>
             
-              <div className='grid grid-rows-5 gap-3 md:gap-12 ' >
+              <div className='grid grid-rows-5 gap-16 ' >
                 
                 <p className='text-[2.5rem] md:text-[3rem]' >
                 i'm Matheus, a passionate front-end developer rooted in Brazil. Currently, I'm pursuing a Bachelor's degree in Information Systems, and my journey in the world of programming began with an unwavering quest to merge creativity and technology. 
