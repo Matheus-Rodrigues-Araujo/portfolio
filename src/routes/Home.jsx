@@ -56,8 +56,6 @@ const Home = () =>{
                 </p>
               </div>
 
-              
-              
               <div className={`comments ${isMobile ? 'flex gap-5 bottom-20 self-center ': 'mt-12'}`} >
                 <p className='text-[2.5rem] font-light md:text-[3.5rem] w-50' >"Solid problem-solving and code debugging skills to create effective and efficient solutions."</p>
               </div>
