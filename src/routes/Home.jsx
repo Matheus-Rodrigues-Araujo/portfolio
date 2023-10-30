@@ -74,7 +74,7 @@ const Home = () =>{
                 <a href="https://github.com/Matheus-Rodrigues-Araujo" target='_blank' >
                   <AiFillGithub className='w-[50px] h-[45px]' />
                 </a>
-                <a href="#">
+                <a href="#contact">
                   <AiFillMail className='w-[50px] h-[45px]  ' />
                 </a>
               </div>
