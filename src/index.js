@@ -7,9 +7,6 @@ import {createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import Home from './routes/Home';
 import ErrorPage from './routes/ErrorPage';
-import Projects from './routes/Projects';
-import Project1 from './routes/techs/project1';
-import Project2 from './routes/techs/project2';
 
 const router = createBrowserRouter([
   {
@@ -26,33 +23,8 @@ const router = createBrowserRouter([
   {
     path: '/projects',
     element: <App/>,
-    children:[
-      {
-        path:'/projects',
-        element: <Projects/>
-      }
-    ]
   },
-  {
-    path: '/project1',
-    element: <App/>,
-    children:[
-      {
-        path:'/project1',
-        element: <Project1/>
-      }
-    ]
-  },
-  {
-    path: '/project2',
-    element: <App/>,
-    children:[
-      {
-        path:'/project2',
-        element: <Project2/>
-      }
-    ]
-  },
+  
 ])
 
 

@@ -19,8 +19,9 @@ body{
 }
 
 .logo{
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
+    margin-inline: auto;
 }
 
 .logo-name{
@@ -59,7 +60,9 @@ body{
     background-color: var(--purple);
     border-radius: .7em;
     
-    div > div{
+    .project-content{
+        // width: calc(100vw - 30%);
+
         h1{
             color: var(--custom-red);
         }
@@ -87,6 +90,8 @@ body{
     .contact-form{
         background-color: var(--custom-red);
         // background-color: white;
+        // width: calc(100vw - 30%);
+        border-radius: 1em;
         border-radius: .7em;
         h1{
             // color: var(--custom-red);
@@ -98,7 +103,6 @@ body{
         }
 
         input, textarea{
-            font-size: 3rem;
             padding: 5px;
             margin-block: 5px;
             border-radius: .3em;
@@ -111,7 +115,6 @@ body{
 .btn-container{
     border: 2px solid white;
     color: white;
-    font-size: 3rem;
     cursor: pointer;
     transition: .2s ease-in;
     font-weight: 700;
@@ -119,40 +122,25 @@ body{
         background-color: white;
         color: var(--custom-red);
     }
+
+
 }
 
 .personal-img{
-    padding: 30px;
-    width: 420px;
-    height: 420px;
-    border: 12px solid #FB3137;
+    // padding: 15px;
+    // width: 150px;
+    // height: 150px;
+    // border: 6px solid #FB3137;
+
+    // @media screen and (min-width:640px) and (max-width:767px) {
+        padding: 30px;
+        width: 400px;
+        height: 400px;
+        border: 12px solid var(--custom-red);
+    // }
 }
 
-.navbar{
-    color: white;
-    font-size: 3rem;
-    font-weight:500;
-    background-color: white;
-    box-shadow: 0px 0px 7px 0px var(--purple);
 
-    img{
-        filter: invert(1);
- 
-    }
-   .nav-links{
-
-        svg{
-            height: 35px;
-            width: 35px;
-            fill: var(--purple);
-            transition: .2s ease-in-out;
-            &:hover{
-                fill: #f55356;
-            }
-        }
-   
-    }
-}
 
 footer{
     background-color: var(--purple);
@@ -181,11 +169,7 @@ footer{
         }
     }
 
-    .container-1, .container-2{
-        a, p{
-            font-size: 3rem;
-        }
-    }
+    
 
 }
 
@@ -196,8 +180,8 @@ footer{
 .links{
     font-size: 3.5rem;
     // margin-inline:100px;
-    margin-left: 15%;
-    align-self: center;
+    // margin-left: 15%;
+    // align-self: center;
     text-decoration: underline;
     a{
         // color: #FB3137;

@@ -1,4 +1,5 @@
 import './styles/App.scss';
+import './styles/Navbar.scss';
 import './styles/Projects.scss';
 import './styles/Techs.scss';
 import './index.css'
