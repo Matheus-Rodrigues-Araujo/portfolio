@@ -32,18 +32,12 @@ const Home = () =>{
             <p className='text-white font-bold p-0 text-[11rem]'>atheus.<span style={{color:'#FB3137'}} >dev</span></p>
           </div>
 
-          <div className='grid grid-cols-1 grid-rows-2  gap-40 px-64 pt-14' >
+          <div className='greetings grid grid-cols-1 grid-rows-2  gap-40 px-64 pt-14' >
               <div className='flex flex-column gap-32' >
-                <h1 className='text-[15rem] font-bold text-left'  style={{color: '#FB3137',
-              }} >Front-end Developer.</h1>
+                <h1 className='title text-[15rem] font-bold text-left' >Front-end Developer.</h1>
                 <p className='text-white font-[700] text-[6rem] font-light text-left w-50' >"I'm deeply passionate about meticulously crafting visually stunning and highly functional websites that leave a lasting impression."</p>
               </div>
 
-              {/* <div className='personal-img flex justify-center items-center rounded-full bg-white font-bold' >
-                  <img src={draw} className='' height={220} width={220} alt="Personal drawn"/>
-              </div> */}
-              
-              
               <div className='comments  flex gap-5 bottom-20 self-center ' >
                 <p className='text-[5rem] font-light text-left w-50' >Solid problem-solving and code debugging skills to create effective and efficient solutions.</p>
               </div>
