@@ -5,9 +5,25 @@ import cartoon from '../assets/images/cartoon.jpg'
 import logo from '../assets/images/logo_official.png'
 import { AiFillLinkedin, AiFillGithub, AiFillMail } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
+import { useState, useEffect } from 'react'
 
 const Home = () =>{
-    return (
+  const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+        setIsMobile(window.innerWidth <= 768); // Define o breakpoint para "md" como 768 pixels
+        };
+
+        window.addEventListener('resize', handleResize);
+        handleResize();
+
+        return () => {
+        window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+  return (
       <main className='top-0 ml-[108px] h-screen ' >
 
         <section id='main' className="relative main-section h-100 p-20" >
@@ -16,31 +32,31 @@ const Home = () =>{
             <p className='text-white font-bold p-0 text-[11rem]'>atheus.<span style={{color:'#FB3137'}} >dev</span></p>
           </div>
 
-          <div className='grid grid-cols-2 grid-rows-2  gap-40 px-64 pt-14' >
-              <div>
-                <h1 className='text-[10rem] font-bold text-left'  style={{width:'50%', color: '#FB3137',
+          <div className='grid grid-cols-1 grid-rows-2  gap-40 px-64 pt-14' >
+              <div className='flex flex-column gap-32' >
+                <h1 className='text-[15rem] font-bold text-left'  style={{color: '#FB3137',
               }} >Front-end Developer.</h1>
-                <p className='text-white font-bold text-[5rem] font-light text-left' >I'm deeply passionate about meticulously crafting visually stunning and highly functional websites that leave a lasting impression.</p>
+                <p className='text-white font-[700] text-[6rem] font-light text-left w-50' >"I'm deeply passionate about meticulously crafting visually stunning and highly functional websites that leave a lasting impression."</p>
               </div>
 
-              <div className='personal-img flex justify-center items-center rounded-full bg-white font-bold' >
+              {/* <div className='personal-img flex justify-center items-center rounded-full bg-white font-bold' >
                   <img src={draw} className='' height={220} width={220} alt="Personal drawn"/>
-              </div>
+              </div> */}
               
               
-              <div className='comments  flex gap-5 bottom-20 self-center w-75' >
-                <p className='text-[3.5rem] font-light text-left' >Solid problem-solving and code debugging skills to create effective and efficient solutions.</p>
+              <div className='comments  flex gap-5 bottom-20 self-center ' >
+                <p className='text-[5rem] font-light text-left w-50' >Solid problem-solving and code debugging skills to create effective and efficient solutions.</p>
               </div>
 
-              <div className='links flex gap-5  self-start' >
+              <div className='absolute bottom-20 right-[40%] links flex gap-32  self-start' >
                 <a href="https://www.linkedin.com/in/matheus-rodrigues-araujo/" target='_blank'  >
-                  Linkedin
+                  <AiFillLinkedin className='w-[50px] h-auto' />
                 </a>
                 <a href="https://github.com/Matheus-Rodrigues-Araujo" target='_blank' >
-                  Github
+                  <AiFillGithub className='w-[50px] h-auto' />
                 </a>
                 <a href="#">
-                  Contact
+                  <AiFillMail className='w-[50px] h-auto' />
                 </a>
               </div>
           </div>

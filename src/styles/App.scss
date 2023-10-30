@@ -193,7 +193,11 @@ footer{
     align-self: center;
     text-decoration: underline;
     a{
-        color: #FB3137;
+        // color: #FB3137;
+        background-color: var(--custom-red);
+        border-radius: 61rem;
+        padding: 3px;
+
         &:hover{
             color: white;
         }
