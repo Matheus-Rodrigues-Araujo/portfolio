@@ -16,7 +16,7 @@ const Home = () =>{
 
     useEffect(()=>{
       alert('Website is still being built!')
-    })
+    }, [])
 
     useEffect(() => {
         const handleResize = () => {

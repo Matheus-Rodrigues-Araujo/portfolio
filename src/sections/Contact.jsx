@@ -17,7 +17,7 @@ export default function Contact(){
   }, []);
 
     return (
-        <section id='contact' className={`contact-section relative flex ${isMobile ? 'items-center justify-center my-20 p-20' : 'h-screen p-20  items-center'}`} >
+        <section id='contact' className={`contact-section relative flex ${isMobile ? 'items-center justify-center py-20 p-20' : 'h-screen p-20  items-center'}`} >
         {/* <div className='contact-form flex flex-column justify-start py-20  h-auto md:w-auto '> */}
 
           {/* <h1 className='text-[6rem] font-bold text-center py-2 md:text-[8rem]' >Contact me</h1> */}

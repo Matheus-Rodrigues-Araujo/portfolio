@@ -37,7 +37,7 @@ body{
 
 .main-section{
     background-color: var(--purple);
-
+    background-image: linear-gradient(44deg, var(--purple), #000000);
     .title{
         color: var(--custom-red);
     }
@@ -59,7 +59,7 @@ body{
 
     background-color: var(--purple);
     border-radius: .7em;
-    
+    background-image: linear-gradient(44deg, var(--purple), #000000);
     .project-content{
         // width: calc(100vw - 30%);
 
@@ -85,9 +85,10 @@ body{
 
 .contact-section{
     // background-color: var(--custom-dark);
-    background-color: white;
-
+    // background-color: white;
+    background-color: var(--custom-red);
     .contact-form{
+        border: 2px solid white;
         background-color: var(--custom-red);
         // background-color: white;
         // width: calc(100vw - 30%);
@@ -145,7 +146,7 @@ body{
 footer{
     background-color: var(--purple);
     color: white;
-
+    background-image: linear-gradient(44deg, var(--purple), #000000);
     .container-1{
         border-bottom: 1px solid white;
 

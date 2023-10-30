@@ -16,7 +16,7 @@ export default function Projects(){
       };
   }, []);
     return(
-        <section id='projects' className={`projects-section my-20 p-20 ${
+        <section id='projects' className={`projects-section py-20 p-20 ${
           isMobile ? 
           'relative flex items-center justify-center' :
           'h-screen flex items-center justify-center'}`
