@@ -14,6 +14,10 @@ import Footer from '../components/Footer'
 const Home = () =>{
   const [isMobile, setIsMobile] = useState(false);
 
+    useEffect(()=>{
+      alert('Website is still being built!')
+    })
+
     useEffect(() => {
         const handleResize = () => {
         setIsMobile(window.innerWidth <= 768); // Define o breakpoint para "md" como 768 pixels
