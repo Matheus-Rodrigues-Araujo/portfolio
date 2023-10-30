@@ -50,8 +50,8 @@ const Home = () =>{
                   }`} style={{color: '#FB3137'}} >Front-end Developer.</h1>
                 <p className={`${ 
                   isMobile ? 
-                  'text-white font-bold font-light text-left text-[3rem]' : 
-                  'text-white font-bold font-light text-left text-[4rem] w-50 py-5'}`} >
+                  'text-white font-[700] text-left text-[3rem]' : 
+                  'text-white font-[700]  text-left text-[4rem] w-50 py-5'}`} >
                     I'm deeply passionate about meticulously crafting visually stunning and highly functional websites that leave a lasting impression.
                 </p>
               </div>
@@ -59,7 +59,7 @@ const Home = () =>{
               
               
               <div className={`comments ${isMobile ? 'flex gap-5 bottom-20 self-center ': 'mt-12'}`} >
-                <p className='text-[2.5rem] font-light md:text-[3.5rem] w-50' >Solid problem-solving and code debugging skills to create effective and efficient solutions.</p>
+                <p className='text-[2.5rem] font-light md:text-[3.5rem] w-50' >"Solid problem-solving and code debugging skills to create effective and efficient solutions."</p>
               </div>
 
               {/* Links */}
