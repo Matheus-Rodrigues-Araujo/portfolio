@@ -20,7 +20,7 @@ const Navbar = () => {
 
       <div className="nav-links flex justify-between items-center mt-0 gap-[20px]">
         <a
-          className="text-[4rem] font-[260] bg-normalBlue text-black hover:underline"
+          className="text-[4rem] font-[260] bg-normalBlue p-2 text-black hover:underline"
           href="#main"
           title="Home"
         >
