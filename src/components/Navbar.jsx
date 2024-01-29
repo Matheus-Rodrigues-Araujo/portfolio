@@ -11,58 +11,17 @@ import { useState, useEffect } from "react";
 
 const Navbar = () => {
   return (
-    <nav
-      className={`navbar bg-black flex h-64 w-full fixed-top items-center px-40`}
-    >
-      <Link to={"/"} className="text-[8rem] text-diveGreen ">
-        Matheus
-      </Link>
-
-      <div className="nav-links flex justify-between items-center mt-0 gap-[20px]">
-        <a
-          className="text-[4rem] font-[260] bg-normalBlue p-2 text-diveGreen hover:underline hover:text-white"
-          href="#main"
-          title="Home"
-        >
-          Home
-        </a>
-        <a
-          className="text-[4rem] font-[260] text-diveGreen hover:underline hover:text-white"
-          href="#about"
-          title="About"
-        >
-          About
-        </a>
-        <a
-          className="text-[4rem] font-[260] text-diveGreen hover:underline hover:text-white"
-          href="#technologies"
-          title="Technologies"
-        >
-          Technologies
-        </a>
-        <a
-          className="text-[4rem] font-[260] text-diveGreen hover:underline hover:text-white"
-          href="#projects"
-          title="Projects"
-        >
-          Projects
-        </a>
-        <a
-          className="text-[4rem] font-[260] text-diveGreen hover:underline hover:text-white"
-          href="#linkedin"
-          title="Linkedin"
-        >
-          Linkedin
-        </a>
-        <a
-          className="text-[4rem] font-[260] text-diveGreen hover:underline hover:text-white"
-          href="#github"
-          title="Github"
-        >
-          Github
-        </a>
-      </div>
-    </nav>
+    <nav class="navbar">
+    <a href="" class="brand">Matheus.</a>
+    <ul>
+      <li class="active nav-item">HOME</li>
+      <li class="nav-item">ABOUT</li>
+      <li class="nav-item">TECHNOLOGIES</li>
+      <li class="nav-item">PROJECTS</li>
+      <li class="nav-item">LINKEDIN</li>
+      <li class="nav-item">GITHUB</li>
+    </ul>
+  </nav>
   );
 };
 

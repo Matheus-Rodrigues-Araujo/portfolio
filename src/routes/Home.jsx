@@ -28,16 +28,70 @@ const Home = () => {
     };
   }, []);
   return (
-    <main className="mt-64">
-      <Main />
+    <div className="main gridContainer">
+      <div className="section">
+        <div className="greetings">
+          <h1 className="name">Matheus Rodrigues Araujo</h1>
+          <h2 className="">Front-End Developer<span>|</span></h2>
+          <p className="phrase">
+            I have a profound passion for meticulously crafting visually
+            stunning and highly functional websites that leave a lasting
+            impression. My dedication to bringing ideas to life through design
+            and coding is what drives my constant pursuit of excellence in
+            frontend development. Let's work together to transform concepts into
+            incredible digital experiences.
+          </p>
 
-      <About />
+          <div className="contact-buttons">
+            <button className="">Hire me</button>
+            <button className="">Let's talk</button>
+          </div>
+        </div>
 
-      <Projects />
+        <div >
+          <div className="social-links flex gap-5">
+            <a
+              href="https://www.linkedin.com/in/matheus-rodrigues-araujo/"
+              target="_blank"
+            >
+              <AiFillMail className="icon" height={20} width={20} />
+            </a>
+            
+            <a
+              href="https://github.com/Matheus-Rodrigues-Araujo"
+              target="_blank"
+            >
+              <AiFillMail className="icon" height={20} width={20} />
+            </a>
 
-      <Contact />
-      <Footer />
-    </main>
+            <a href="https://github.com/Matheus-Rodrigues-Araujo" >
+              <AiFillMail className="icon" height={20} width={20} />
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div className="section">DIV 2</div>
+      <div className="section">DIV 3</div>
+      <div className="section">DIV 4</div>
+      <div className="section">DIV 5</div>
+      <div className="section">DIV 6</div>
+
+      <div className="scroll-helper">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div className="scroll-mouse">
+        <div></div>
+      </div>
+
+    </div>
   );
 };
 

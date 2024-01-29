@@ -1,22 +1,53 @@
-// .navbar {
-//   color: white;
-//   font-size: 3rem;
-//   font-weight: 500;
-//   box-shadow: 0px 0px 7px 0px var(--purple);
-//   z-index: 1000;
-//   img {
-//     filter: invert(1);
-//   }
+.navbar {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  height: 60px;
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 3rem;
+  padding-inline: 40px;
+  font-weight: 700;
+  font-family: "Orbitron", sans-serif;
+}
 
-//   .nav-links {
-//     svg {
-//       height: 35px;
-//       width: 35px;
-//       fill: var(--purple);
-//       transition: 0.2s ease-in-out;
-//       &:hover {
-//         fill: #f55356;
-//       }
-//     }
-//   }
-// }
+.brand {
+  text-decoration: none;
+  font-size: 5.5rem;
+  color: var(--diveGreen);
+  text-shadow: -2px 0px 0px rgb(231, 14, 115);
+  transition: 0.2s ease-in;
+}
+
+.brand:hover {
+  border: 1px solid white;
+  padding: 1px 5px;
+
+  color: rgb(204, 210, 210);
+  text-shadow: -3px 0px 0px rgb(231, 14, 115);
+}
+
+.navbar ul {
+  display: flex;
+  gap: 10px;
+  font-size: 21px;
+}
+
+.active {
+  background-color: var(--normalBlue);
+  padding: 1px 4px;
+}
+
+.navbar .nav-item {
+  list-style: none;
+  font-weight: 400;
+  color: var(--diveGreen);
+  transition: 0.2s ease-in;
+}
+
+.navbar .nav-item:hover {
+  color: white;
+  text-decoration: underline;
+}

@@ -17,8 +17,8 @@ export default function About(){
       };
   }, []);
     return(
-        <section id='about' className='relative about-section p-20 py-20 h-auto' >
-          <div className={`${isMobile ? 'grid grid-cols-1 pt-0' : 'h-100 px-64 pt-14'}`}>
+        <section id='about' className='relative about-section p-40 ' >
+          <div className="grid grid-cols-1 pt-0 h-100 pt-14">
             <div >
               <h1 className='text-[6rem] font-bold text-left py-2 font-bold md:text-[8rem]'  style={{color: '#FB3137'}} >Hello,</h1>
             
