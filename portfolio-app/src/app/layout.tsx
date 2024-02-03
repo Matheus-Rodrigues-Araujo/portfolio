@@ -16,7 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+      <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet"></link>
+      <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"></link>      
+    </head>
+      <body >{children}</body>
     </html>
   );
 }
