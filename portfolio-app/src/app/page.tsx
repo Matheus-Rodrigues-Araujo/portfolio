@@ -1,5 +1,8 @@
 import Image from "next/image";
 import profileImg from "../../assets/profile-thumb.png";
+import coffeeSVG from "../../assets/coffee.svg";
+import devicesPNG from "../../assets/devices.png";
+
 import { FaLinkedin, FaGithub, FaNodeJs } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import {
@@ -38,7 +41,7 @@ export default function Home() {
           <a className="item" href="#contact">
             Contact
           </a>
-          <a
+          {/* <a
             className="item"
             target="_blank"
             href="https://www.linkedin.com/in/matheus-rodrigues-araujo"
@@ -51,7 +54,7 @@ export default function Home() {
             href="https://github.com/Matheus-Rodrigues-Araujo/"
           >
             Github
-          </a>
+          </a> */}
         </ul>
       </nav>
 
@@ -65,12 +68,10 @@ export default function Home() {
               Front-End Developer
             </h2>
             <p className="phrase">
-              I have a profound passion for meticulously crafting visually
-              stunning and highly functional websites that leave a lasting
-              impression. My dedication to bringing ideas to life through design
-              and coding is what drives my constant pursuit of excellence in
-              frontend development. Let's work together to transform concepts
-              into incredible digital experiences.
+              Passionate about crafting visually stunning websites. Dedicated to
+              turning ideas into reality through frontend development. Let's
+              collaborate to transform concepts into incredible digital
+              experiences. Join me in creating a unique digital universe.
             </p>
 
             <div className="contact-buttons">
@@ -181,12 +182,16 @@ export default function Home() {
               </div>
             </div>
 
+          <div className="wrapper" >
             <figure className="image-container">
-              <img
-                src="./images/devices-img.png"
+              <Image
+                src={devicesPNG}
                 alt="Image of my App's behavior on mobile and desktop devices"
               />
             </figure>
+
+            <em><i>"Curiosity is the key"</i></em>
+            </div>
           </div>
         </div>
         <div className="section contact" id="contact">
@@ -198,21 +203,21 @@ export default function Home() {
           <div className="contact-container">
             <div className="links">
               <div>
-                <img src="./assets/linkedin.png" alt="Linkedin link" />
+                <FaLinkedin className="icon" />
                 <a href="https://www.linkedin.com/in/matheus-rodrigues-araujo">
                   Linkedin
                 </a>
               </div>
 
               <div>
-                <img src="./assets/github.png" alt="Github link" />
+                <FaGithub className="icon" />
                 <a href="https://github.com/Matheus-Rodrigues-Araujo/">
                   Github
                 </a>
               </div>
 
               <div>
-                <img src="./assets/instagram.png" alt="Instagram link" />
+                <RiInstagramFill className="icon" />
                 <a href="https://www.linkedin.com/in/matheus-rodrigues-araujo">
                   Instagram
                 </a>
@@ -220,7 +225,7 @@ export default function Home() {
             </div>
 
             <figure>
-              <img src="./assets/coffee.png" alt="Coffee image" />
+              <Image src={coffeeSVG} alt="Coffee image" />
             </figure>
           </div>
         </div>
