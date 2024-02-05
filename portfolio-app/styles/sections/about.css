@@ -1,0 +1,41 @@
+.about-content .phrase {
+    color: var(--light-gray);
+    width: 100%;
+  }
+  
+  .job {
+    color: var(--vibrantPink);
+    font-weight: 600;
+  }
+  
+  .techs span {
+    color: var(--light-green);
+    font-weight: 600;
+  }
+  
+  .technologies-list {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-columns: auto;
+    gap: 20px;
+    margin-top: 5px;
+  }
+  
+  .technologies-list svg {
+    width: 40px;
+    max-width: 40px;
+    object-fit: cover;
+    height: auto;
+    padding: 2px;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .technologies-list svg:hover {
+    background-color: var(--light-green);
+    box-shadow: -1px -1px 30px var(--light-green);
+    color: var(--dark);
+    color: white;
+    padding: 2px;
+    border-radius: 2.5em;
+  }
+  

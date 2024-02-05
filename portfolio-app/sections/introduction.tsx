@@ -5,50 +5,49 @@ import Link from "next/link";
 
 export default function Introduction() {
   return (
-    <div className="section introduction">
-      <div className="greetings">
-        <h1 className="name" id="name">
-          Matheus Rodrigues Araujo
+    <section className="section introduction">
+      <div className="">
+        <h1 className="font-orbitron text-[12rem] text-white mt-[50px]">
+          Matheus Rodrigues Araujo <br/>
+          <span className="position text-light-green" id="position">
+          Front-End Developer</span>
         </h1>
-        <h2 className="position" id="position">
-          Front-End Developer
-        </h2>
-        <p className="phrase">
+        <p className="font-raleway phrase">
           Passionate about crafting visually stunning websites. Dedicated to
           turning ideas into reality through frontend development. Let's
           collaborate to transform concepts into incredible digital experiences.
           Join me in creating a unique digital universe.
         </p>
 
-        <div className="contact-buttons">
-          <button className="">Hire me</button>
-          <button className="">Resume</button>
+        <div className="contact-buttons flex gap-12 mt-10">
+          <button className="text-[5rem] cursor-pointer border-0 p-8">Hire me</button>
+          <button className="text-[5rem] cursor-pointer border-0 p-8">Resume</button>
         </div>
       </div>
 
       <div>
-        <div className="social-links">
+        <div className="social-links flex gap-10">
           <Link
             href="https://www.linkedin.com/in/matheus-rodrigues-araujo/"
             target="_blank"
             title="Linkedin"
           >
-            <FaLinkedin className="icon" />
+            <FaLinkedin className="w-24 h-24 p-2 text-light-green" />
           </Link>
           <Link
             href="https://github.com/Matheus-Rodrigues-Araujo"
             target="_blank"
             title="Github"
           >
-            <FaGithub className="icon" />
+            <FaGithub className="w-24 h-24 p-2 text-light-green" />
           </Link>
           <Link href="#">
-            <RiInstagramFill className="icon" title="Instagram" />
+            <RiInstagramFill className="w-24 h-24 p-2 text-light-green" title="Instagram" />
           </Link>
         </div>
       </div>
 
       <MouseAnimation />
-    </div>
+    </section>
   );
 }

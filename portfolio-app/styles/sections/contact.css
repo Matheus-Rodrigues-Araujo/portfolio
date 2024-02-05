@@ -1,0 +1,25 @@
+.contact-links {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 10px;
+}
+
+.contact-links div a {
+  font-size: 6rem;
+  color: var(--light-green);
+  text-decoration: none;
+  margin-top: auto;
+  transition: 0.2s ease-in;
+}
+
+.contact-links div:hover svg {
+  color: white;
+  background-color: var(--light-green);
+  border-radius: 2em;
+  box-shadow: 1px -1px 10px var(--light-green);
+  transition: 0.2s ease-in-out;
+}
+
+.contact-links div:hover a {
+  text-shadow: -2px 0px 35px rgb(30, 243, 76);
+}

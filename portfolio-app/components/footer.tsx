@@ -3,15 +3,15 @@ import { RiInstagramFill } from "react-icons/ri";
 
 export default function Footer() {
   return (
-    <footer className="h-[20svh]" >
-      <div className="footer-container">
-        <div>
+    <footer className="flex h-[20svh] bg-light-green text-[3rem]" >
+      <div className="footer-container flex flex-col grow items-center justify-evenly ">
+        <div className="flex justify-center" >
           <FaLinkedin className="icon" />
           <FaGithub className="icon" />
           <RiInstagramFill className="icon" />
         </div>
-        <ul>
-          <a className="active item" href="#main">
+        <ul className="flex gap-10" >
+          <a className="item" href="#main">
             Home
           </a>
           <a className="item" href="#about">
@@ -25,7 +25,7 @@ export default function Footer() {
           </a>
         </ul>
 
-        <p>© matheusrodriguesaraujo.dev 2024</p>
+        <p className="font-raleway font-400" >© matheusrodriguesaraujo.dev 2024</p>
       </div>
     </footer>
   );

@@ -1,0 +1,48 @@
+.contact-buttons {
+  display: flex;
+}
+
+.contact-buttons button {
+  font-family: "Orbitron", sans-serif;
+  transition: 0.2s ease-in-out;
+}
+
+.contact-buttons button:first-child {
+  background-color: var(--light-green);
+}
+
+.contact-buttons button:nth-child(2) {
+  background-color: var(--light-dark);
+  color: var(--light-green);
+  outline: 1px solid var(--light-green);
+}
+
+.contact-buttons button:first-child:hover {
+  background-color: #48ff83;
+  box-shadow: 1px -1px 20px var(--light-green);
+}
+
+.contact-buttons button:nth-child(2):hover {
+  background-color: var(--dark);
+
+  box-shadow: 1px -1px 20px var(--light-green);
+}
+
+.social-links a {
+  text-decoration: none;
+  color: none;
+  cursor: pointer;
+  background-color: var(--light-dark);
+}
+
+.social-links a:hover {
+  background-color: var(--light-green);
+  border-radius: 2em;
+  box-shadow: 1px -1px 10px var(--light-green);
+  transition: 0.2s ease-in-out;
+}
+
+.social-links a:hover svg {
+  color: white;
+  padding: 5px;
+}
