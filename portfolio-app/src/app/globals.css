@@ -53,7 +53,7 @@ body {
   text-decoration: none;
   font-size: 3.5rem;
   color: white;
-  transition: 0.2s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .navbar .brand:hover {
@@ -65,29 +65,30 @@ body {
   display: flex;
   gap: 1em;
   font-size: 21px;
+  color: var(--light-green);
 }
 
 .active {
   background-color: var(--normalBlue);
   padding: 1px 4px;
-}
+} */
 
 .item {
   font-size: 3rem;
   list-style: none;
   font-weight: 400;
   color: var(--light-green);
+
   text-decoration: none;
   cursor: pointer;
-  transition: 0.2s ease-in-out;
+  transition: 0.4s ease-in-out;
   text-transform: uppercase;
 }
 
-.navbar .item:hover {
+.navbar ul .item:hover {
   /* color: white; */
-  text-decoration: underline;
   color: var(--light-green);
-  text-shadow: 2px 2px 35px rgb(0, 255, 55);
+  text-shadow: -1px -1px 35px rgb(30, 243, 76);
 }
 
 @keyframes hideElement {
@@ -177,7 +178,7 @@ footer {
   border: none;
   padding: 5px;
   font-size: 5rem;
-  transition: 0.2s ease-in;
+  transition: 0.2s ease-in-out;
   padding: 15px;
 }
 
@@ -224,6 +225,7 @@ footer {
   background-color: var(--light-green);
   border-radius: 2em;
   box-shadow: 1px -1px 10px var(--light-green);
+  transition: .2s ease-in-out;
 }
 
 .social-links a:hover .icon{
@@ -340,11 +342,17 @@ footer {
   object-fit: cover;
   height: auto;
   padding: 2px;
+  transition: .2s ease-in-out;
 }
 
 .technologies-container svg:hover {
-  border: 1px solid var(--light-green);
-  border-radius: .3em;
+  /* border: 1px solid var(--light-green); */
+  background-color: var(--light-green);
+  box-shadow: -1px -1px 30px var(--light-green);
+  color: var(--dark);
+  color: white;
+  padding: 2px;
+  border-radius: 2.5em;
 }
 
 h2,
@@ -427,7 +435,7 @@ h4 {
   border: none;
   padding: 5px;
   font-size: 5rem;
-  transition: 0.2s ease-in;
+  transition: .2s ease-in-out;
 }
 
 .projects-links a {
@@ -436,7 +444,7 @@ h4 {
   padding: 15px;
   font-weight: bolder;
   text-align: center;
-  transition: 0.2s ease-in;
+  transition: .2s ease-in-out;
 }
 
 .projects-links a:first-child {
@@ -517,15 +525,20 @@ h4 {
   color: var(--light-green);
   text-decoration: none;
   margin-top: auto;
-  transition: 0.2s ease-in;
+  transition: .2s ease-in;
 }
 
 .links div:hover svg{
   color: white;
+  background-color: var(--light-green);
+  border-radius: 2em;
+  box-shadow: 1px -1px 10px var(--light-green);
+  transition: .2s ease-in-out;
 }
 
 .links div:hover a{
-  color: white;
+  text-shadow: -2px 0px 35px rgb(30, 243, 76);
+  
 }
 
 footer {
@@ -567,6 +580,7 @@ footer ul {
 
 .footer-container .icon:hover {
   color: white;
+  
 }
 
 footer p {
