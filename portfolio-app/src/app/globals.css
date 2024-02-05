@@ -71,7 +71,7 @@ body {
 .active {
   background-color: var(--normalBlue);
   padding: 1px 4px;
-} */
+}
 
 .item {
   font-size: 3rem;
@@ -86,7 +86,6 @@ body {
 }
 
 .navbar ul .item:hover {
-  /* color: white; */
   color: var(--light-green);
   text-shadow: -1px -1px 35px rgb(30, 243, 76);
 }
@@ -203,22 +202,17 @@ footer {
   box-shadow: 1px -1px 20px var(--light-green);
 }
 
+.social-links{
+  display: flex;
+  gap: 5px;
+}
+
 .social-links a {
   text-decoration: none;
   color: none;
-  padding: 5px;
+  /* padding: 5px; */
   cursor: pointer;
   background-color: var(--light-dark);
-}
-
-.icon {
-  width: 40px;
-  height: 40px;
-  padding: 3px;
-  cursor: pointer;
-  transition: 0.2s ease-in;
-  color: var(--light-green);
-  background-color: transparent;
 }
 
 .social-links a:hover{
@@ -231,6 +225,17 @@ footer {
 .social-links a:hover .icon{
   color: white;
 }
+
+.icon {
+  width: 40px;
+  height: 40px;
+  padding: 3px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+  color: var(--light-green);
+  background-color: transparent;
+}
+
 
 .scroll-helper {
   display: grid;
@@ -328,7 +333,7 @@ footer {
   font-weight: 600;
 }
 
-.technologies-container {
+.technologies-list {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-auto-columns: auto;
@@ -336,7 +341,7 @@ footer {
   margin-top: 5px;
 }
 
-.technologies-container svg {
+.technologies-list svg {
   width: 45px;
   max-width: 45px;
   object-fit: cover;
@@ -345,8 +350,7 @@ footer {
   transition: .2s ease-in-out;
 }
 
-.technologies-container svg:hover {
-  /* border: 1px solid var(--light-green); */
+.technologies-list svg:hover {
   background-color: var(--light-green);
   box-shadow: -1px -1px 30px var(--light-green);
   color: var(--dark);
@@ -491,7 +495,7 @@ h4 {
 
 .contact-container figure {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .contact-container figure img {
@@ -503,7 +507,6 @@ h4 {
 .links {
   display: flex;
   flex-flow: column wrap;
-  /* justify-content: space-between; */
   gap: 10px;
 }
 

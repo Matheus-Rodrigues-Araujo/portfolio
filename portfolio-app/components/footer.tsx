@@ -3,7 +3,7 @@ import { RiInstagramFill } from "react-icons/ri";
 
 export default function Footer() {
   return (
-    <footer className="h-40"  >
+    <footer className="h-[20svh]" >
       <div className="footer-container">
         <div>
           <FaLinkedin className="icon" />
