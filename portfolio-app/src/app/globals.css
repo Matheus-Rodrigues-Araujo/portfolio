@@ -397,7 +397,7 @@ h4 {
 
 .description-container figure {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .description-container figure img {
