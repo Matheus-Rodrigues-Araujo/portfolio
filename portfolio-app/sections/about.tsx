@@ -24,11 +24,9 @@ export default function About() {
           <div className="flex flex-col gap-5">
             <h4>Problem Solver</h4>
             <p className="font-raleway phrase">
-              Hello, I'm Matheus Rodrigues Araujo, a
-              <span className="job">dedicated web developer</span>
-              from Ceará, Brazil. I'm deeply passionate about meticulously
-              crafting visually stunning and highly functional websites that
-              leave a lasting impression.
+              Hi, I'm Matheus Rodrigues Araujo, a{" "}
+              <span className="job">frontend developer</span> from Ceará,
+              Brazil. Currently in the 8th semester of Information Systems at IFCE. Specialized in crafting responsive, attractive, and efficient websites and web applications.
             </p>
             <p className="font-raleway phrase">
               I am currently studying the 8th semester of the Information

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import coffeeSVG from "../assets/coffee.svg";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
@@ -11,30 +12,40 @@ export default function Contact() {
         coffee! :)
       </h3>
 
-      <div className="contact-container grid grid-cols-2">
-        <div className="contact-links">
-          <div className="inline-flex items-center gap-5" >
-            <FaLinkedin className="icon max-w-full h-auto" />
-            <a href="https://www.linkedin.com/in/matheus-rodrigues-araujo">
+      <div className="contact-container grid grid-cols-[auto_1fr] gap-32">
+        <div>
+          <div className="font-orbitron contact-links grid gap-5">
+            <Link
+              href="https://www.linkedin.com/in/matheus-rodrigues-araujo"
+              className="flex  items-center gap-5"
+            >
+              <FaLinkedin className="icon max-w-full h-auto" />
               Linkedin
-            </a>
-          </div>
+            </Link>
 
-          <div className="inline-flex items-center gap-5" >
-            <FaGithub className="icon max-w-full h-auto" />
-            <a href="https://github.com/Matheus-Rodrigues-Araujo/">Github</a>
-          </div>
+            <Link
+              href="https://github.com/Matheus-Rodrigues-Araujo/"
+              className="flex items-center gap-5"
+            >
+              <FaGithub className="icon max-w-full h-auto" />
+              Github
+            </Link>
 
-          <div className="inline-flex items-center gap-5" >
-            <RiInstagramFill className="icon max-w-full h-auto" />
-            <a href="https://www.linkedin.com/in/matheus-rodrigues-araujo">
+            <Link
+              className="flex  items-center gap-5"
+              href="https://www.linkedin.com/in/matheus-rodrigues-araujo"
+            >
+              <RiInstagramFill className="icon max-w-full h-auto" />
               Instagram
-            </a>
+            </Link>
           </div>
         </div>
-
-        <figure className="flex justify-end" >
-          <Image src={coffeeSVG} alt="Coffee image" className="max-w-[60%] h-auto object-cover" />
+        <figure className="flex justify-end">
+          <Image
+            src={coffeeSVG}
+            alt="Coffee image"
+            className="max-w-[500px] h-auto object-cover"
+          />
         </figure>
       </div>
     </section>

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="navbar font-orbitron flex items-center justify-between bg-light-dark z-10 fixed top-0 h-[50px] w-full">
+    <nav className="font-orbitron flex items-center justify-between bg-light-dark z-10 fixed top-0 h-[50px] w-full">
       <Link
         href="/"
         className="brand font-bold text-[3.5rem] text-white transistion duration-300 ease-in-out"

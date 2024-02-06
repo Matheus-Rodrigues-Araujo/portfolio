@@ -1,25 +1,26 @@
-.contact-links {
-  display: flex;
-  flex-flow: column wrap;
-  gap: 10px;
-}
-
-.contact-links div a {
-  font-size: 6rem;
+.contact-links a {
+  font-size: 5rem;
   color: var(--light-green);
-  text-decoration: none;
   margin-top: auto;
   transition: 0.2s ease-in;
+  /* display: flex; */
+  /* align-items: flex-end; */
 }
 
-.contact-links div:hover svg {
+.contact-links .icon{
+  height: 80px;
+  width: 80px;
+}
+
+.contact-links a:hover svg {
   color: white;
   background-color: var(--light-green);
-  border-radius: 2em;
+  border-radius: .3em;
   box-shadow: 1px -1px 10px var(--light-green);
   transition: 0.2s ease-in-out;
 }
 
-.contact-links div:hover a {
+.contact-links a:hover {
+  text-decoration: underline;
   text-shadow: -2px 0px 35px rgb(30, 243, 76);
 }

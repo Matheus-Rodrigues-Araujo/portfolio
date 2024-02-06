@@ -67,7 +67,7 @@ section h4 {
   }
 }
 
-.navbar,
+nav,
 section,
 footer {
   padding-inline: calc(var(--space) * 20);

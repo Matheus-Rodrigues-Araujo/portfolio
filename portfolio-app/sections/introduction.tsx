@@ -32,17 +32,17 @@ export default function Introduction() {
             target="_blank"
             title="Linkedin"
           >
-            <FaLinkedin className="w-24 h-24 p-2 text-light-green" />
+            <FaLinkedin className="w-32 h-32 p-2 text-light-green" />
           </Link>
           <Link
             href="https://github.com/Matheus-Rodrigues-Araujo"
             target="_blank"
             title="Github"
           >
-            <FaGithub className="w-24 h-24 p-2 text-light-green" />
+            <FaGithub className="w-32 h-32 p-2 text-light-green" />
           </Link>
           <Link href="#">
-            <RiInstagramFill className="w-24 h-24 p-2 text-light-green" title="Instagram" />
+            <RiInstagramFill className="w-32 h-32 p-2 text-light-green" title="Instagram" />
           </Link>
         </div>
       </div>

@@ -1,13 +1,11 @@
-.navbar {
-  padding-inline: calc(var(--space) * 8);
-}
 
-.navbar .brand:hover {
+
+nav .brand:hover {
   color: var(--light-green);
   text-shadow: -2px 0px 25px rgb(30, 243, 76);
 }
 
-.navbar ul {
+nav ul {
   display: flex;
   gap: 1em;
   font-size: 21px;
