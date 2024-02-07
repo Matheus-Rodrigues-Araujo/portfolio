@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 // import { Inter } from "next/font/google";
 import "./globals.css";
 
-import "../../styles/components/navbar.css";
-import "../../styles/components/footer.css";
+import "../../styles/header.css";
+import "../../styles/footer.css";
 
-import "../../styles/sections/introduction.css";
-import "../../styles/sections/about.css";
-import "../../styles/sections/projects.css";
-import "../../styles/sections/contact.css";
+import "../../styles/introduction.css";
+import "../../styles/about.css";
+import "../../styles/projects.css";
+import "../../styles/contact.css";
 
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
@@ -37,10 +37,10 @@ export default function RootLayout({
           rel="stylesheet"
         ></link>
       </head>
-      <body className="bg-light-dark grid grid-flow-row auto-rows-auto">
+      <body className="bg-light-dark ">
         <Navbar />
 
-        <div className="grid grid-flow-row auto-rows-[100svh]" id="main">
+        <div className="grid-flow-row auto-rows-[100svh]" id="main">
           {children}
         </div>
 

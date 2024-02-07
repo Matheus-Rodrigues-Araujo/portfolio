@@ -9,21 +9,20 @@
   }
   
   .techs span {
-    color: var(--light-green);
+    color: var(--orange);
     font-weight: 600;
   }
   
   .technologies-list {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(7, 40px);
     grid-auto-columns: auto;
-    gap: 20px;
+    gap: 10px;
     margin-top: 5px;
   }
   
   .technologies-list svg {
     width: 40px;
-    max-width: 40px;
     object-fit: cover;
     height: auto;
     padding: 2px;

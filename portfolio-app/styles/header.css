@@ -1,15 +1,16 @@
-
+.brand{
+  font-size: 5rem;
+  color: var(--light-green);
+}
 
 nav .brand:hover {
-  color: var(--light-green);
   text-shadow: -2px 0px 25px rgb(30, 243, 76);
 }
 
 nav ul {
   display: flex;
   gap: 1em;
-  font-size: 21px;
-  color: var(--light-green);
+  font-size: 4rem
 }
 
 .active {
@@ -17,7 +18,13 @@ nav ul {
   padding: 1px 4px;
 }
 
-.nav-list .item:hover {
+nav ul a:hover {
   color: var(--light-green);
   text-shadow: -1px -1px 35px rgb(30, 243, 76);
+}
+
+@media screen and (max-width: 600px) {
+  nav ul {
+    display: none;
+  }
 }

@@ -4,7 +4,7 @@
 
 :root {
   --space: 5px;
-  font-size: 6px;
+  font-size: 4px;
   font-family: "Inter", sans-serif;
   font-family: "Montserrat", sans-serif;
   font-family: "Mulish", sans-serif;
@@ -15,6 +15,7 @@
   --dark: #0b0a0a;
   --light-dark: #0f0f0f;
   --light-gray: #dcdde8;
+  --orange: #e29616;
 }
 
 * {
@@ -46,7 +47,6 @@ section h4 {
 }
 
 .item {
-  font-size: 3rem;
   list-style: none;
   font-weight: 400;
   color: var(--light-green);
@@ -70,7 +70,7 @@ section h4 {
 nav,
 section,
 footer {
-  padding-inline: calc(var(--space) * 20);
+  padding-inline: calc(var(--space) * 4);
 }
 
 section {

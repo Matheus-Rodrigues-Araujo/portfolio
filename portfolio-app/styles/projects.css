@@ -1,22 +1,9 @@
-.description .phrase {
-    width: auto;
-    font-size: 5rem;
-  }
   
   .description .phrase span {
     color: var(--light-green);
     font-weight: bold;
   }
   
-  .description-container figure {
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  .description-container figure img {
-    max-width: 70%;
-    height: auto;
-  }
   
   .description-container div:nth-child(2) {
     display: flex;

@@ -3,13 +3,11 @@
   color: var(--light-green);
   margin-top: auto;
   transition: 0.2s ease-in;
-  /* display: flex; */
-  /* align-items: flex-end; */
 }
 
 .contact-links .icon{
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
 }
 
 .contact-links a:hover svg {
