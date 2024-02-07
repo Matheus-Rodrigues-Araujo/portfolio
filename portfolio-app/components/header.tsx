@@ -88,7 +88,7 @@ export default function Header() {
                 </Link>
                 <Link href="#">
                   <RiInstagramFill
-                    className="w-40 h-40  text-light-green"
+                    className="w-40 h-40 text-light-green"
                     title="Instagram"
                   />
                 </Link>
