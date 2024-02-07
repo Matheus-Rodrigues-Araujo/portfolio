@@ -4,7 +4,7 @@ import { technologies } from "../constants/technologies";
 
 export default function About() {
   return (
-    <section className="h-svh about bg-dark py-40 md:py-0" id="about">
+    <section className="about bg-dark py-40 md:py-0" id="about">
       <h2 className="font-orbitron text-[6rem]">About me</h2>
       <div className="about-content lg:grid grid-cols-2">
         <figure>

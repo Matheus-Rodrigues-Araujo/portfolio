@@ -10,7 +10,7 @@ import "../../styles/about.css";
 import "../../styles/projects.css";
 import "../../styles/contact.css";
 
-import Navbar from "../../components/navbar";
+import Header from "../../components/header";
 import Footer from "../../components/footer";
 
 // const inter = Inter({ subsets: ["latin"] });
@@ -38,7 +38,7 @@ export default function RootLayout({
         ></link>
       </head>
       <body className="bg-light-dark ">
-        <Navbar />
+        <Header />
 
         <div className="grid-flow-row auto-rows-[100svh]" id="main">
           {children}

@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Introduction() {
   return (
-    <section className="h-svh section justify-center introduction relative">
+    <section className="section justify-center introduction relative py-40 lg:py-0 ">
       <div className="">
         <h1 className="font-orbitron text-white text-[7.2rem]">
           Matheus Rodrigues Araujo <br/>

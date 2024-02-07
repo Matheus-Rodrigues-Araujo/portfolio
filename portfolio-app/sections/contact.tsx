@@ -6,7 +6,7 @@ import { RiInstagramFill } from "react-icons/ri";
 
 export default function Contact() {
   return (
-    <section className="h-svh contact bg-dark py-20 md:py-0" id="contact">
+    <section className="contact bg-dark py-20 md:py-0" id="contact">
       <h2 className="font-orbitron text-[6rem]">
         Let's grab a <br />
         coffee! :)

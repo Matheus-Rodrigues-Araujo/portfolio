@@ -1,3 +1,7 @@
+.introduction{
+  background-image: repeating-linear-gradient(10deg, var(--light-dark), black  207px);
+}
+
 .contact-buttons {
   display: flex;
 }

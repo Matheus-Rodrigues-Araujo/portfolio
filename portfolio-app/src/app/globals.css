@@ -38,6 +38,17 @@ h4 {
   color: var(--light-green);
 }
 
+.active {
+  background-color: var(--normalBlue);
+  padding: 1px 4px;
+}
+
+nav ul a:hover {
+  color: var(--light-green);
+  text-shadow: -1px -1px 35px rgb(30, 243, 76);
+}
+
+
 section h3 {
   font-size: 8rem;
 }
@@ -89,23 +100,6 @@ section {
   color: var(--light-green);
   text-shadow: -0.5px 0px 6px var(--light-green);
 }
-
-/* .introduction span {
-  animation: hideElement 1s infinite;
-} 
-
-@keyframes hideElement {
-  0%,
-  100% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-}
-
-*/
 
 .phrase {
   color: var(--light-gray);
@@ -173,4 +167,3 @@ section {
   background-color: white;
   border-radius: 0.3em;
 }
-

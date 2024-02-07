@@ -1,4 +1,4 @@
-.brand{
+.brand {
   font-size: 5rem;
   color: var(--light-green);
 }
@@ -7,24 +7,26 @@ nav .brand:hover {
   text-shadow: -2px 0px 25px rgb(30, 243, 76);
 }
 
-nav ul {
-  display: flex;
-  gap: 1em;
-  font-size: 4rem
+.toggle {
+  border: 1px solid var(--light-green);
+  padding: 3px;
 }
 
-.active {
-  background-color: var(--normalBlue);
-  padding: 1px 4px;
+.toggle:hover {
+  padding: 4px;
+  box-shadow: -2px 0px 25px rgb(30, 243, 76);
 }
 
-nav ul a:hover {
-  color: var(--light-green);
-  text-shadow: -1px -1px 35px rgb(30, 243, 76);
+.close-toggle-btn{
+  transition: .3s ease-in-out;
 }
 
-@media screen and (max-width: 600px) {
-  nav ul {
-    display: none;
-  }
+.close-toggle-btn:hover{
+  text-shadow: -2px 0px 25px rgb(30, 243, 76);
+  font-weight: 700;
+}
+
+.sidebar{
+  background-image: repeating-linear-gradient(127deg, black, var(--light-dark) 207px);
+  width: 320px;
 }
