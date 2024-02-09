@@ -40,7 +40,7 @@ export default function RootLayout({
       <body className="bg-light-dark ">
         <Header />
 
-        <div className="grid-flow-row auto-rows-[100svh]" id="main">
+        <div className="pt-[60px] lg:pt-[60px] lg:grid grid-flow-row auto-rows-[100svh]" id="main">
           {children}
         </div>
 

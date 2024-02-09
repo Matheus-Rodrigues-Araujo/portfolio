@@ -5,14 +5,14 @@
   }
   
   
-  .description-container div:nth-child(2) {
+  /* .description-container div:nth-child(2) {
     display: flex;
     flex-flow: column;
     align-items: self-end;
-  }
+  } */
   
   .projects {
-    position: relative;
+    /* position: relative; */
     background-image: linear-gradient(
       163deg,
       var(--light-dark),

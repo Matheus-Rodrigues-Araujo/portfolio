@@ -78,12 +78,6 @@ section h4 {
   }
 }
 
-nav,
-section,
-footer {
-  padding-inline: calc(var(--space) * 4);
-}
-
 section {
   font-size: 2em;
   font-family: sans-serif;
@@ -166,4 +160,26 @@ section {
   height: 10px;
   background-color: white;
   border-radius: 0.3em;
+}
+
+nav,
+section,
+footer {
+  padding-inline: calc(var(--space) * 30);
+}
+
+@media screen and (max-width: 900px){
+  nav,
+  section,
+  footer {
+    padding-inline: calc(var(--space) * 15);
+  }
+}
+
+@media screen and (max-width: 720px){
+  nav,
+  section,
+  footer {
+    padding-inline: calc(var(--space) * 4);
+  }
 }

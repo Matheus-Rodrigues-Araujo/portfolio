@@ -13,7 +13,7 @@ export default function Header() {
 
   return (
     <header>
-      <nav className="font-orbitron h-[60px] flex items-center justify-between gap-12 my-auto w-full">
+      <nav className="fixed bg-dark font-orbitron h-[60px] z-10 flex items-center justify-between gap-12 my-auto w-full">
         <Link href="/" className="brand">
           Matheus R. Araujo.
         </Link>

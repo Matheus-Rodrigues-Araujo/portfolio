@@ -15,14 +15,16 @@
   
   .technologies-list {
     display: grid;
-    grid-template-columns: repeat(7, 40px);
-    grid-auto-columns: auto;
+    /* grid-template-columns: repeat(7, 40px); */
+    /* grid-auto-columns: auto; */
+    display: flex;
+    flex-flow: row wrap;
     gap: 10px;
     margin-top: 5px;
   }
   
   .technologies-list svg {
-    width: 40px;
+    width: 45px;
     object-fit: cover;
     height: auto;
     padding: 2px;
