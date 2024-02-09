@@ -4,30 +4,30 @@ import { technologies } from "../constants/technologies";
 
 export default function About() {
   return (
-    <section className="about bg-dark py-40 md:py-0" id="about">
-      <div className="about-content grid grid-cols-1">
-          <h2 className="font-orbitron text-[12rem]">About me</h2>
+    <section className="about bg-dark py-40 md:py-0" id="about"> 
+      <div className="about-content grid grid-cols-1" >
+          <h2 className="font-orbitron text-[10rem] md:text-[12rem]">About me</h2>
         {/* <div> */}
           <div className="wrapper flex flex-col h-full gap-20 mt-10 lg:flex-row" >
             <div className="flex-1 py-20 border-b-2 border-light-green lg:border-r-2 lg:border-b-0 lg:py-0 lg:px-5" >
               <h3 className="font-orbitron text-[7rem] text-light-green">
                 Problem solver
               </h3>
-              <p className="font-raleway text-[5rem]  text-light-gray">
+              <p className="font-raleway text-[4.5rem] md:text-[5rem] text-light-gray">
                 Hi, I'm Matheus Rodrigues Araujo, a{" "}
                 <span className="job">frontend developer</span> from Ceará,
                 Brazil. Currently in the 8th semester of Information Systems at
                 IFCE. Specialized in crafting responsive, attractive, and
                 efficient websites and web applications.
               </p>
-              <p className="font-raleway text-[5rem] text-light-gray">
+              <p className="font-raleway text-[4.5rem] md:text-[5rem] text-light-gray">
                 I am currently studying the 8th semester of the Information
                 Systems bachelor's degree at IFCE. My expertise is developing
                 websites and web applications that are responsive, attractive
                 and performant.
               </p>
 
-              <p className="font-raleway text-[5rem] techs text-light-gray">
+              <p className="font-raleway text-[4.5rem] md:text-[5rem] techs text-light-gray">
                 I have experience with <span>JavaScript</span>,{" "}
                 <span>TypeScript</span>, <span>React</span>, <span> Next</span>,{" "}
                 <span>CSS</span>, <span>SCSS</span>, <span>Tailwind</span> and

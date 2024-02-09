@@ -15,8 +15,8 @@
     /* position: relative; */
     background-image: linear-gradient(
       163deg,
-      var(--light-dark),
-      var(--light-dark) 62%,
+      var(--dark),
+      var(--dark) 62%,
       var(--light-green) 60%,
       var(--light-green)
     );

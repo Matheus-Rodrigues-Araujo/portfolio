@@ -7,7 +7,7 @@ import profileImg from "../assets/profile-thumb.png";
 
 export default function Introduction() {
   return (
-    <section className="section justify-center items-start introduction flex flex-col-reverse xl:flex-row lg:items-center py-40 lg:py-0 ">
+    <section className="section bg-dark justify-center items-start introduction flex flex-col-reverse xl:flex-row lg:items-center py-40 lg:py-0 ">
       <div className="flex flex-col">
         <h1 className="font-orbitron text-white text-[7.2rem] md:text-[10rem] lg:text-[12rem]">
           Matheus Rodrigues Araujo <br />
@@ -57,8 +57,12 @@ export default function Introduction() {
         <MouseAnimation />
       </div>
 
-      <figure className="w-full flex justify-center xl:justify-end" >
-        <Image src={profileImg} alt="Thumb photo" className="w-[30%] xl:w-[80%]" />
+      <figure className="w-full flex justify-center xl:justify-end">
+        <Image
+          src={profileImg}
+          alt="Thumb photo"
+          className="w-[30%] xl:w-[80%]"
+        />
       </figure>
 
       {/* <MouseAnimation /> */}

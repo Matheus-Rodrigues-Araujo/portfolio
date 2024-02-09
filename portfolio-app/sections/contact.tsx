@@ -1,52 +1,61 @@
 import Link from "next/link";
 import Image from "next/image";
 import coffeeSVG from "../assets/coffee.svg";
+import dancingCoffee from "../assets/dancing-coffee.gif";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
+import ContactForm from "../forms/contactForm";
 
 export default function Contact() {
   return (
     <section className="contact bg-dark py-20 md:py-0" id="contact">
-      <h2 className="font-orbitron text-[6rem]">
-        Let's grab a <br />
-        coffee! :)
-      </h2>
+      <h2 className="font-orbitron text-[10rem] md:text-[12rem]">Contact</h2>
 
-      <div className="contact-container flex flex-col gap-32 lg:grid grid-cols-[auto_1fr]">
-        <div>
-          <div className="font-orbitron contact-links flex justify-center gap-5 lg:flex-col">
-            <Link
-              href="https://www.linkedin.com/in/matheus-rodrigues-araujo"
-              className="flex flex-col items-center gap-5 lg:flex-row"
-            >
-              <FaLinkedin className="icon max-w-full h-auto" />
-              Linkedin
-            </Link>
+      <div className="contact-container grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-0">
+        <div className="flex justify-between lg:flex-col" >
+          <div className="font-orbitron flex flex-col gap-5">
+            <h3 className="font-orbitron text-[7rem] text-light-green">
+              Let's grap a 
+              coffee!
+            </h3>
+            <p className="font-raleway text-[4.5rem] md:text-[5rem] text-light-gray w-50">
+              The time has come to transform your ideas into concrete actions!
+            </p>
 
-            <Link
-              href="https://github.com/Matheus-Rodrigues-Araujo/"
-              className="flex flex-col items-center gap-5 lg:flex-row"
-            >
-              <FaGithub className="icon max-w-full h-auto" />
-              Github
-            </Link>
+            <div className="flex gap-12 contact-links">
+              <Link
+                href="https://www.linkedin.com/in/matheus-rodrigues-araujo"
+                title="Linkedin"
+                className="flex flex-col items-center gap-5 lg:flex-row"
+              >
+                <FaLinkedin className="h-32 w-32 text-light-green max-w-full " />
+              </Link>
 
-            <Link
-              className="flex flex-col items-center gap-5 lg:flex-row"
-              href="https://www.linkedin.com/in/matheus-rodrigues-araujo"
-            >
-              <RiInstagramFill className="icon max-w-full h-auto" />
-              Instagram
-            </Link>
+              <Link
+                href="https://github.com/Matheus-Rodrigues-Araujo/"
+                className="flex flex-col items-center gap-5 lg:flex-row"
+                title="Github"
+              >
+                <FaGithub className="h-32 w-32 text-light-green max-w-full " />
+              </Link>
+
+              <Link
+                className="flex flex-col items-center gap-5 lg:flex-row"
+                href="https://www.linkedin.com/in/matheus-rodrigues-araujo"
+                title="Instagram"
+              >
+                <RiInstagramFill className="h-32 w-32 text-light-green max-w-full " />
+              </Link>
+            </div>
           </div>
-        </div>
-        <figure className="flex justify-center md:justify-end">
           <Image
-            src={coffeeSVG}
-            alt="Coffee image"
-            className="max-w-[50%] h-auto "
+            src={dancingCoffee}
+            alt="A coffee dancing"
+            className="max-w-[30%] h-auto"
           />
-        </figure>
+        </div>
+
+        <ContactForm />
       </div>
     </section>
   );
