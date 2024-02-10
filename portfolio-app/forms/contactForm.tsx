@@ -1,6 +1,6 @@
 export default function ContactForm() {
   return (
-    <div className="contact-form mt-2 sm:mx-auto w-full lg:w-10/12">
+    <div className="contact-form mt-2 flex flex-col sm:mx-auto w-full ">
       <form className="space-y-20">
         <div>
           <label className="font-orbitron block text-[5rem] font-medium leading-6 text-white">

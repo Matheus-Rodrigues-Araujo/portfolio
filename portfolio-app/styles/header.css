@@ -1,6 +1,7 @@
 .brand {
   font-size: 5rem;
   color: var(--light-green);
+  font-weight:700;
 }
 
 nav .brand:hover {

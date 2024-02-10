@@ -18,11 +18,12 @@ export default function Projects() {
             </p>
 
             <div className="projects-links flex gap-12 my-20">
-              <Link href="#" title="Explore" className="cursor-pointer">
+              <Link href="#" title="Explore" className="cursor-pointer text-[6rem] md:text-[7rem]">
                 Explore
               </Link>
               <Link
                 href="https://github.com/Matheus-Rodrigues-Araujo"
+                className="cursor-pointer text-[6rem] md:text-[7rem]"
                 target="_blank"
                 title="Github"
               >

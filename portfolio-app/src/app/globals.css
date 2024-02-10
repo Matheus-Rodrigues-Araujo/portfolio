@@ -165,8 +165,25 @@ section {
 nav,
 section,
 footer {
-  padding-inline: calc(var(--space) * 30);
+  padding-inline: calc(var(--space) * 20);
 }
+
+@media screen and (min-width: 1400px){
+  nav,
+  section,
+  footer {
+    padding-inline: calc(var(--space) * 60);
+  }
+}
+
+@media screen and (min-width: 2000px){
+  nav,
+  section,
+  footer {
+    padding-inline: calc(var(--space) * 90);
+  }
+}
+
 
 @media screen and (max-width: 900px){
   nav,
@@ -183,3 +200,4 @@ footer {
     padding-inline: calc(var(--space) * 4);
   }
 }
+

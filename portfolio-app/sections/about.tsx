@@ -13,21 +13,19 @@ export default function About() {
               <h3 className="font-orbitron text-[7rem] text-light-green">
                 Problem solver
               </h3>
-              <p className="font-raleway text-[4.5rem] md:text-[5rem] text-light-gray">
+              <p className="font-raleway text-[4.5rem] lg:w-1/2 md:text-[5rem] text-light-gray">
                 Hi, I'm Matheus Rodrigues Araujo, a{" "}
                 <span className="job">frontend developer</span> from Ceará,
                 Brazil. Currently in the 8th semester of Information Systems at
                 IFCE. Specialized in crafting responsive, attractive, and
                 efficient websites and web applications.
-              </p>
-              <p className="font-raleway text-[4.5rem] md:text-[5rem] text-light-gray">
                 I am currently studying the 8th semester of the Information
                 Systems bachelor's degree at IFCE. My expertise is developing
                 websites and web applications that are responsive, attractive
                 and performant.
               </p>
 
-              <p className="font-raleway text-[4.5rem] md:text-[5rem] techs text-light-gray">
+              <p className="font-raleway text-[4.5rem] md:text-[5rem] lg:w-1/2 techs text-light-gray">
                 I have experience with <span>JavaScript</span>,{" "}
                 <span>TypeScript</span>, <span>React</span>, <span> Next</span>,{" "}
                 <span>CSS</span>, <span>SCSS</span>, <span>Tailwind</span> and
@@ -39,7 +37,7 @@ export default function About() {
               <h3 className="font-orbitron text-[7rem] text-light-green">
                 Technologies
               </h3>
-              <ul className="technologies-list">
+              <ul className="technologies-list lg:w-1/2">
                 {technologies.map((item) => (
                   <li key={item.name} title={item.name}>
                     {item.symbol}

@@ -15,7 +15,7 @@ export default function Introduction() {
             Front-End Developer
           </span>
         </h1>
-        <p className="font-raleway text-light-gray  text-[5rem] xl:w-1/2">
+        <p className="font-raleway text-light-gray  text-[5rem] w-10/12">
           Passionate about crafting visually stunning websites. Dedicated to
           turning ideas into reality through frontend development. Let's
           collaborate to transform concepts into incredible digital experiences.
@@ -23,10 +23,10 @@ export default function Introduction() {
         </p>
 
         <div className="contact-buttons flex gap-12 mt-10">
-          <button className="text-[5rem] cursor-pointer border-0 p-8 lg:text-[5rem]">
+          <button className="text-[6rem] cursor-pointer border-0 p-8 md:text-[7rem]">
             Hire me
           </button>
-          <button className="text-[5rem] cursor-pointer border-0 p-8 lg:text-[5rem]">
+          <button className="text-[6rem] cursor-pointer border-0 p-8 md:text-[7rem]">
             Resume
           </button>
         </div>
