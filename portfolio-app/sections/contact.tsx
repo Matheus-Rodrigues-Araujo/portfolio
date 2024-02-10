@@ -8,8 +8,8 @@ import ContactForm from "../forms/contactForm";
 
 export default function Contact() {
   return (
-    <section className="contact bg-dark py-20 md:py-0" id="contact">
-      <h2 className="font-orbitron text-[10rem] md:text-[12rem]">Contact</h2>
+    <section className="contact bg-light-dark py-20 md:py-0" id="contact">
+      <h2 className="font-orbitron text-[10rem] text-white md:text-[12rem]">Contact</h2>
 
       <div className="contact-container grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-0">
         <div className="flex justify-between lg:flex-col" >

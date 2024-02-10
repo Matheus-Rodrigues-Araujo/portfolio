@@ -5,7 +5,7 @@ import { RiInstagramFill } from "react-icons/ri";
 import { useState } from "react";
 
 export default function Header() {
-  const [isSidebarActive, setIsSidebarActive] = useState(true);
+  const [isSidebarActive, setIsSidebarActive] = useState(false);
 
   const handleSidebarVisibility = () => {
     setIsSidebarActive(!isSidebarActive);

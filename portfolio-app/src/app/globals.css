@@ -172,7 +172,7 @@ footer {
   nav,
   section,
   footer {
-    padding-inline: calc(var(--space) * 60);
+    padding-inline: calc(var(--space) * 30);
   }
 }
 

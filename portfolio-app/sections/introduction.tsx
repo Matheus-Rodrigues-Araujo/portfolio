@@ -3,11 +3,12 @@ import { RiInstagramFill } from "react-icons/ri";
 import MouseAnimation from "../components/scrollMouse";
 import Link from "next/link";
 import Image from "next/image";
-import profileImg from "../assets/profile-thumb.png";
+// import profileImg from "../assets/profile-thumb.png";
+import profileImg from "../assets/thumb-green.png";
 
 export default function Introduction() {
   return (
-    <section className="section bg-dark justify-center items-start introduction flex flex-col-reverse xl:flex-row lg:items-center py-40 lg:py-0 ">
+    <section className="section w-full bg-dark justify-center items-start introduction flex flex-col-reverse xl:flex-row lg:items-center py-40 lg:py-0 ">
       <div className="flex flex-col">
         <h1 className="font-orbitron text-white text-[7.2rem] md:text-[10rem] lg:text-[12rem]">
           Matheus Rodrigues Araujo <br />
@@ -61,11 +62,11 @@ export default function Introduction() {
         <Image
           src={profileImg}
           alt="Thumb photo"
-          className="w-[30%] xl:w-[80%]"
+          className="rounded-full w-[50%] xl:w-auto"
         />
       </figure>
 
-      {/* <MouseAnimation /> */}
+
     </section>
   );
 }
