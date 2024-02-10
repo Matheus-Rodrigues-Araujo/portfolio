@@ -28,7 +28,7 @@ export default function Contact() {
                 title="Linkedin"
                 className="flex flex-col items-center gap-5 lg:flex-row"
               >
-                <FaLinkedin className="h-32 w-32 text-light-green max-w-full " />
+                <FaLinkedin className="h-28 w-28  text-light-green max-w-full " />
               </Link>
 
               <Link
@@ -36,7 +36,7 @@ export default function Contact() {
                 className="flex flex-col items-center gap-5 lg:flex-row"
                 title="Github"
               >
-                <FaGithub className="h-32 w-32 text-light-green max-w-full " />
+                <FaGithub className="h-28 w-28 text-light-green max-w-full " />
               </Link>
 
               <Link
@@ -44,7 +44,7 @@ export default function Contact() {
                 href="https://www.linkedin.com/in/matheus-rodrigues-araujo"
                 title="Instagram"
               >
-                <RiInstagramFill className="h-32 w-32 text-light-green max-w-full " />
+                <RiInstagramFill className="h-28 w-28 text-light-green max-w-full " />
               </Link>
             </div>
           </div>

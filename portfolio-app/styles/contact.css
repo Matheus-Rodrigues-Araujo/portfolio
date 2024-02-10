@@ -23,6 +23,14 @@
   text-shadow: -2px 0px 35px rgb(30, 243, 76);
 }
 
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid var(--light-green);
+}
+
+
+
+
 .submit-btn:hover,
 .contact-form input:focus,
 .contact-form textarea:focus {

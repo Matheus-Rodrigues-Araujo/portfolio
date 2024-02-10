@@ -8,8 +8,8 @@ export default function About() {
       <div className="about-content grid grid-cols-1" >
           <h2 className="font-orbitron text-[10rem] md:text-[12rem]">About me</h2>
         {/* <div> */}
-          <div className="wrapper flex flex-col h-full gap-20 mt-10 lg:flex-row" >
-            <div className="flex-1 py-20 border-b-2 border-light-green lg:border-r-2 lg:border-b-0 lg:py-0 lg:px-5" >
+          <div className="wrapper flex flex-col h-full gap-20 mt-10 " >
+            <div className="flex-1 py-20 border-b-2 border-light-green md:border-b-0  lg:py-0 lg:px-5" >
               <h3 className="font-orbitron text-[7rem] text-light-green">
                 Problem solver
               </h3>
