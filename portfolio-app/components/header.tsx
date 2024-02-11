@@ -71,7 +71,7 @@ export default function Header() {
                 </Link>
               </ul>
 
-              <div className="mt-10 sidebar-social-links flex justify-end gap-10">
+              <div className="mt-10 sidebar-social-links flex justify-end mb-60 md:mb-0 gap-10">
                 <Link
                   href="https://www.linkedin.com/in/matheus-rodrigues-araujo/"
                   target="_blank"
