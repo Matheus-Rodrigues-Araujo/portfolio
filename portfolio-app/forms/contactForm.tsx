@@ -51,7 +51,7 @@ export default function ContactForm() {
           </div>
         </div>
 
-        <div className="submit-btn-container mx-auto flex justify-between">
+        <div className="submit-btn-container mx-auto flex justify-between gap-5 md:gap-0">
           <p className="font-raleway text-[4.5rem] md:text-[5rem] text-purple font-light">
             Hit me up so we can talk!
           </p>

@@ -50,7 +50,7 @@ export default function Contact() {
           <Image
             src={dancingCoffee}
             alt="A coffee dancing"
-            className="max-w-[30%] h-auto"
+            className="max-w-[50%] h-auto"
           />
         </div>
 
