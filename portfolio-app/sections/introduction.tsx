@@ -9,7 +9,7 @@ export default function Introduction() {
   return (
     <section className="section w-full bg-light-dark justify-center items-start introduction flex flex-col-reverse xl:flex-row lg:items-center py-40 lg:py-0 ">
       <div className="flex flex-col">
-        <h1 className="font-orbitron text-white text-[7.2rem] md:text-[10rem] lg:text-[12rem]">
+        <h1 className="font-orbitron text-white text-[6rem] md:text-[10rem] lg:text-[12rem]">
           Matheus Rodrigues Araujo <br />
           <span className="position text-purple font-bold" id="position">
             Front-End Developer
