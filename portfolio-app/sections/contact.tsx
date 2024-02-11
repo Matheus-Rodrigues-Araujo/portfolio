@@ -9,12 +9,12 @@ import ContactForm from "../forms/contactForm";
 export default function Contact() {
   return (
     <section className="contact bg-light-dark py-20 md:py-0" id="contact">
-      <h2 className="font-orbitron text-[10rem] md:text-[12rem]">Contact</h2>
+      <h2 className="font-orbitron text-[10rem] md:text-[12rem] text-purple font-bold">Contact</h2>
 
       <div className="contact-container grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-0">
         <div className="flex justify-between lg:flex-col" >
           <div className="font-orbitron flex flex-col gap-5">
-            <h3 className="font-orbitron text-[7rem] text-light-green">
+            <h3 className="font-orbitron text-[7rem] text-purple font-200 ">
               Let's grap a 
               coffee!
             </h3>
@@ -28,7 +28,7 @@ export default function Contact() {
                 title="Linkedin"
                 className="flex flex-col items-center gap-5 lg:flex-row"
               >
-                <FaLinkedin className="h-40 w-40  text-light-green max-w-full " />
+                <FaLinkedin className="h-40 w-40  text-purple max-w-full " />
               </Link>
 
               <Link
@@ -36,7 +36,7 @@ export default function Contact() {
                 className="flex flex-col items-center gap-5 lg:flex-row"
                 title="Github"
               >
-                <FaGithub className="h-40 w-40 text-light-green max-w-full " />
+                <FaGithub className="h-40 w-40 text-purple max-w-full " />
               </Link>
 
               <Link
@@ -44,7 +44,7 @@ export default function Contact() {
                 href="https://www.linkedin.com/in/matheus-rodrigues-araujo"
                 title="Instagram"
               >
-                <RiInstagramFill className="h-40 w-40 text-light-green max-w-full " />
+                <RiInstagramFill className="h-40 w-40 text-purple max-w-full " />
               </Link>
             </div>
           </div>

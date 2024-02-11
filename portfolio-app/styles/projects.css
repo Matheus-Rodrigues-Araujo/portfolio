@@ -41,13 +41,13 @@
 }
 
 .filter button{
-  background-color: var(--purple);
+  background-color: var(--dark-purple);
   color: white;
   transition: .3s ease-in-out;
 }
 
 .filter button:hover{
-  background-color: var(--light-green);
+  background-color: var(--purple);
 }
 
 .project-detail {
@@ -56,7 +56,7 @@
   position: absolute;
   bottom: -10px;
   left: 0;
-  background-color: var(--purple);
+  background-color: var(--dark-purple);
   flex-flow: column;
   justify-contemt: space-around;
   transition: bottom .3s ease-in-out;

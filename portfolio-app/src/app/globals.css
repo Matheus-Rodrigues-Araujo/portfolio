@@ -10,13 +10,15 @@
   font-family: "Mulish", sans-serif;
   font-family: "Nunito Sans", sans-serif;
   font-family: "Orbitron", sans-serif;
-  --light-green: #27fb6b;
+  --light-green: #5E17EB;
   --dark-green: #0a2e36;
   --dark: #0b0a0a;
   --light-dark: #0f0f0f;
   --light-gray: #dcdde8;
   --orange: #e29616;
-  --purple: #2b27ff;
+  --pink: #ff4fb4;
+  --purple: #7631FF;
+  --dark-purple: #5E17EB;
 }
 
 * {
@@ -39,17 +41,6 @@ h4 {
   color: var(--light-green);
 }
 
-.active {
-  background-color: var(--normalBlue);
-  padding: 1px 4px;
-}
-
-nav ul a:hover {
-  color: var(--light-green);
-  text-shadow: -1px -1px 35px rgb(30, 243, 76);
-}
-
-
 section h3 {
   font-size: 8rem;
 }
@@ -61,7 +52,7 @@ section h4 {
 .item {
   list-style: none;
   font-weight: 400;
-  color: var(--light-green);
+  color: white;
   text-decoration: none;
   cursor: pointer;
   transition: 0.2s ease-in-out;
@@ -85,15 +76,6 @@ section {
   display: flex;
   flex-flow: column;
   justify-content: space-evenly;
-}
-
-.introduction h1 {
-  text-shadow: -0.5px 0px 5px var(--light-green);
-}
-
-.introduction span {
-  color: var(--light-green);
-  text-shadow: -0.5px 0px 6px var(--light-green);
 }
 
 .phrase {

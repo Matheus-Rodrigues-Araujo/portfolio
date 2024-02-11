@@ -6,11 +6,11 @@ export default function About() {
   return (
     <section className="about bg-light-dark py-40 md:py-0" id="about"> 
       <div className="about-content grid grid-cols-1" >
-          <h2 className="font-orbitron text-[10rem] md:text-[12rem]">About me</h2>
-        {/* <div> */}
+          <h2 className="font-orbitron text-[10rem] md:text-[12rem] font-bold text-purple">About me</h2>
+          
           <div className="wrapper flex flex-col h-full gap-20 mt-10 " >
-            <div className="flex-1 py-20 border-b-2 border-light-green md:border-b-0  lg:py-0 lg:px-5" >
-              <h3 className="font-orbitron text-[7rem] text-light-green">
+            <div className="flex-1 py-20 border-b-2 border-purple md:border-b-0  lg:py-0 lg:px-5" >
+              <h3 className="font-orbitron text-[7rem] text-purple">
                 Problem solver
               </h3>
               <p className="font-raleway text-[4.5rem] lg:w-1/2 md:text-[5rem] text-light-gray">
@@ -34,7 +34,7 @@ export default function About() {
             </div>
 
             <div className="flex-1">
-              <h3 className="font-orbitron text-[7rem] text-light-green">
+              <h3 className="font-orbitron text-[7rem] text-purple">
                 Technologies
               </h3>
               <ul className="technologies-list lg:w-1/2">
@@ -47,7 +47,6 @@ export default function About() {
             </div>
 
           </div>
-        {/* </div> */}
       </div>
     </section>
   );

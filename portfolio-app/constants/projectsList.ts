@@ -34,7 +34,7 @@ export const projectsList: ProjectsInterface[] = [
   },
   {
     name: "Ecommerce App",
-    description: 'Application that simulates an intuitive and realistic shopping journey',
+    description: 'Application that simulates an intuitive and realistic shopping journey.',
     stack: [
       "HTML",
       "CSS",
@@ -49,7 +49,7 @@ export const projectsList: ProjectsInterface[] = [
   },
   {
     name: "Calendar System",
-    description: 'App with the aim of assisting and managing user appointments',
+    description: 'App with the aim of assisting and managing user appointments.',
     stack: [
       "HTML",
       "CSS",
@@ -64,7 +64,7 @@ export const projectsList: ProjectsInterface[] = [
   },
   {
     name: "Gym landing page",
-    description: 'Customized landing page for a gym platform',
+    description: 'Customized landing page for a gym platform.',
     stack: [
       "HTML",
       "CSS",

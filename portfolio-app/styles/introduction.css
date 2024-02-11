@@ -1,6 +1,3 @@
-/* .introduction{
-  background-image: repeating-linear-gradient(10deg, var(--light-dark), black  207px);
-} */
 
 .contact-buttons {
   display: flex;
@@ -12,24 +9,24 @@
 }
 
 .contact-buttons button:first-child {
-  background-color: var(--light-green);
+  background-color: var(--purple);
 }
 
 .contact-buttons button:nth-child(2) {
   background-color: var(--light-dark);
-  color: var(--light-green);
-  outline: 1px solid var(--light-green);
+  color: var(--purple);
+  outline: 1px solid var(--purple);
 }
 
 .contact-buttons button:first-child:hover {
-  background-color: #48ff83;
-  box-shadow: 1px -1px 20px var(--light-green);
+  background-color: var(--dark-purple);
+  box-shadow: 1px -1px 20px var(--dark-purple);
 }
 
 .contact-buttons button:nth-child(2):hover {
   background-color: var(--dark);
 
-  box-shadow: 1px -1px 20px var(--light-green);
+  box-shadow: 1px -1px 20px var(--dark-purple);
 }
 
 .social-links a {
@@ -40,9 +37,9 @@
 }
 
 .social-links a:hover {
-  background-color: var(--light-green);
+  background-color: var(--dark-purple);
   border-radius: 2em;
-  box-shadow: 1px -1px 10px var(--light-green);
+  box-shadow: 1px -1px 10px var(--dark-purple);
   transition: 0.2s ease-in-out;
 }
 

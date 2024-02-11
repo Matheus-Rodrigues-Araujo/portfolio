@@ -23,6 +23,8 @@ const config: Config = {
         "dark": "#0b0a0a",
         "light-dark": "#0f0f0f",
         "light-gray": "#dcdde8",
+        "purple": "#7631FF",
+        "dark-purple": "#5E17EB",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

@@ -7,34 +7,34 @@ export default function Projects() {
   return (
     <section className="bg-light-dark projects py-20 md:py-0 " id="projects">
       <div className="description-container">
-        <h2 className="font-orbitron text-[10rem] md:text-[12rem]">
+        <h2 className="font-orbitron text-[10rem] md:text-[12rem] text-purple font-bold">
           Projects / Work
         </h2>
         <div className="grid gap-40 mt-40">
           <div className="filter grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-20">
-            <button className=" font-bold  text-center p-10 text-[4.5rem]">
+            <button className=" font-light  text-center p-10 text-[4.5rem]">
               See all
             </button>
-            <button className=" font-bold  text-center p-10 text-[4.5rem]">
+            <button className=" font-light  text-center p-10 text-[4.5rem]">
               JavaScript
             </button>
-            <button className=" font-bold  text-center p-10 text-[4.5rem]">
+            <button className=" font-light  text-center p-10 text-[4.5rem]">
               TypeScript
             </button>
-            <button className=" font-bold  text-center p-10 text-[4.5rem]">
+            <button className=" font-light  text-center p-10 text-[4.5rem]">
               Node.js
             </button>
-            <button className=" font-bold  text-center p-10 text-[4.5rem]">
+            <button className=" font-light  text-center p-10 text-[4.5rem]">
               React
             </button>
-            <button className=" font-bold  text-center p-10 text-[4.5rem]">
+            <button className=" font-light  text-center p-10 text-[4.5rem]">
               Next
             </button>
           </div>
 
           <ul className="projects-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-40">
             {projectsList.map((item) => (
-              <li className="project-item h-[300px] relative bg-light-green">
+              <li className="project-item h-[300px] relative">
                 <Image
                   src={item.image}
                   className="w-full object-git h-full object-cover"

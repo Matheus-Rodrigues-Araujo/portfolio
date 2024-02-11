@@ -1,38 +1,64 @@
 .brand {
-  font-size: 5rem;
-  color: var(--light-green);
+  font-size: 8rem;
+  color: white;
   font-weight:700;
+  transition: .2s ease-in-out;
+  text-shadow: -2px 3px 0px var(--purple);
 }
 
 nav .brand:hover {
-  text-shadow: -2px 0px 25px rgb(30, 243, 76);
+  text-shadow: -2px 4px 0px var(--purple);
+  font-size: 8.2rem;
 }
 
-.toggle {
-  border: 1px solid var(--light-green);
-  padding: 3px;
+nav .item:hover{
+  text-decoration: underline;
 }
 
-.toggle:hover {
-  padding: 4px;
-  box-shadow: -2px 0px 25px rgb(30, 243, 76);
+.active {
+  background-color: var(--normalBlue);
+  padding: 1px 4px;
+}
+
+.toggle div{
+  transition: .2s ease-in-out
+}
+
+.toggle:hover div{
+  box-shadow: none;
+  box-shadow: 5px 4px 2px var(--purple);
+  height: 10px;
 }
 
 .close-toggle-btn{
-  transition: .3s ease-in-out;
+  color: white;
+  font-size: 10rem;
+  transition: .2s ease-in-out;
 }
 
 .close-toggle-btn:hover{
-  text-shadow: -2px 0px 25px rgb(30, 243, 76);
+  text-shadow: 3px 1px 0px var(--pink);
   font-weight: 700;
 }
 
 .sidebar{
-  background-image: repeating-linear-gradient(127deg, black, var(--light-dark) 207px);
   width: 320px;
   transition: .2s ease-in-out;
   animation: displayElement .02s ease-in-out ;
 }
+
+.sidebar .item:hover{
+  text-shadow: 3px 1px 0px var(--pink);
+}
+
+.sidebar-social-links  a svg{
+  color: var(--purple);
+}
+
+.sidebar-social-links  a:hover svg{
+  color: var(--pink);
+}
+
 
 @keyframes displayElement {
   0%{

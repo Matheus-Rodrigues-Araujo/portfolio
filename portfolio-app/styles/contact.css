@@ -1,6 +1,6 @@
 .contact-links a {
   font-size: 5rem;
-  color: var(--light-green);
+  color: var(--purple);
   margin-top: auto;
   transition: 0.2s ease-in;
 }
@@ -12,9 +12,9 @@
 
 .contact-links a:hover svg {
   color: white;
-  background-color: var(--light-green);
+  background-color: var(--purple);
   border-radius: 0.3em;
-  box-shadow: 1px -1px 10px var(--light-green);
+  box-shadow: 1px -1px 10px var(--purple);
   transition: 0.2s ease-in-out;
 }
 
@@ -25,14 +25,15 @@
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  outline: 2px solid var(--light-green);
+  outline: 2px solid var(--purple);
 }
 
-
-
-
-.submit-btn:hover,
 .contact-form input:focus,
 .contact-form textarea:focus {
-  box-shadow: -1px 0px 25px var(--light-green);
+  box-shadow: -1px 0px 25px var(--purple);
+}
+
+.submit-btn:hover{
+  background-color: var(--dark-purple);
+  box-shadow: 1px -1px 20px var(--dark-purple);
 }

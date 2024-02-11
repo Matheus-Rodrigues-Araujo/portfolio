@@ -1,16 +1,18 @@
 footer .icon {
-  color: var(--dark);
+  color: white;
 }
 
 footer .item {
-  color: var(--dark);
+  color: white;
   font-weight: 600;
 }
 
 .footer-container ul .item:hover {
-  color: white;
+  text-decoration: underline;
 }
 
 .footer-container .icon:hover {
-  color: white;
+  color: var(--purple);
+  background-color: white;
+  border-radius: 5em;
 }
