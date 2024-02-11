@@ -37,11 +37,11 @@ export default function RootLayout({
           rel="stylesheet"
         ></link>
       </head>
-      <body className="bg-dark">
+      <body className="bg-light-dark">
         <Header />
 
         {/* <div className="pt-[60px] lg:pt-[60px] lg:grid grid-flow-row auto-rows-[100svh]" id="main"> */}
-        <div className="pt-[60px] lg:pt-0 grid grid-flow-row auto-rows-[100svh]" id="main">
+        <div className="pt-[60px] gap-10 lg:pt-0 grid grid-flow-row auto-rows-[100svh_100svh_auto_100svh] lg:auto-rows-[100svh_100svh_auto_100svh] " id="main">
           {children}
         </div>
 

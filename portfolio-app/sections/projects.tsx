@@ -1,47 +1,59 @@
 import Image from "next/image";
 import devicesPNG from "../assets/devices.png";
 import Link from "next/link";
+import { projectsList } from "../constants/projectsList";
 
 export default function Projects() {
   return (
-    <section className="projects py-20 md:py-0" id="projects">
+    <section className="bg-light-dark projects py-20 md:py-0 " id="projects">
       <div className="description-container">
-        <h2 className="font-orbitron text-[10rem] md:text-[12rem]">Projects / Work</h2>
-
-        <div className="wrapper grid gap-10 lg:grid-cols-2 ">
-          <div className="container-1 flex flex-col ">
-            <p className="font-raleway text-[5rem] md:text-[6rem] text-justify text-light-gray">
-              Since the beginning of my journey, I have built several projects
-              that have elevated my skills as a developer. Now it's your turn to
-              learn about what I've developed throughout my career as a{" "}
-              <span className="text-light-green">Front-End Developer</span>.
-            </p>
-
-            <div className="projects-links flex gap-12 my-20">
-              <Link href="#" title="Explore" className="cursor-pointer text-[6rem] md:text-[7rem]">
-                Explore
-              </Link>
-              <Link
-                href="https://github.com/Matheus-Rodrigues-Araujo"
-                className="cursor-pointer text-[6rem] md:text-[7rem]"
-                target="_blank"
-                title="Github"
-              >
-                Github
-              </Link>
-            </div>
+        <h2 className="font-orbitron text-[10rem] md:text-[12rem]">
+          Projects / Work
+        </h2>
+        <div className="grid gap-40 mt-40">
+          <div className="filter grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-20">
+            <button className=" font-bold  text-center p-10 text-[4.5rem]">
+              See all
+            </button>
+            <button className=" font-bold  text-center p-10 text-[4.5rem]">
+              JavaScript
+            </button>
+            <button className=" font-bold  text-center p-10 text-[4.5rem]">
+              TypeScript
+            </button>
+            <button className=" font-bold  text-center p-10 text-[4.5rem]">
+              Node.js
+            </button>
+            <button className=" font-bold  text-center p-10 text-[4.5rem]">
+              React
+            </button>
+            <button className=" font-bold  text-center p-10 text-[4.5rem]">
+              Next
+            </button>
           </div>
 
-          <div className="container-2 flex flex-col gap-5 items-center lg:items-end">
-            <Image
-              src={devicesPNG}
-              alt="Image of my App's behavior on mobile and desktop devices"
-              className="max-w-[70%] h-auto"
-            />
-            <em>
-              <i className="text-dark text-[5rem]">"Curiosity is the key"</i>
-            </em>
-          </div>
+          <ul className="projects-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-40">
+            {projectsList.map((item) => (
+              <li className="project-item h-[300px] relative bg-light-green">
+                <Image
+                  src={item.image}
+                  className="w-full object-git h-full object-cover"
+                  alt={`Screenshot of the Social media app called ${item.name}`}
+                />
+                <div className="project-detail h-full w-full text-white text-[5rem] text-center">
+                  <h3 className="font-orbitron flex-1 text-white font-bold">
+                    {item.name}
+                  </h3>
+                    <p className="text-white text-[4rem] flex-1 font-400">
+                      {item.description}
+                    </p>
+                    <button className="text-[#2b27ff] flex-1 p-3 text-[4.5rem] font-bold bg-white">
+                      EXPLORE
+                    </button>
+                </div>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>

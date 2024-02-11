@@ -2,15 +2,21 @@ interface ProjectsInterface {
   name: string;
   description: string;
   stack: string[];
-  image: string;
+  image: StaticImageData | "";
   link: string;
   repository: string;
 }
 
-export const projects: ProjectsInterface[] = [
+import { StaticImageData } from 'next/image';
+import feedImg from '../images/momentz/feed.jpg';
+import gymImg from '../images/gym-landing-page/image.png';
+import ecommerceImg from '../images/ecommerce/ecommerce.jpg';
+import calendarImg from '../images/calendar-system/calendar-img.png';
+
+export const projectsList: ProjectsInterface[] = [
   {
     name: "Momentz",
-    description: '',
+    description: 'Social media platform created for social interaction and sharing unforgettable moments.',
     stack: [
       "HTML",
       "CSS",
@@ -22,13 +28,13 @@ export const projects: ProjectsInterface[] = [
       "MongoDB",
       "S3",
     ],
-    image: "",
+    image: feedImg,
     link: "",
     repository: "",
   },
   {
     name: "Ecommerce App",
-    description: '',
+    description: 'Application that simulates an intuitive and realistic shopping journey',
     stack: [
       "HTML",
       "CSS",
@@ -37,13 +43,13 @@ export const projects: ProjectsInterface[] = [
       "Next",
       "Styled Components",
     ],
-    image: "",
+    image: ecommerceImg,
     link: "",
     repository: "",
   },
   {
     name: "Calendar System",
-    description: '',
+    description: 'App with the aim of assisting and managing user appointments',
     stack: [
       "HTML",
       "CSS",
@@ -52,19 +58,19 @@ export const projects: ProjectsInterface[] = [
       "Next",
       "Tailwind",
     ],
-    image: "",
+    image: calendarImg,
     link: "",
     repository: "",
   },
   {
     name: "Gym landing page",
-    description: '',
+    description: 'Customized landing page for a gym platform',
     stack: [
       "HTML",
       "CSS",
       "JavaScript",
     ],
-    image: "",
+    image: gymImg,
     link: "",
     repository: "",
   },

@@ -9,15 +9,11 @@
   }
   
   .techs span {
-    color: var(--orange);
+    color: var(--light-green);
     font-weight: 600;
   }
   
   .technologies-list {
-    /* display: grid; */
-    /* grid-template-columns: repeat(4, 1fr); */
-    /* grid-auto-columns: auto; */
-    /* margin-block */
     display: flex;
     flex-flow: row wrap;
     gap: 10px;

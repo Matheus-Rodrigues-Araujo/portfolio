@@ -70,6 +70,6 @@ export const technologies = [
     },
     {
       name: "MongoDB",
-      symbol: <SiSass className="text-green-600" />,
+      symbol: <SiMongodb className="text-green-600" />,
     },
   ];
