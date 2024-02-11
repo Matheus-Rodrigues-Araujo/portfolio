@@ -38,7 +38,6 @@ export default function Contact() {
               >
                 <FaGithub className="h-40 w-40 text-purple max-w-full " />
               </Link>
-
               <Link
                 className="flex flex-col items-center gap-5 lg:flex-row"
                 href="https://www.linkedin.com/in/matheus-rodrigues-araujo"
