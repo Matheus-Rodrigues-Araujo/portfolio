@@ -15,7 +15,7 @@ export default function Introduction() {
             Front-End Developer
           </span>
         </h1>
-        <p className="font-raleway text-light-gray  text-[5rem] w-10/12">
+        <p className="font-raleway text-light-gray  text-[5rem] md:w-10/12">
           Passionate about crafting visually stunning websites. Dedicated to
           turning ideas into reality through frontend development. Let's
           collaborate to transform concepts into incredible digital experiences.
