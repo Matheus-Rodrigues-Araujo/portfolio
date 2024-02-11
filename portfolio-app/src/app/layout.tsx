@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-// import { Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
 import "../../styles/header.css";
@@ -13,7 +13,7 @@ import "../../styles/contact.css";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
 
-// const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Matheus R. Araujo",
@@ -37,7 +37,7 @@ export default function RootLayout({
           rel="stylesheet"
         ></link>
       </head>
-      <body className="bg-light-dark">
+      <body className={inter.className}  >
         <Header />
 
         {/* <div className="pt-[60px] lg:pt-[60px] lg:grid grid-flow-row auto-rows-[100svh]" id="main"> */}
