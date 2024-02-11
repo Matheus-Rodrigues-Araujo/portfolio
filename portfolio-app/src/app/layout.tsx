@@ -41,7 +41,7 @@ export default function RootLayout({
         <Header />
 
         {/* <div className="pt-[60px] lg:pt-[60px] lg:grid grid-flow-row auto-rows-[100svh]" id="main"> */}
-        <div className="pt-[60px] gap-60 md:gap-10 lg:pt-0 grid grid-flow-row auto-rows-[100svh_100svh_auto_100svh] lg:auto-rows-[100svh_100svh_auto_100svh] " id="main">
+        <div className="pt-[60px] gap-60 md:gap-10 lg:pt-0 grid grid-flow-row auto-rows-[100svh_100svh_auto_auto] lg:auto-rows-[100svh_100svh_auto_100svh] " id="main">
           {children}
         </div>
 
