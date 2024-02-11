@@ -57,7 +57,7 @@ export default function ContactForm() {
           </p>
           <button
             type="submit"
-            className="submit-btn flex p-20 bg-purple justify-center rounded-md text-[5rem]
+            className="submit-btn flex p-12 md:p-20 bg-purple justify-center rounded-md text-[4.5rem] md:text-[5rem]
                        font-400 uppercase leading-6 text-white shadow-sm"
           >
             Hit me up
