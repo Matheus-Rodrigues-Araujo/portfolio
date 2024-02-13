@@ -4,11 +4,11 @@
 }
 
 .job {
-  color: var(--vibrantPink);
+  color: var(--pink);
   font-weight: 600;
 }
 
-.techs span {
+.techs strong {
   color: var(--pink);
   font-weight: 600;
 }
@@ -54,9 +54,9 @@
 
 .tech-item p{
   text-align: center;
-  font-size: 3.8rem;
+  font-size: 4rem;
   color: white;
-  font-weight: 600;
+  font-weight: 800;
   font-family: 'Raleway';
 }
 

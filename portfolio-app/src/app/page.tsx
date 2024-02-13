@@ -5,11 +5,11 @@ import Introduction from "../../sections/introduction";
 
 export default function Home() {
   return (
-    <main>
+    <>
       <Introduction />
       <About />
       <Projects />
       <Contact />
-    </main>
+    </>
   );
 }

@@ -17,16 +17,16 @@ export default function About() {
             </h3>
             <p className="font-raleway text-[4.5rem] lg:w-1/2 md:text-[5rem] text-light-gray">
               Hi, I'm Matheus Rodrigues Araujo, a{" "}
-              <span className="job">frontend developer</span> from Ceará,
+              <strong className="job">Front-End Developer</strong> from Ceará,
               Brazil. Currently in the 8th semester of Information Systems at
               IFCE. My expertise is developing websites and web applications
               that are responsive, attractive and performant.
             </p>
 
             <p className="font-raleway text-[4.5rem] md:text-[5rem] lg:w-1/2 techs text-light-gray">
-              I have experience with <span>JavaScript</span>,{" "}
-              <span>TypeScript</span>, <span>React</span>, <span> Next</span>,{" "}
-              <span>CSS</span>, <span>SCSS</span>, <span>Tailwind</span> and
+              I have experience with <strong>JavaScript</strong>,{" "}
+              <strong>TypeScript</strong>, <strong>React</strong>, <strong> Next</strong>,{" "}
+              <strong>CSS</strong>, <strong>SCSS</strong>, <strong>Tailwind</strong> and
               more.
             </p>
           </div>

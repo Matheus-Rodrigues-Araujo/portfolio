@@ -50,14 +50,11 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={inter.className}>
-        <div
-          className="gap-40 md:gap-60 lg:pt-0 grid grid-flow-row md:auto-rows-[auto_1fr_1fr_1fr_1fr_auto]"
-          id="main"
-        >
-          <Header />
+        <Header />
+        <main className="gap-10 md:gap-60 lg:pt-0 grid grid-flow-row md:auto-rows-[1fr_1fr_1fr_1fr] ">
           {children}
-          <Footer />
-        </div>
+        </main>
+        <Footer />
       </body>
     </html>
   );
