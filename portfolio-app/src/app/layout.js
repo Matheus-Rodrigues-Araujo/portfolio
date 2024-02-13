@@ -18,9 +18,9 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   authors: [{ name: "Matheus Rodrigues Araujo" }],
-  title: "Matheus Rodrigues Araujo | Front-end Developer & JavaScript Expert",
+  title: "Matheus | Front-end Developer | React | Next",
   description:
-    "Welcome to my portfolio! I'm Matheus Rodrigues Araujo, a skilled front-end developer proficient in JavaScript, TypeScript, React, Next.js, and more. Explore my projects.",
+    "Welcome to my portfolio! I'm Matheus, a skilled front-end developer proficient in JavaScript, TypeScript, React, Next.js, and more. Explore my projects.",
   keywords:
     "Front-End Developer, JavaScript, React, TypeScript, Next.js, Tailwind, SQL, NoSQL, MongoDB, MySQL, Node.js, Express.js, Bootstrap, Jest, Web Development",
 };
