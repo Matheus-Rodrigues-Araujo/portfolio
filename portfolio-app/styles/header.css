@@ -7,12 +7,19 @@
 }
 
 nav .brand:hover {
-  text-shadow: -2px 4px 0px var(--purple);
-  font-size: 8.2rem;
+  font-size: 8.5rem;
+}
+
+nav  .item{
+  font-size: 5rem;
+  transition: .2s ease-in-out;
+  text-shadow: -2px 3px 0px var(--purple);
+  text-decoration: none;
 }
 
 nav .item:hover{
-  text-decoration: underline;
+  transform: scale(1.2);
+  transition: .2s ease-in-out;
 }
 
 .active {
@@ -21,12 +28,13 @@ nav .item:hover{
 }
 
 .toggle div{
-  transition: .2s ease-in-out
+  transition: .2s ease-in-out;
+  box-shadow: 5px 4px 2px var(--purple);
 }
 
 .toggle:hover div{
   box-shadow: none;
-  box-shadow: 5px 4px 2px var(--purple);
+  box-shadow: 6px 7px 2px var(--purple);
   height: 10px;
 }
 
@@ -34,10 +42,11 @@ nav .item:hover{
   color: white;
   font-size: 10rem;
   transition: .2s ease-in-out;
+  text-shadow: 4px 2px 2px var(--purple);
 }
 
 .close-toggle-btn:hover{
-  text-shadow: 3px 1px 0px var(--pink);
+  text-shadow: 5px 3px 2px var(--purple);
   font-weight: 700;
 }
 
@@ -47,16 +56,23 @@ nav .item:hover{
   animation: displayElement .02s ease-in-out ;
 }
 
+.sidebar .item{
+  text-shadow: 3px 2px 0px var(--purple);
+}
+
 .sidebar .item:hover{
-  text-shadow: 3px 1px 0px var(--pink);
+  transform: scale(1.2);
+  text-decoratino: none;
 }
 
 .sidebar-social-links  a svg{
   color: var(--purple);
+  transition: .2s ease-in-out;
 }
 
 .sidebar-social-links  a:hover svg{
-  color: var(--pink);
+  color: white;
+  transform: scale(1.2);
 }
 
 

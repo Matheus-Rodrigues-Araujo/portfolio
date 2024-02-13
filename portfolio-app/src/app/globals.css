@@ -18,6 +18,7 @@
   --orange: #e29616;
   --pink: #ff4fb4;
   --purple: #7631FF;
+  --light-purple: #7935ff;
   --dark-purple: #5E17EB;
 }
 
@@ -39,7 +40,7 @@ body {
 h2,
 h3,
 h4 {
-  color: var(--light-green);
+  color: var(--purple);
 }
 
 section h3 {
@@ -185,6 +186,8 @@ footer {
   }
 }
 
-@media screen and (max-width: 4000px){
-  
+@media screen and (max-height: 950px){
+  .scroll-mouse {
+    display: none;
+  }
 }
