@@ -7,22 +7,22 @@ import profileImg from "../assets/purple-thumb.png";
 
 export default function Introduction() {
   return (
-    <section className="section w-full bg-light-dark justify-center items-start introduction flex flex-col-reverse xl:flex-row lg:items-center py-40 lg:py-0 ">
+    <section className="md:mt-[60px] section w-full bg-light-dark justify-center items-start introduction flex flex-col-reverse xl:flex-row lg:items-center py-40 lg:py-0 ">
       <div className="flex flex-col">
-        <h1 className="font-orbitron text-white  max-[400px]:text-[5rem] text-[6rem] md:text-[10rem] lg:text-[12rem]">
+        <h1 className="font-orbitron text-purple font-bold max-[400px]:text-[5rem] text-[6rem] md:text-[10rem] lg:text-[12rem]">
           Matheus Rodrigues Araujo <br/>
-          <span className="position text-purple font-bold" id="position">
+          <span className="position text-white font-600" id="position">
             Front-End Developer
           </span>
         </h1>
-        <p className="font-raleway text-light-gray  text-[5rem] md:w-10/12">
+        <p className="font-raleway text-light-gray text-[4.5rem]  md:text-[5rem] md:w-10/12">
           Passionate about crafting visually stunning websites. Dedicated to
           turning ideas into reality through frontend development. Let's
           collaborate to transform concepts into incredible digital experiences.
           Join me in creating a unique digital universe.
         </p>
 
-        <div className="contact-buttons flex gap-12 mt-10">
+        <div className="contact-buttons flex gap-14 mt-10">
           <button className="text-[6rem] text-white cursor-pointer border-0 p-8 md:text-[7rem]">
             Hire me
           </button>
@@ -37,18 +37,18 @@ export default function Introduction() {
             target="_blank"
             title="Linkedin"
           >
-            <FaLinkedin className="w-40 h-40 text-purple" />
+            <FaLinkedin className="w-32 h-32 md:w-40 md:h-40 text-purple" />
           </Link>
           <Link
             href="https://github.com/Matheus-Rodrigues-Araujo"
             target="_blank"
             title="Github"
           >
-            <FaGithub className="w-40 h-40  text-purple" />
+            <FaGithub className="w-32 h-32 md:w-40 md:h-40  text-purple" />
           </Link>
           <Link href="#">
             <RiInstagramFill
-              className="w-40 h-40  text-purple"
+              className="w-32 h-32 md:w-40 md:h-40  text-purple"
               title="Instagram"
             />
           </Link>

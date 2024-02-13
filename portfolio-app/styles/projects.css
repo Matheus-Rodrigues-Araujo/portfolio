@@ -40,14 +40,17 @@
   box-shadow: 1px -1px 20px var(--light-green);
 }
 
-.filter button{
-  background-color: var(--dark-purple);
-  color: white;
-  transition: .3s ease-in-out;
+.filter button {
+  outline: 1.5px outset var(--purple);
+  color: var(--purple);
+  transition: 0.2s ease-in-out;
+  border-radius: 1px 0px 0px 10px;
 }
 
-.filter button:hover{
-  background-color: var(--purple);
+.filter button:hover {
+  outline: 3px outset white;
+  color: white;
+  transform: scale(1.05);
 }
 
 .project-detail {
@@ -59,11 +62,10 @@
   background-color: var(--dark-purple);
   flex-flow: column;
   justify-contemt: space-around;
-  transition: bottom .3s ease-in-out;
+  transition: bottom 0.3s ease-in-out;
 }
 
 .project-item:hover .project-detail {
-  bottom:0;
-  opacity: .95;
+  bottom: 0;
+  opacity: 0.95;
 }
-

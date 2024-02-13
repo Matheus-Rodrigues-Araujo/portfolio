@@ -4,7 +4,7 @@ import { technologies } from "../constants/technologies";
 
 export default function About() {
   return (
-    <section className="about bg-light-dark py-40 md:py-0" id="about">
+    <section className="about  bg-light-dark py-40 md:py-0" id="about">
       <div className="about-content grid grid-cols-1">
         <h2 className="font-orbitron text-[10rem] md:text-[12rem] font-bold text-purple">
           About me
@@ -37,7 +37,8 @@ export default function About() {
             </h3>
             <ul className="technologies-list lg:w-1/2">
               {technologies.map((item) => (
-                <li key={item.name} title={item.name}>
+                <li className="tech-item" key={item.name} title={item.name}>
+                  <p>{item.name}</p>
                   {item.symbol}
                 </li>
               ))}

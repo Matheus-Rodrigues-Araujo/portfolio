@@ -34,7 +34,7 @@ export default function Projects() {
 
           <ul className="projects-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-40">
             {projectsList.map((item) => (
-              <li className="project-item h-[300px] relative">
+              <li key={item.name} className="project-item h-[300px] relative">
                 <Image
                   src={item.image}
                   className="w-full object-git h-full object-cover"
