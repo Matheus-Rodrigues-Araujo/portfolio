@@ -37,6 +37,7 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:title" content={metadata.title} />
         <meta property="og:description" content={metadata.description} />
+        <link rel="icon" href="/logo.svg" />
         <link
           href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
           rel="preload"
