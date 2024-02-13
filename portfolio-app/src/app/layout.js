@@ -29,7 +29,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
+      <head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <meta name="keywords" content={metadata.keywords} />
@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
           rel="preload"
           as="style"
         />
-      </Head>
+      </head>
       <body className={inter.className}>
         <div
           className="gap-40 md:gap-60 lg:pt-0 grid grid-flow-row md:auto-rows-[auto_1fr_1fr_1fr_1fr_auto]"
