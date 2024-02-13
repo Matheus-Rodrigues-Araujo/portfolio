@@ -23,7 +23,7 @@ export const metadata = {
     "Welcome to my portfolio! I'm Matheus Rodrigues Araujo, a skilled front-end developer proficient in JavaScript, TypeScript, React, Next.js, and more. Explore my projects.",
   keywords:
     "Front-End Developer, JavaScript, React, TypeScript, Next.js, Tailwind, SQL, NoSQL, MongoDB, MySQL, Node.js, Express.js, Bootstrap, Jest, Web Development",
-  ogImage: "/favicon.ico",
+  ogImage: "favicon.ico",
 };
 
 export default function RootLayout({ children }) {
