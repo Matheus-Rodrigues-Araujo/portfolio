@@ -10,16 +10,17 @@ export default function Introduction() {
     <section className="md:mt-[60px] section w-full bg-light-dark justify-center items-start introduction flex flex-col-reverse xl:flex-row lg:items-center py-40 lg:py-0 ">
       <div className="flex flex-col">
         <h1 className="font-orbitron text-purple font-bold max-[400px]:text-[5rem] text-[6rem] md:text-[10rem] lg:text-[12rem]">
-          Matheus Rodrigues Araujo <br/>
+          Matheus Rodrigues Araujo <br />
           <span className="position text-white font-600" id="position">
             Front-End Developer
           </span>
         </h1>
         <p className="font-raleway text-light-gray text-[4.5rem]  md:text-[5rem] md:w-10/12">
-          Passionate about crafting visually stunning websites. Dedicated to
-          turning ideas into reality through frontend development. Let's
-          collaborate to transform concepts into incredible digital experiences.
-          Join me in creating a unique digital universe.
+          Hello! I'm Matheus Rodrigues Araujo, a skilled front-end developer
+          with expertise in JavaScript, TypeScript, React, Next.js, and other
+          modern web technologies. I have a passion for creating dynamic and
+          user-friendly web experiences that delight users and meet clients'
+          needs.
         </p>
 
         <div className="contact-buttons flex gap-14 mt-10">
@@ -64,8 +65,6 @@ export default function Introduction() {
           className="rounded-full w-[50%] xl:w-auto bg-light-dark"
         />
       </figure>
-
-
     </section>
   );
 }
