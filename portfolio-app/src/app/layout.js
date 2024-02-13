@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
+import logo from "./logo.svg"
 
 import "../../styles/header.css";
 import "../../styles/footer.css";
@@ -22,7 +23,7 @@ export const metadata = {
     "Welcome to my portfolio! I'm Matheus Rodrigues Araujo, a skilled front-end developer proficient in JavaScript, TypeScript, React, Next.js, and more. Explore my projects.",
   keywords:
     "Front-End Developer, JavaScript, React, TypeScript, Next.js, Tailwind, SQL, NoSQL, MongoDB, MySQL, Node.js, Express.js, Bootstrap, Jest, Web Development",
-  ogImage: "/logo.svg",
+  ogImage: logo,
 };
 
 export default function RootLayout({ children }) {
@@ -38,7 +39,7 @@ export default function RootLayout({ children }) {
         <meta property="og:title" content={metadata.title} />
         <meta property="og:description" content={metadata.description} />
         <meta property="og:image" content={metadata.ogImage} />
-        <link rel="icon" href="/logo.svg" />
+        <link rel="icon" href={metadata.ogImage} />
         <link
           href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
           rel="preload"
