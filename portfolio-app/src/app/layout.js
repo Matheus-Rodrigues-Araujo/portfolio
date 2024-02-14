@@ -1,7 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-// import Head from "next/head";
-// import logo from "./logo.svg"
+import Head from "next/head";
 
 import "../../styles/header.css";
 import "../../styles/footer.css";
@@ -18,11 +17,13 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   authors: [{ name: "Matheus Rodrigues Araujo" }],
-  title: "Matheus | Front-end Developer | React | Next",
+  title: "Portfolio | Matheus - Front-End Developer",
   description:
     "Welcome to my portfolio! I'm Matheus, a skilled front-end developer proficient in JavaScript, TypeScript, React, Next.js, and more. Explore my projects.",
   keywords:
-    "Front-End Developer, JavaScript, React, TypeScript, Next.js, Tailwind, SQL, NoSQL, MongoDB, MySQL, Node.js, Express.js, Bootstrap, Jest, Web Development",
+    "Front-End Developer, Desenvolvedor Front-End, Frontend, Matheus, Portfolio, Portfólio, JavaScript, React, TypeScript, Next.js, Tailwind, SQL, NoSQL, MongoDB, MySQL, Node.js, Express.js, Bootstrap, Jest, Web Development",
+  icon: "/logo.svg",
+  robots: "index, follow",
 };
 
 export default function RootLayout({ children }) {
@@ -30,9 +31,13 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta charset="UTF-8" />
-        <meta name="robots" content="index, follow" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="/logo.svg" />
+        <meta property="authors" content={metadata.authors[0].name} />
+        <link rel="icon" href={metadata.icon} />
+        <meta name="keywords" content={metadata.keywords} />
+        <meta name="robots" content={metadata.robots} />
+        <meta property="og:title" content={metadata.title} />
+        <meta property="og:description" content={metadata.description} />
+        <meta property="og:image" content={metadata.icon} />
         <link
           href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
           rel="preload"
@@ -43,10 +48,11 @@ export default function RootLayout({ children }) {
           rel="preload"
           as="style"
         />
+        <meta name="google-site-verification" content="_1aY2_CMIIoL8pn4_5u0D1krdCCwkTF49ciJcFthFg4" />
       </head>
       <body className={inter.className}>
         <Header />
-        <main className="gap-10 md:gap-60 lg:pt-0 grid grid-flow-row md:auto-rows-[1fr_1fr_1fr_1fr] ">
+        <main className="gap-10 pt-20 md:pt-0 md:gap-60 lg:pt-0 grid grid-flow-row md:auto-rows-[1fr_1fr_1fr_1fr] ">
           {children}
         </main>
         <Footer />
