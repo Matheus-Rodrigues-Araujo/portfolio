@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Head from "next/head";
+// import Head from "next/head";
 
 import "../../styles/header.css";
 import "../../styles/footer.css";
@@ -48,7 +48,11 @@ export default function RootLayout({ children }) {
           rel="preload"
           as="style"
         />
-        <meta name="google-site-verification" content="CE75ZtNUKfK_9RU8YiJMi_X0ZXxe73-Tpw3GliUmEEI" />
+        <meta
+          name="google-site-verification"
+          content="CE75ZtNUKfK_9RU8YiJMi_X0ZXxe73-Tpw3GliUmEEI"
+        />
+        <link rel="sitemap" type="application/xml" href="/sitemap.xml"  />
       </head>
       <body className={inter.className}>
         <Header />
