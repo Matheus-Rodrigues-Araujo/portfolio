@@ -17,11 +17,11 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   authors: [{ name: "MatheusCode" }],
-  title: "Portfolio | MatheusCode - Front-End Developer",
+  title: "Portfolio | MatheusCoder - Front-End Developer",
   description:
     "Welcome to my portfolio! I'm Matheus, a skilled front-end developer proficient in JavaScript, TypeScript, React, Next.js, and more. Explore my projects.",
   keywords:
-    "Matheus, MatheusCode, Code, código, Front-End Developer, Desenvolvedor Front-End, Frontend, Portfolio, Portfólio, JavaScript, React, TypeScript, Next.js, Tailwind, SQL, NoSQL, MongoDB, MySQL, Node.js, Express.js, Bootstrap, Jest, Web Development",
+    "Matheus, MatheusCoder, Coder, código, Front-End Developer, Desenvolvedor Front-End, Frontend, Portfolio, Portfólio, JavaScript, React, TypeScript, Next.js, Tailwind, SQL, NoSQL, MongoDB, MySQL, Node.js, Express.js, Bootstrap, Jest, Web Development",
   icon: "/logo.svg",
   robots: "index, follow",
 };
