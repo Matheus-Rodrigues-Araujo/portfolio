@@ -15,7 +15,7 @@ export default function Header() {
     <header>
       <nav className="fixed navbar bg-light-dark font-orbitron h-[60px] z-10 flex items-center justify-between gap-12 my-auto w-full">
         <Link href="/" className="brand">
-          Matheus R. Araujo.
+        &lt;MatheusCode/&gt;
         </Link>
         <ul className="hidden lg:flex gap-20 text-[4rem]">
           <Link className="item" href="#main">
