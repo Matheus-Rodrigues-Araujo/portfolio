@@ -16,7 +16,7 @@ import Footer from "../../components/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  authors: [{ name: "Matheus Rodrigues Araujo" }],
+  authors: [{ name: "MatheusCode" }],
   title: "Portfolio | Matheus - Front-End Developer",
   description:
     "Welcome to my portfolio! I'm Matheus, a skilled front-end developer proficient in JavaScript, TypeScript, React, Next.js, and more. Explore my projects.",
@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
           rel="preload"
           as="style"
         />
-        <meta name="google-site-verification" content="_1aY2_CMIIoL8pn4_5u0D1krdCCwkTF49ciJcFthFg4" />
+        <meta name="google-site-verification" content="CE75ZtNUKfK_9RU8YiJMi_X0ZXxe73-Tpw3GliUmEEI" />
       </head>
       <body className={inter.className}>
         <Header />
