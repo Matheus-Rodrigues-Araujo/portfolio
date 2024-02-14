@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-// import Head from "next/head";
+import schemaData from "../../schema.json";
 
 import "../../styles/header.css";
 import "../../styles/footer.css";
@@ -52,7 +52,7 @@ export default function RootLayout({ children }) {
           name="google-site-verification"
           content="CE75ZtNUKfK_9RU8YiJMi_X0ZXxe73-Tpw3GliUmEEI"
         />
-        <link rel="sitemap" type="application/xml" href="/sitemap.xml"  />
+        <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
       </head>
       <body className={inter.className}>
         <Header />
@@ -60,6 +60,20 @@ export default function RootLayout({ children }) {
           {children}
         </main>
         <Footer />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "MatheusCoder",
+            "jobTitle": "Front-End Developer",
+            "url": "https://matheuscoder.vercel.app/",
+            "sameAs": [
+              "https://www.linkedin.com/in/matheus-rodrigues-araujo",
+              "https://github.com/Matheus-Rodrigues-Araujo",
+              "https://www.instagram.com/_matheus_rodrigues_araujo_/"
+            ]
+          })
+        }} />
       </body>
     </html>
   );

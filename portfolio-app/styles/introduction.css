@@ -2,25 +2,24 @@
   display: flex;
 }
 
-.contact-buttons button {
-  font-family: "Orbitron", sans-serif;
+.contact-buttons a {
   transition: 0.2s ease-in-out;
 }
 
-.contact-buttons button:first-child {
+.contact-buttons a:first-child {
   background-color: var(--dark-purple);
 }
 
-.contact-buttons button:nth-child(2) {
+.contact-buttons a:nth-child(2) {
   color: var(--purple);
   outline: 1px solid var(--purple);
 }
 
-.contact-buttons button:first-child:hover, .contact-buttons button:nth-child(2):hover {
+.contact-buttons a:first-child:hover, .contact-buttons a:nth-child(2):hover {
   transform: scale(1.1);
 }
 
-.contact-buttons button:nth-child(2):hover {
+.contact-buttons a:nth-child(2):hover {
   color: white;
   background-color: var(--dark-purple);
   outline: none;

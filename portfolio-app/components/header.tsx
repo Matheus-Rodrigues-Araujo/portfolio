@@ -86,10 +86,9 @@ export default function Header() {
                 >
                   <FaGithub className="w-32 h-32 md:w-40 md:h-40 text-purple" />
                 </Link>
-                <Link href="#">
+                <Link href="https://www.instagram.com/_matheus_rodrigues_araujo_/" target="_blank" title="Instagram">
                   <RiInstagramFill
                     className="w-32 h-32 md:w-40 md:h-40 text-purple"
-                    title="Instagram"
                   />
                 </Link>
               </div>

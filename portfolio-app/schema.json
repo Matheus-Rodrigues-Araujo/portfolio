@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "MatheusCoder",
+  "jobTitle": "Front-End Developer",
+  "url": "https://matheuscoder.vercel.app/",
+  "sameAs": [
+    "https://www.linkedin.com/in/matheus-rodrigues-araujo",
+    "https://github.com/Matheus-Rodrigues-Araujo",
+    "https://www.instagram.com/_matheus_rodrigues_araujo_/"
+  ]
+}

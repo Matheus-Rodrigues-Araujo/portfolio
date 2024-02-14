@@ -24,12 +24,12 @@ export default function Introduction() {
         </p>
 
         <div className="contact-buttons flex gap-14 mt-10">
-          <button className="text-[6rem] text-white cursor-pointer border-0 p-8 md:text-[7rem]">
-            Hire me
-          </button>
-          <button className="text-[6rem] text-white cursor-pointer border-0 p-8 md:text-[7rem]">
+          <a  href="mailto:matheusrodriguesaraujo13@gmail.com" className="text-[6rem] text-white cursor-pointer border-0 p-8 md:text-[7rem]">
+            Let's Talk
+          </a>
+          <a className="text-[6rem] text-white cursor-pointer border-0 p-8 md:text-[7rem]">
             Resume
-          </button>
+          </a>
         </div>
 
         <div className="mt-10 social-links flex gap-10">
@@ -47,10 +47,9 @@ export default function Introduction() {
           >
             <FaGithub className="w-32 h-32 md:w-40 md:h-40  text-purple" />
           </Link>
-          <Link href="#">
+          <Link href="https://www.instagram.com/_matheus_rodrigues_araujo_/" target="_blank" title="Instagram" >
             <RiInstagramFill
               className="w-32 h-32 md:w-40 md:h-40  text-purple"
-              title="Instagram"
             />
           </Link>
         </div>
