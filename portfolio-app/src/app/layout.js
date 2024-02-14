@@ -30,10 +30,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <Head>
         <meta charset="UTF-8" />
-        <meta property="authors" content={metadata.authors[0].name} />
-        <link rel="icon" href={metadata.icon} />
-        <meta name="keywords" content={metadata.keywords} />
-        <meta name="robots" content={metadata.robots} />
         <meta property="og:title" content={metadata.title} />
         <meta property="og:description" content={metadata.description} />
         <meta property="og:image" content={metadata.icon} />
