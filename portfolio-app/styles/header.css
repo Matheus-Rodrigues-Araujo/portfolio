@@ -6,6 +6,10 @@
   text-shadow: -2px 3px 0px var(--purple);
 }
 
+.brand span{
+  color: var(--pink);
+}
+
 nav .brand:hover {
   font-size: 8.5rem;
 }
