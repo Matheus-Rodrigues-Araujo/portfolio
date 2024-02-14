@@ -1,7 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import schemaData from "../../schema.json";
-
+import Head from "next/head";
 import "../../styles/header.css";
 import "../../styles/footer.css";
 
@@ -29,7 +28,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
+      <Head>
         <meta charset="UTF-8" />
         <meta property="authors" content={metadata.authors[0].name} />
         <link rel="icon" href={metadata.icon} />
@@ -53,7 +52,7 @@ export default function RootLayout({ children }) {
           content="CE75ZtNUKfK_9RU8YiJMi_X0ZXxe73-Tpw3GliUmEEI"
         />
         <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
-      </head>
+      </Head>
       <body className={inter.className}>
         <Header />
         <main className="gap-10 pt-20 md:pt-0 md:gap-60 lg:pt-0 grid grid-flow-row md:auto-rows-[1fr_1fr_1fr_1fr] ">
