@@ -13,9 +13,9 @@ export default function Header() {
 
   return (
     <header>
-      <nav className="fixed navbar bg-light-dark font-orbitron h-[60px] z-10 flex items-center justify-between gap-12 my-auto w-full">
+      <nav className="fixed navbar bg-dark font-orbitron h-[60px] z-10 flex items-center justify-between gap-12 my-auto w-full">
         <Link href="/" className="brand">
-        &lt;Matheus<span>Coder</span>/&gt;
+        &lt;Matheus<span>WebCoder</span>/&gt;
         </Link>
         <ul className="hidden lg:flex gap-20 text-[4rem]">
           <Link className="item" href="#main">
@@ -38,7 +38,7 @@ export default function Header() {
           <div className="ml-auto w-8/12 h-8 bg-white"></div>
         </div>
         {isSidebarActive && (
-          <div className="sidebar lg:hidden bg-light-dark justify-around fixed top-0 right-0 h-screen z-1 p-20">
+          <div className="sidebar lg:hidden bg-dark justify-around fixed top-0 right-0 h-screen z-1 p-20">
             <div className="flex flex-col justify-between h-full">
               <ul className="grid justify-end gap-16 text-[4rem] text-end">
                 <div

@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 :root {
   --space: 5px;
   font-size: 4px;
@@ -34,7 +36,7 @@ html {
 
 body {
   overflow-x: hidden;
-  background-color: var(--light-dark);
+  background-color: var(--dark);
 }
 
 h2,

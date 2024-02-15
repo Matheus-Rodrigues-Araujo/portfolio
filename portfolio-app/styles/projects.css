@@ -41,8 +41,8 @@
 }
 
 .filter button {
-  outline: 1.5px outset var(--purple);
-  color: var(--purple);
+  outline: 1.5px outset var(--pink);
+  color: var(--pink);
   transition: 0.2s ease-in-out;
   border-radius: 1px 0px 0px 10px;
 }

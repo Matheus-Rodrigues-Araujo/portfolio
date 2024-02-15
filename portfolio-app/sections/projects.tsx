@@ -5,9 +5,9 @@ import { projectsList } from "../constants/projectsList";
 
 export default function Projects() {
   return (
-    <section className="bg-light-dark projects py-20 md:py-0 " id="projects">
+    <section className="bg-dark projects py-20 md:py-0 " id="projects">
       <div className="description-container">
-        <h2 className="font-orbitron text-[10rem] md:text-[12rem] text-purple font-bold">
+        <h2 className="text-[10rem] md:text-[12rem] text-purple font-bold">
           Projects / Work
         </h2>
         <div className="grid gap-40 mt-40">
@@ -41,15 +41,13 @@ export default function Projects() {
                   alt={`Screenshot of the Social media app called ${item.name}`}
                 />
                 <div className="project-detail h-full w-full text-white text-[5rem] text-center">
-                  <h3 className="font-orbitron flex-1 text-white font-bold">
-                    {item.name}
-                  </h3>
-                    <p className="text-white text-[4rem] flex-1 font-400">
-                      {item.description}
-                    </p>
-                    <button className="text-[#2b27ff] flex-1 p-3 text-[4.5rem] font-bold bg-white">
-                      EXPLORE
-                    </button>
+                  <h3 className="flex-1 text-white font-bold">{item.name}</h3>
+                  <p className="text-white text-[4rem] flex-1 font-400">
+                    {item.description}
+                  </p>
+                  <button className="text-[#2b27ff] flex-1 p-3 text-[4.5rem] font-bold bg-white">
+                    EXPLORE
+                  </button>
                 </div>
               </li>
             ))}

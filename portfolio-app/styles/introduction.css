@@ -1,3 +1,9 @@
+
+.introduction h1{
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 200;
+}
+
 .contact-buttons {
   display: flex;
 }
@@ -29,13 +35,10 @@
   text-decoration: none;
   color: none;
   cursor: pointer;
-  background-color: var(--light-dark);
 }
 
 .social-links a:hover {
-  /* background-color: purple; */
   border-radius: 2em;
-  /* box-shadow: 1px -1px 10px var(--dark-purple); */
   transition: 0.2s ease-in-out;
 }
 

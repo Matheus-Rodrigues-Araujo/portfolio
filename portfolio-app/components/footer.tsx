@@ -26,7 +26,7 @@ export default function Footer() {
           </Link>
         </ul>
 
-        <p className="font-raleway text-[4rem] font-normal text-white" >© matheusrodriguesaraujo.dev 2024</p>
+        <p className="text-[4rem] font-normal text-white" >© matheuswebcoder.vercel.app 2024</p>
       </div>
     </footer>
   );
