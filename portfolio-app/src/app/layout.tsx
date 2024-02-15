@@ -108,10 +108,7 @@ export default function RootLayout({
     <html lang="en" className={`${orbitron.variable} ${raleway.variable}`}>
       <Head>
         <meta charSet="UTF-8" />
-        <meta
-          name="google-site-verification"
-          content="CE75ZtNUKfK_9RU8YiJMi_X0ZXxe73-Tpw3GliUmEEI"
-        />
+        <meta name="google-site-verification" content="0JFUc9cYBnpMRju-7iqgXnL-Ipvl_239-Dpq19X2S5o" />
       </Head>
       <body>
         <Header />
