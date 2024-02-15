@@ -1,6 +1,6 @@
-.about-content .phrase {
+.about-content p {
+  font-family: var(--font-raleway);
   color: var(--light-gray);
-  width: 100%;
 }
 
 .job {
@@ -28,15 +28,6 @@
   transition: 0.2s ease-in-out;
 }
 
-/* .technologies-list svg:hover {
-  background-color: var(--light-green);
-  box-shadow: -1px -1px 30px var(--light-green);
-  color: var(--dark);
-  color: white;
-  padding: 2px;
-  border-radius: 2.5em;
-} */
-
 .tech-item {
   cursor: pointer;
   background-color: #1e1a1a;
@@ -53,11 +44,11 @@
 }
 
 .tech-item p{
+  font-family: var(--font-orbitron);
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
   color: white;
   font-weight: 800;
-  font-family: 'Raleway';
 }
 
 .tech-item svg{

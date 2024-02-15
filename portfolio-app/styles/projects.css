@@ -41,6 +41,7 @@
 }
 
 .filter button {
+  font-family: var(--font-orbitron);
   outline: 1.5px outset var(--pink);
   color: var(--pink);
   transition: 0.2s ease-in-out;
@@ -63,6 +64,16 @@
   flex-flow: column;
   justify-contemt: space-around;
   transition: bottom 0.3s ease-in-out;
+}
+
+.project-detail h4{
+  font-size: 8rem;
+  font-family: var(--font-orbitron);
+}
+
+.project-detail p{
+  font-size: 3.8rem;
+  font-family: var(--font-raleway);
 }
 
 .project-item:hover .project-detail {

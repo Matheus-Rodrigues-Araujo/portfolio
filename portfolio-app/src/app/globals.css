@@ -2,26 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 :root {
   --space: 5px;
   font-size: 4px;
-  font-family: "Inter", sans-serif;
-  font-family: "Montserrat", sans-serif;
-  font-family: "Mulish", sans-serif;
-  font-family: "Nunito Sans", sans-serif;
-  font-family: "Orbitron", sans-serif;
-  --light-green: #5E17EB;
+  --light-green: #5e17eb;
   --dark-green: #0a2e36;
   --dark: #0b0a0a;
   --light-dark: #0f0f0f;
   --light-gray: #dcdde8;
   --orange: #e29616;
   --pink: #ff4fb4;
-  --purple: #7631FF;
+  --purple: #7631ff;
   --light-purple: #7935ff;
-  --dark-purple: #5E17EB;
+  --dark-purple: #5e17eb;
 }
 
 * {
@@ -43,6 +36,7 @@ h2,
 h3,
 h4 {
   color: var(--purple);
+  font-family: var(--font-orbitron);
 }
 
 section h3 {
@@ -80,13 +74,6 @@ section {
   display: flex;
   flex-flow: column;
   justify-content: space-evenly;
-}
-
-.phrase {
-  color: var(--light-gray);
-  font-size: 3.5rem;
-  font-weight: lighter;
-  width: 50%;
 }
 
 .icon {
@@ -155,7 +142,7 @@ footer {
   padding-inline: calc(var(--space) * 20);
 }
 
-@media screen and (min-width: 1400px){
+@media screen and (min-width: 1400px) {
   nav,
   section,
   footer {
@@ -163,7 +150,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 2000px){
+@media screen and (min-width: 2000px) {
   nav,
   section,
   footer {
@@ -171,8 +158,7 @@ footer {
   }
 }
 
-
-@media screen and (max-width: 900px){
+@media screen and (max-width: 900px) {
   nav,
   section,
   footer {
@@ -180,7 +166,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 720px){
+@media screen and (max-width: 720px) {
   nav,
   section,
   footer {
@@ -188,7 +174,7 @@ footer {
   }
 }
 
-@media screen and (max-height: 950px){
+@media screen and (max-height: 950px) {
   .scroll-mouse {
     display: none;
   }

@@ -1,4 +1,4 @@
-import { Inter } from "next/font/google";
+import { Orbitron, Raleway } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
 import { Metadata } from "next";
@@ -14,8 +14,17 @@ import "../../styles/contact.css";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
 
-import { PreloadResources } from "./preload-resources";
-const inter = Inter({ subsets: ["latin"] });
+const orbitron = Orbitron({ 
+  subsets: ["latin"],
+  variable: '--font-orbitron',
+  display: 'swap', 
+});
+
+const raleway = Raleway({
+   subsets: ["latin"],
+   variable: '--font-raleway',
+   display: 'swap'
+});
 
 export const metadata: Metadata = {
   authors: [
@@ -96,12 +105,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${orbitron.variable} ${raleway.variable}`}>
       <Head>
         <meta charSet="UTF-8" />
-        <meta name="google-site-verification" content="CE75ZtNUKfK_9RU8YiJMi_X0ZXxe73-Tpw3GliUmEEI"/>
+        <meta
+          name="google-site-verification"
+          content="CE75ZtNUKfK_9RU8YiJMi_X0ZXxe73-Tpw3GliUmEEI"
+        />
       </Head>
-      <body className={inter.className}>
+      <body>
         <Header />
         <main className="gap-10 pt-20 md:pt-0 md:gap-60 lg:pt-0 grid grid-flow-row md:auto-rows-[1fr_1fr_1fr_1fr] ">
           {children}

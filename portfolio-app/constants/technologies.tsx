@@ -62,7 +62,7 @@ export const technologies = [
     },
     {
       name: "SASS",
-      symbol: <SiSass className="text-pink-600" />,
+      symbol: <SiSass className="text-red-500" />,
     },
     {
       name: "MySQL",

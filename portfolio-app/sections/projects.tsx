@@ -1,6 +1,4 @@
 import Image from "next/image";
-import devicesPNG from "../assets/devices.png";
-import Link from "next/link";
 import { projectsList } from "../constants/projectsList";
 
 export default function Projects() {
@@ -41,7 +39,7 @@ export default function Projects() {
                   alt={`Screenshot of the Social media app called ${item.name}`}
                 />
                 <div className="project-detail h-full w-full text-white text-[5rem] text-center">
-                  <h3 className="flex-1 text-white font-bold">{item.name}</h3>
+                  <h4 className="flex-1 text-white font-bold">{item.name}</h4>
                   <p className="text-white text-[4rem] flex-1 font-400">
                     {item.description}
                   </p>
