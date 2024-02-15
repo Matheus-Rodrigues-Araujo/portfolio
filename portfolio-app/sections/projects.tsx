@@ -10,22 +10,22 @@ export default function Projects() {
         </h2>
         <div className="grid gap-40 mt-40">
           <div className="filter grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-20">
-            <button className=" font-light  text-center p-10 text-[4.5rem]">
+            <button className=" font-light  text-center p-10">
               See all
             </button>
-            <button className=" font-light  text-center p-10 text-[4.5rem]">
+            <button className=" font-light  text-center p-10">
               JavaScript
             </button>
-            <button className=" font-light  text-center p-10 text-[4.5rem]">
+            <button className=" font-light  text-center p-10">
               TypeScript
             </button>
-            <button className=" font-light  text-center p-10 text-[4.5rem]">
+            <button className=" font-light  text-center p-10">
               Node.js
             </button>
-            <button className=" font-light  text-center p-10 text-[4.5rem]">
+            <button className=" font-light  text-center p-10">
               React
             </button>
-            <button className=" font-light  text-center p-10 text-[4.5rem]">
+            <button className=" font-light  text-center p-10">
               Next
             </button>
           </div>

@@ -41,6 +41,7 @@
 }
 
 .filter button {
+  font-size: 4rem;
   font-family: var(--font-orbitron);
   outline: 1.5px outset var(--pink);
   color: var(--pink);
@@ -79,4 +80,15 @@
 .project-item:hover .project-detail {
   bottom: 0;
   opacity: 0.95;
+}
+
+@media screen and (max-width:430px){
+  .filter button {
+    font-size: 3rem;
+    font-family: var(--font-orbitron);
+    outline: 1.5px outset var(--pink);
+    color: var(--pink);
+    transition: 0.2s ease-in-out;
+    border-radius: 1px 0px 0px 10px;
+  }
 }
