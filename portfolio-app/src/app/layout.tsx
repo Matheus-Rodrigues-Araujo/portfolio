@@ -1,6 +1,5 @@
 import { Orbitron, Raleway } from "next/font/google";
 import "./globals.css";
-import Head from "next/head";
 import { Metadata } from "next";
 
 import "../../styles/header.css";
@@ -34,7 +33,7 @@ export const metadata: Metadata = {
     },
   ],
   creator: "Matheus Rodrigues Araujo",
-  title: "Portfolio | MatheusWebCoder - Front-End",
+  title: "MatheusWebCoder - Front-End Developer",
   description:
     "Welcome to my portfolio! I'm Matheus, a skilled front-end developer proficient in JavaScript, TypeScript, React, Next.js, and more. Explore my projects.",
   icons: {
@@ -42,20 +41,39 @@ export const metadata: Metadata = {
   },
   keywords: [
     "Matheus",
+    "portfolio de MatheusWebCoder",
+    "portfolio de frontend",
+    "Desenvolvedor",
+    "Programador",
     "MatheusWebCoder",
-    "web",
-    "Coder",
-    "código",
-    "Front-End Developer",
+    "Desenvolvimento Web",
     "Desenvolvedor Front-End",
+    "HTML5",
+    "CSS3",
+    "Responsive Design",
+    "UI/UX",
+    "Version Control",
+    "Git",
+    "GitHub",
+    "Agile Methodologies",
+    "Scrum",
+    "Code Optimization",
+    "SEO Optimization",
+    "Performance Optimization",
+    "Progressive Web Apps",
+    "Single Page Applications",
+    "API Integration",
+    "User Authentication",
+    "RESTful APIs",
     "Frontend",
+    "Frontend Developer",
     "Portfolio",
     "Portfólio",
     "JavaScript",
     "React",
     "TypeScript",
     "Next.js",
-    "Tailwind",
+    "Tailwind CSS",
     "SQL",
     "NoSQL",
     "MongoDB",
@@ -64,7 +82,7 @@ export const metadata: Metadata = {
     "Express.js",
     "Bootstrap",
     "Jest",
-    "Web Development",
+    "Web Development"
   ],
   robots: {
     index: true,
@@ -72,7 +90,7 @@ export const metadata: Metadata = {
     nocache: true,
     googleBot: {
       index: true,
-      follow: false,
+      follow: true,
     },
   },
   metadataBase: new URL("https://matheuswebcoder.vercel.app"),
@@ -108,9 +126,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${orbitron.variable} ${raleway.variable}`}>
-      <Head>
-        <meta charSet="UTF-8" />
-      </Head>
       <body>
         <Header />
         <main className="gap-10 pt-20 md:pt-0 md:gap-60 lg:pt-0 grid grid-flow-row md:auto-rows-[1fr_1fr_1fr_1fr] ">
