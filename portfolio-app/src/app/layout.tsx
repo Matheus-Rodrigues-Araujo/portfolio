@@ -29,7 +29,6 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Matheus Rodrigues Araujo",
-      url: "https://matheuswebcoder.vercel.app",
     },
   ],
   creator: "Matheus Rodrigues Araujo",
