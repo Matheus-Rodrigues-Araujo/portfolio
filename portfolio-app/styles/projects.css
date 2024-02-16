@@ -67,7 +67,7 @@
   transition: bottom 0.3s ease-in-out;
 }
 
-.project-detail h4{
+.project-detail h3{
   font-size: 8rem;
   font-family: var(--font-orbitron);
 }

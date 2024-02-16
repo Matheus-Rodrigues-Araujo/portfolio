@@ -13,17 +13,26 @@ import "../../styles/contact.css";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
 
-const orbitron = Orbitron({ 
+const orbitron = Orbitron({
   subsets: ["latin"],
-  variable: '--font-orbitron',
-  display: 'swap', 
+  variable: "--font-orbitron",
+  display: "swap",
 });
 
 const raleway = Raleway({
-   subsets: ["latin"],
-   variable: '--font-raleway',
-   display: 'swap'
+  subsets: ["latin"],
+  variable: "--font-raleway",
+  display: "swap",
 });
+
+const jsonLd = {
+  "@context": "https://matheuswebcoder.vercel.app",
+  "@type": "Product",
+  name: "MatheusWebCoder - Front-End Developer",
+  image: "/logo.svg",
+  description:
+    "Welcome to my portfolio! I'm Matheus, a skilled front-end developer proficient in JavaScript, TypeScript, React, Next.js, and more. Explore my projects.",
+};
 
 export const metadata: Metadata = {
   authors: [
@@ -81,7 +90,7 @@ export const metadata: Metadata = {
     "Express.js",
     "Bootstrap",
     "Jest",
-    "Web Development"
+    "Web Development",
   ],
   robots: {
     index: true,
@@ -115,7 +124,7 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "0JFUc9cYBnpMRju-7iqgXnL-Ipvl_239-Dpq19X2S5o",
-  }
+  },
 };
 
 export default function RootLayout({
@@ -133,20 +142,7 @@ export default function RootLayout({
         <Footer />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Person",
-              name: "MatheusWebCoder",
-              jobTitle: "Front-End Developer",
-              url: "https://matheuswebcoder.vercel.app/",
-              sameAs: [
-                "https://www.linkedin.com/in/matheus-rodrigues-araujo",
-                "https://github.com/Matheus-Rodrigues-Araujo",
-                "https://www.instagram.com/_matheus_rodrigues_araujo_/",
-              ],
-            }),
-          }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </body>
     </html>

@@ -14,7 +14,7 @@ export default function Contact() {
       <div className="contact-container grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-0">
         <div className="flex justify-between lg:flex-col" >
           <div className="flex flex-col gap-5">
-            <h3 className="text-[7rem] text-purple font-200 ">
+            <h3 className="text-[7rem] text-pink font-200 ">
               Let's grap a 
               coffee!
             </h3>
