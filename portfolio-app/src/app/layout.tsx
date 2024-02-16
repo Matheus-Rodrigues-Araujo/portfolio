@@ -73,7 +73,6 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: false,
-      noimageindex: true,
     },
   },
   metadataBase: new URL("https://matheuswebcoder.vercel.app"),
