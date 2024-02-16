@@ -102,6 +102,9 @@ export const metadata: Metadata = {
     },
   },
   metadataBase: new URL("https://matheuswebcoder.vercel.app"),
+  alternates: {
+    canonical: '/',
+  },
   category: "technology",
   openGraph: {
     type: "website",
