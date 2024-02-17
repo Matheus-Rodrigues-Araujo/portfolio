@@ -35,7 +35,6 @@ const jsonLd = {
 };
 
 export const metadata: Metadata = {
-  applicationName: "MatheusWebCoder",
   authors: [
     {
       name: "Matheus Rodrigues Araujo",
@@ -93,14 +92,14 @@ export const metadata: Metadata = {
     "Jest",
     "Web Development",
   ],
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-    },
-  },
+  // robots: {
+  //   index: true,
+  //   follow: true,
+  //   googleBot: {
+  //     index: true,
+  //     follow: true,
+  //   },
+  // },
   metadataBase: new URL("https://matheuswebcoder.vercel.app"),
   alternates: {
     canonical: '/',
