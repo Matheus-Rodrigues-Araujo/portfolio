@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+Disallow:
+
+Sitemap: https://matheuswebcoder.vercel.app/sitemap.xml
