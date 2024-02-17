@@ -56,12 +56,12 @@ export default function ContactForm() {
         </div>
 
         <div className="submit-btn-container mx-auto flex justify-between gap-5 md:gap-0">
-          <p className="text-[4.5rem] md:text-[5rem] text-purple">
+          <p className="text-[4.5rem] md:text-[5rem] text-white">
             Hit me up so we can talk!
           </p>
           <button
             type="submit"
-            className="submit-btn flex p-14 md:p-20 bg-pink justify-center rounded-md text-[3.2rem] md:text-[5rem]
+            className="submit-btn flex p-14 md:p-20 bg-purple justify-center rounded-md text-[3.2rem] md:text-[5rem]
                        font-400 uppercase leading-6 text-white shadow-sm"
           >
             Hit me up

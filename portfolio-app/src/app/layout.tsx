@@ -119,8 +119,11 @@ export const metadata: Metadata = {
       height: 600,
     },
   },
+  // verification: {
+  //   google: "0JFUc9cYBnpMRju-7iqgXnL-Ipvl_239-Dpq19X2S5o",
+  // },
   verification: {
-    google: "0JFUc9cYBnpMRju-7iqgXnL-Ipvl_239-Dpq19X2S5o",
+    google: "googledfb436e05134f43a.html",
   },
 };
 
