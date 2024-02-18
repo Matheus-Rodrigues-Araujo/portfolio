@@ -27,7 +27,7 @@ const raleway = Raleway({
 
 const jsonLd = {
   "@context": "https://matheuswebcoder.vercel.app",
-  "@type": "Product",
+  "@type": "Person",
   name: "MatheusWebCoder - Front-End Developer",
   image: "/logo.svg",
   description:
@@ -35,13 +35,26 @@ const jsonLd = {
 };
 
 export const metadata: Metadata = {
+  title: {
+    default: "Portfolio | MatheusWebCoder - Front-End Developer",
+    template: "Portfolio |MatheusWebCoder - Front-End Developer",
+  },
+  generator: "Next.js",
+  applicationName: "MatheusWebCoder",
+  referrer: "origin-when-cross-origin",
   authors: [
     {
       name: "Matheus Rodrigues Araujo",
+      url: "https://matheuswebcoder.vercel.app"
     },
   ],
   creator: "Matheus Rodrigues Araujo",
-  title: "MatheusWebCoder - Front-End Developer",
+  publisher: "Matheus Rodrigues Araujo",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   description:
     "Welcome to my portfolio! I'm Matheus, a skilled front-end developer proficient in JavaScript, TypeScript, React, Next.js, and more. Explore my projects.",
   icons: {
@@ -95,19 +108,23 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    nocache: false,
     googleBot: {
       index: true,
       follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
     },
   },
   metadataBase: new URL("https://matheuswebcoder.vercel.app"),
   alternates: {
-    canonical: '/',
+    canonical: "/",
   },
   category: "technology",
   openGraph: {
     type: "website",
-    title: "MatheusWebCoder - Front-End Developer",
+    title: "Portfolio | MatheusWebCoder - Front-End Developer",
     description:
       "Welcome to my portfolio! I'm Matheus, a skilled front-end developer proficient in JavaScript, TypeScript, React, Next.js, and more. Explore my projects.",
     url: "https://matheuswebcoder.vercel.app",
@@ -118,9 +135,6 @@ export const metadata: Metadata = {
       height: 600,
     },
   },
-  // verification: {
-  //   google: "0JFUc9cYBnpMRju-7iqgXnL-Ipvl_239-Dpq19X2S5o",
-  // },
   verification: {
     google: "_1aY2_CMIIoL8pn4_5u0D1krdCCwkTF49ciJcFthFg4",
   },
@@ -135,9 +149,7 @@ export default function RootLayout({
     <html lang="en" className={`${orbitron.variable} ${raleway.variable}`}>
       <body>
         <Header />
-        <main className="gap-10 pt-20 md:pt-0 md:gap-60 lg:pt-0 grid grid-flow-row md:auto-rows-[1fr_1fr_1fr_1fr] ">
           {children}
-        </main>
         <Footer />
         <script
           type="application/ld+json"

@@ -1,5 +1,6 @@
 interface ProjectsInterface {
   name: string;
+  synopsis: string;
   description: string;
   stack: string[];
   image: StaticImageData | "";
@@ -7,16 +8,18 @@ interface ProjectsInterface {
   repository: string;
 }
 
-import { StaticImageData } from 'next/image';
-import feedImg from '../images/momentz/feed.jpg';
-import gymImg from '../images/gym-landing-page/image.png';
-import ecommerceImg from '../images/ecommerce/ecommerce.jpg';
-import calendarImg from '../images/calendar-system/calendar-img.png';
+import { StaticImageData } from "next/image";
+import feedImg from "../assets/images/projects/momentz/feed.jpg";
+import gymImg from "../assets/images/projects/gym-landing-page/image.png";
+import ecommerceImg from "../assets/images/projects/ecommerce/ecommerce.jpg";
+import calendarImg from "../assets/images/projects/calendar-system/calendar-img.png";
 
 export const projectsList: ProjectsInterface[] = [
   {
     name: "Momentz",
-    description: 'Social media platform created for social interaction and sharing unforgettable moments.',
+    synopsis:
+      "Social media platform created for social interaction and sharing unforgettable moments.",
+    description: "",
     stack: [
       "HTML",
       "CSS",
@@ -34,7 +37,9 @@ export const projectsList: ProjectsInterface[] = [
   },
   {
     name: "Ecommerce App",
-    description: 'Application that simulates an intuitive and realistic shopping journey.',
+    synopsis:
+      "Application that simulates an intuitive and realistic shopping journey.",
+    description: "",
     stack: [
       "HTML",
       "CSS",
@@ -49,27 +54,18 @@ export const projectsList: ProjectsInterface[] = [
   },
   {
     name: "Calendar System",
-    description: 'App with the aim of assisting and managing user appointments.',
-    stack: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "SQL",
-      "Next",
-      "Tailwind",
-    ],
+    synopsis: "App with the aim of assisting and managing user appointments.",
+    description: "",
+    stack: ["HTML", "CSS", "JavaScript", "SQL", "Next", "Tailwind"],
     image: calendarImg,
     link: "",
     repository: "",
   },
   {
     name: "Gym landing page",
-    description: 'Customized landing page for a gym platform.',
-    stack: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-    ],
+    synopsis: "Customized landing page for a gym platform.",
+    description: "",
+    stack: ["HTML", "CSS", "JavaScript"],
     image: gymImg,
     link: "",
     repository: "",

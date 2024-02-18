@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import coffeeSVG from "../assets/coffee.svg";
-import dancingCoffee from "../assets/dancing-coffee.gif";
+import dancingCoffee from "../assets/images/dancing-coffee.gif";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import ContactForm from "../forms/contactForm";
@@ -9,14 +8,13 @@ import ContactForm from "../forms/contactForm";
 export default function Contact() {
   return (
     <section className="contact bg-dark py-20 md:py-0" id="contact">
-      <h2 className="text-[10rem] md:text-[12rem] text-purple font-bold">Contact</h2>
+      <h2 className="text-[10rem] md:text-[12rem] font-bold">Contact</h2>
 
       <div className="contact-container grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-0">
-        <div className="flex justify-between lg:flex-col" >
+        <div className="flex justify-between lg:flex-col">
           <div className="flex flex-col gap-5">
             <h3 className="text-[7rem] text-purple font-200 ">
-              Let's grap a 
-              coffee!
+              Let's grap a coffee!
             </h3>
             <p className="text-[4.5rem] md:text-[5rem] text-light-gray w-50">
               The time has come to transform your ideas into concrete actions!

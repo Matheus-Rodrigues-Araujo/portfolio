@@ -15,27 +15,30 @@ export default function Header() {
     <header>
       <nav className="fixed navbar bg-dark font-orbitron h-[60px] z-10 flex items-center justify-between gap-12 my-auto w-full">
         <Link href="/" className="brand">
-        &lt;Matheus<span>WebCoder</span>/&gt;
+          &lt;Matheus<span>WebCoder</span>/&gt;
         </Link>
         <ul className="hidden lg:flex gap-20 text-[4rem]">
-          <Link className="item" href="#main">
-            Home
-          </Link>
-          <Link className="item" href="#about">
-            About
-          </Link>
-          <Link className="item" href="#projects">
-            Projects
-          </Link>
-          <Link className="item" href="#contact">
-            Contact
-          </Link>
+          <li className="item">
+            <Link href="#main">Home</Link>
+          </li>
+          <li className="item">
+            <Link href="#about">About</Link>
+          </li>
+          <li className="item">
+            <Link href="#projects">Projects</Link>
+          </li>
+          <li className="item">
+            <Link href="#contact">Contact</Link>
+          </li>
         </ul>
 
-        <div onClick={handleSidebarVisibility} className="toggle cursor-pointer grid gap-3 w-40 lg:hidden">
-          <div className="ml-auto w-full h-8 bg-white"></div>
-          <div className="ml-auto w-10/12 h-8 bg-white"></div>
-          <div className="ml-auto w-8/12 h-8 bg-white"></div>
+        <div
+          onClick={handleSidebarVisibility}
+          className="toggle cursor-pointer grid gap-3 w-40 lg:hidden"
+        >
+          <div className="ml-auto w-full bg-white"></div>
+          <div className="ml-auto w-10/12 bg-white"></div>
+          <div className="ml-auto w-8/12 bg-white"></div>
         </div>
         {isSidebarActive && (
           <div className="sidebar lg:hidden bg-dark justify-around fixed top-0 right-0 h-screen z-1 p-20">
@@ -48,27 +51,18 @@ export default function Header() {
                   <span>X</span>
                 </div>
 
-                <Link className="item text-[7rem]" href="#main">
-                  Home
-                </Link>
-                <Link
-                  className="item text-[7rem]"
-                  href="#about"
-                >
-                  About
-                </Link>
-                <Link
-                  className="item text-[7rem]"
-                  href="#projects"
-                >
-                  Projects
-                </Link>
-                <Link
-                  className="item text-[7rem]"
-                  href="#contact"
-                >
-                  Contact
-                </Link>
+                <li className="item">
+                  <Link href="#main">Home</Link>
+                </li>
+                <li className="item">
+                  <Link href="#about">About</Link>
+                </li>
+                <li className="item">
+                  <Link href="#projects">Projects</Link>
+                </li>
+                <li className="item">
+                  <Link href="#contact">Contact</Link>
+                </li>
               </ul>
 
               <div className="mt-10 sidebar-social-links flex justify-end mb-60 md:mb-0 gap-10">
@@ -86,10 +80,12 @@ export default function Header() {
                 >
                   <FaGithub className="w-32 h-32 md:w-40 md:h-40 text-purple" />
                 </Link>
-                <Link href="https://www.instagram.com/_matheus_rodrigues_araujo_/" target="_blank" title="Instagram">
-                  <RiInstagramFill
-                    className="w-32 h-32 md:w-40 md:h-40 text-purple"
-                  />
+                <Link
+                  href="https://www.instagram.com/_matheus_rodrigues_araujo_/"
+                  target="_blank"
+                  title="Instagram"
+                >
+                  <RiInstagramFill className="w-32 h-32 md:w-40 md:h-40 text-purple" />
                 </Link>
               </div>
             </div>

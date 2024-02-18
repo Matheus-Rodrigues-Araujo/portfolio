@@ -40,13 +40,23 @@
   box-shadow: 1px -1px 20px var(--light-green);
 }
 
+.filter{
+  display: flex;
+  flex-flow: row wrap;
+  gap: 15px;
+}
+
 .filter button {
+  flex-grow:1;
   font-size: 4rem;
+  padding: 5px;
   font-family: var(--font-orbitron);
   outline: 1.5px outset var(--pink);
   color: var(--pink);
   transition: 0.2s ease-in-out;
   border-radius: 1px 0px 0px 10px;
+  /* width:120px; */
+  /* height:40px; */
 }
 
 .filter button:hover {
@@ -80,15 +90,4 @@
 .project-item:hover .project-detail {
   bottom: 0;
   opacity: 0.95;
-}
-
-@media screen and (max-width:430px){
-  .filter button {
-    font-size: 3rem;
-    font-family: var(--font-orbitron);
-    outline: 1.5px outset var(--pink);
-    color: var(--pink);
-    transition: 0.2s ease-in-out;
-    border-radius: 1px 0px 0px 10px;
-  }
 }

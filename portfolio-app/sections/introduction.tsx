@@ -1,15 +1,17 @@
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaFileDownload } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
-import MouseAnimation from "../components/scrollMouse";
 import Link from "next/link";
 import Image from "next/image";
-import profileImg from "../assets/purple-thumb.png";
+import profileImg from "../assets/images/purple-thumb.png";
 
 export default function Introduction() {
   return (
-    <section id="main" className="md:mt-[60px] section w-full bg-dark justify-center items-start introduction flex flex-col-reverse xl:flex-row lg:items-center py-40 lg:py-0 ">
+    <section
+      id="main"
+      className="md:mt-[60px] section w-full bg-dark justify-center items-start introduction flex flex-col-reverse xl:flex-row lg:items-center py-40 lg:py-0 "
+    >
       <div className="flex flex-col">
-        <h1 className="text-purple font-bold max-[400px]:text-[5rem] text-[6rem] md:text-[10rem] lg:text-[12rem]">
+        <h1 className="text-pink font-bold max-[400px]:text-[5rem] text-[6rem] md:text-[10rem] lg:text-[12rem]">
           Matheus Rodrigues Araujo <br />
           <span className="position text-white font-600" id="position">
             Front-End Developer
@@ -23,14 +25,19 @@ export default function Introduction() {
           needs.
         </p>
 
-        <div className="contact-buttons flex gap-14 mt-10">
+        <div className="contact-buttons flex gap-20 mt-10">
           <a
             href="mailto:matheusrodriguesaraujo13@gmail.com"
             className="text-[6rem] text-white cursor-pointer border-0 p-8 md:text-[7rem]"
           >
             Let's Talk
           </a>
-          <a className="text-[6rem] text-white cursor-pointer border-0 p-8 md:text-[7rem]">
+          <a
+            href="/resumes/en-us/Resume _ Matheus Rodrigues Araujo - Frontend Developer.pdf"
+            download="Resume _ Matheus Rodrigues Araujo - Frontend Developer.pdf"
+            className="flex items-center text-[6rem] cursor-pointer border-0 p-8 md:text-[7rem]"
+          >
+            <FaFileDownload />
             Resume
           </a>
         </div>
@@ -58,8 +65,6 @@ export default function Introduction() {
             <RiInstagramFill className="w-32 h-32 md:w-40 md:h-40  text-purple" />
           </Link>
         </div>
-
-        <MouseAnimation />
       </div>
 
       <figure className="w-full flex justify-center xl:justify-end">
