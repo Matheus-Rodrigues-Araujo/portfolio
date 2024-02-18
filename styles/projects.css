@@ -55,8 +55,6 @@
   color: var(--pink);
   transition: 0.2s ease-in-out;
   border-radius: 1px 0px 0px 10px;
-  /* width:120px; */
-  /* height:40px; */
 }
 
 .filter button:hover {
