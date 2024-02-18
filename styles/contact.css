@@ -1,0 +1,62 @@
+.contact p{
+  font-family: var(--font-raleway);
+}
+
+.contact-links a {
+  font-size: 5rem;
+  color: var(--purple);
+  margin-top: auto;
+  transition: 0.2s ease-in;
+}
+
+.contact-links a svg {
+  transition: 0.2s ease-in-out;
+}
+
+.contact-links a:hover svg {
+  color: white;
+  transform: scale(1.2);
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+  text-shadow: -2px 0px 35px rgb(30, 243, 76);
+}
+
+.contact-form label{
+  font-family: var(--font-orbitron);
+  font-size: 4.5rem;
+}
+
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid var(--purple);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  box-shadow: -1px 0px 25px var(--purple);
+}
+
+.contact-form input:-webkit-autofill,
+.contact-form textarea:-webkit-autofill{
+  -webkit-box-shadow: 0 0 0 100px var(--light-dark) inset !important;
+  -webkit-text-fill-color: white !important;
+  outline: 2px solid var(--purple);
+
+}
+
+.contact-form p{
+  font-family: var(--font-raleway);
+  font-weight: 500;
+}
+
+.submit-btn {
+  font-family: var(--font-orbitron);
+  transition: 0.2s ease-in-out;
+}
+
+.submit-btn:hover {
+  transform: scale(1.1);
+}

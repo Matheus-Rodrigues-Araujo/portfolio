@@ -1,0 +1,18 @@
+footer .icon {
+  color: white;
+}
+
+footer .item {
+  color: white;
+  font-weight: 600;
+}
+
+.footer-container ul .item:hover {
+  text-decoration: underline;
+}
+
+.footer-container .icon:hover {
+  color: var(--purple);
+  background-color: white;
+  border-radius: 5em;
+}
