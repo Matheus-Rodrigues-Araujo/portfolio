@@ -19,29 +19,28 @@ export default function ProjectInformationCard({
   image,
   links,
 }: InterfaceProjectCard) {
-  console.log(name)
   return (
-    <div className="project-information-card flex bg-dark">
-      <div className="grow">
+    <div className="bg-[#000000cc] fixed z-10 top-0 left-0 flex items-center justify-center h-screen min-w-screen">
+      <div className="w-8/12 h-auto relative">
         <Image
-          className=""
+          className="object-cover w-[80%] h-auto"
           src={image}
           alt={`Image of the ${name} project.`}
         />
       </div>
-      <div className="w-1/2">
-        <h4 className="text-[5rem]" >{name}</h4>
-        <p  className="text-[4rem] text-white">{description}</p>
+      <div className="w-8/12 p-4">
+        <h4>{name}</h4>
+        <p>{description}</p>
         <ul className="stack">
           {stack.map((item) => (
-            <li className="text-[4rem] text-white" key={item}>{item}</li>
+            <li key={item}>{item}</li>
           ))}
         </ul>
         <div>
-          <Link href={links.website} className="text-[4rem] text-white" title="Website">
+          <Link href={links.website} title="Website">
             Website
           </Link>
-          <Link href={links.repository} className="text-[4rem] text-white" title="Github">
+          <Link href={links.repository} title="Github">
             Github
           </Link>
         </div>

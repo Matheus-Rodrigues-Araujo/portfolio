@@ -1,11 +1,12 @@
-'use client';
+"use client";
 import { ProjectInterface } from "../constants/projectsData";
 import { useState } from "react";
 import Image from "next/image";
 import ProjectInformationCard from "./projectInformationCard";
 
 export default function ProjectCard(project: ProjectInterface) {
-  const [projectInformationVisibility, setProjectInformationVisibility] = useState(false);
+  const [projectInformationVisibility, setProjectInformationVisibility] =
+    useState(false);
 
   return (
     <li
@@ -13,9 +14,9 @@ export default function ProjectCard(project: ProjectInterface) {
       onClick={() =>
         setProjectInformationVisibility(!projectInformationVisibility)
       }
-      className="project-project h-[300px]  relative cursor-pointer"
+      className="project-project h-[300px] relative cursor-pointer"
     >
-        <div>
+      <div>
         <Image
           src={project.image}
           className="w-full object-fit h-full object-cover"
@@ -34,7 +35,6 @@ export default function ProjectCard(project: ProjectInterface) {
         </div>
       </div>
 
-    
       {projectInformationVisibility && (
         <ProjectInformationCard
           name={project.name}
