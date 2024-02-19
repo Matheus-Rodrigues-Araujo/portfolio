@@ -1,13 +1,12 @@
-import Image from "next/image";
-import { projectsList } from "../constants/projectsList";
+"use server";
+import { projectsData } from "../constants/projectsData";
+import ProjectCard from "../components/projectCard";
 
-export default function Projects() {
+export default async function Projects() {
   return (
-    <section className="bg-dark projects py-20 md:py-0 " id="projects">
+    <section className="relative bg-dark projects py-20 md:py-0 " id="projects">
       <div className="description-container">
-        <h2 className="text-[10rem] md:text-[12rem] font-bold">
-          Projects / Work
-        </h2>
+        <h2 className="text-[10rem] md:text-[12rem] font-bold">Projects</h2>
         <div className="grid gap-40 mt-40">
           <div className="filter">
             <button className=" font-light">See all</button>
@@ -19,29 +18,18 @@ export default function Projects() {
           </div>
 
           <ul className="projects-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-40">
-            {projectsList.map((item) => (
-              <li
-                key={item.name}
-                className="project-item h-[300px] relative cursor-pointer"
-              >
-                <Image
-                  src={item.image}
-                  className="w-full object-git h-full object-cover"
-                  alt={`Screenshot of the Social media app called ${item.name}`}
+            {
+              projectsData.map(project => (
+                <ProjectCard key={project.name}
+                name={project.name} 
+                synopsis={project.synopsis}
+                description={project.description}
+                stack={project.stack}
+                image={project.image}
+                links={project.links}
                 />
-                <div className="project-detail h-full w-full text-white text-[5rem">
-                  <h3 className="flex-1 text-white text-center font-bold">
-                    {item.name}
-                  </h3>
-                  <p className="text-white text-[4rem] text-center flex-1 font-400">
-                    {item.synopsis}
-                  </p>
-                  <button className="text-white bg-pink flex-1 p-3 text-[4.5rem] font-bold">
-                    EXPLORE
-                  </button>
-                </div>
-              </li>
-            ))}
+              ))
+            }
           </ul>
         </div>
       </div>
