@@ -7,12 +7,13 @@ import ProjectInformationCard from "./projectInformationCard";
 export default function ProjectCard(project: ProjectInterface) {
   const [projectInformationVisibility, setProjectInformationVisibility] = useState(false);
 
+  const handleProjectVisibility = () => {
+    setProjectInformationVisibility(!projectInformationVisibility)
+  }
+
   return (
     <li
       key={project.name}
-      // onClick={() =>
-      //   setProjectInformationVisibility(!projectInformationVisibility)
-      // }
       className="project-item h-[300px] relative cursor-pointer"
     >
         <Image
@@ -21,9 +22,7 @@ export default function ProjectCard(project: ProjectInterface) {
           alt={`Screenshot of the Social media app called ${project.name}`}
         />
         <div 
-        onClick={() =>
-          setProjectInformationVisibility(!projectInformationVisibility)
-        }
+        onClick={handleProjectVisibility}
         className="project-detail h-full w-full text-white text-[5rem]">
           <h3 className="flex-1 text-white text-center font-bold">
             {project.name}
@@ -44,6 +43,7 @@ export default function ProjectCard(project: ProjectInterface) {
           stack={project.stack}
           image={project.image}
           links={project.links}
+          handleProjectVisibility={handleProjectVisibility}
         />
       )}
     </li>

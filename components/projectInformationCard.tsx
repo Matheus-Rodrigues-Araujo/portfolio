@@ -3,15 +3,20 @@ import Link from "next/link";
 import { ProjectInterface } from "../constants/projectsData";
 import { technologies } from "../constants/technologies";
 
+interface ProjectInformationCardProps extends ProjectInterface {
+  handleProjectVisibility: () => void;
+}
+
 export default function ProjectInformationCard({
   name,
   description,
   stack,
   image,
   links,
-}: ProjectInterface) {
+  handleProjectVisibility,
+}: ProjectInformationCardProps) {
   return (
-    <div className="project-information-card" >
+    <div className="project-information-card">
       <div className="flex gap-20">
         <div className="w-6/12 h-50 relative">
           <Image
@@ -26,21 +31,28 @@ export default function ProjectInformationCard({
           <h5>Technologies</h5>
           <ul className="stack">
             {stack.map((item) => (
-              <li key={item}>
-                {item}
-              </li>
+              <li key={item}>{item}</li>
             ))}
           </ul>
         </div>
 
-        <button className="text-white text-[5rem] font-bold absolute top-0 right-10 hover:text-pink">
+        <button
+          onClick={handleProjectVisibility}
+          className="text-white text-[5rem] font-bold absolute top-0 right-10 hover:text-pink"
+        >
           X
         </button>
       </div>
-      <div className="project-links" >
+      <div className="project-links">
         {links.map((link) => (
-          <Link className="flex gap-5 bg-purple rounded-md p-5 transition 200 ease-in-out hover:bg-pink" href={link.url} title={link.name} target="_blank">
-             {link.icon}{link.name}
+          <Link
+            className="flex gap-5 bg-purple rounded-md p-5 transition 200 ease-in-out hover:bg-pink"
+            href={link.url}
+            title={link.name}
+            target="_blank"
+          >
+            {link.icon}
+            {link.name}
           </Link>
         ))}
       </div>
