@@ -71,7 +71,7 @@
   left: 0;
   background-color: var(--dark-purple);
   flex-flow: column;
-  justify-contemt: space-around;
+  /* justify-contemt: space-around; */
   transition: bottom 0.3s ease-in-out;
 }
 
@@ -91,10 +91,14 @@
 }
 
 .project-information-card{
+  display: flex;
+  justify-content: center;
   position: fixed;
   top: 50%;
   left: 50%;
   z-index: 1000;
   transform: translate(-50%, -50%);
   width: 75%;
+  background-color: var(--dark);
+  max-width:80%;
 }

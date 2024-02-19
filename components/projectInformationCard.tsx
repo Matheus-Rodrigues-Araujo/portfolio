@@ -20,7 +20,7 @@ export default function ProjectInformationCard({
   links,
 }: InterfaceProjectCard) {
   return (
-    <div className="bg-[#000000cc] fixed z-10 top-0 left-0 flex items-center justify-center h-screen min-w-screen">
+    <div className="project-information-card">
       <div className="w-8/12 h-auto relative">
         <Image
           className="object-cover w-[80%] h-auto"
@@ -45,6 +45,10 @@ export default function ProjectInformationCard({
           </Link>
         </div>
       </div>
+
+      <button className="text-white text-[5rem] font-bold absolute top-0 right-10" >
+        X
+      </button>
     </div>
   );
 }
