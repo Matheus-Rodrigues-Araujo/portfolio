@@ -35,6 +35,7 @@ export default function ProjectCard(project: ProjectInterface) {
       {projectInformationVisibility && (
         <ProjectInformationCard
           name={project.name}
+          synopsis={project.synopsis}
           description={project.description}
           stack={project.stack}
           image={project.image}

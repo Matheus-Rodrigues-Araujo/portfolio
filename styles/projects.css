@@ -92,13 +92,60 @@
 
 .project-information-card{
   display: flex;
+  flex-flow: column;
   justify-content: center;
   position: fixed;
   top: 50%;
   left: 50%;
   z-index: 1000;
   transform: translate(-50%, -50%);
-  width: 75%;
-  background-color: var(--dark);
+  width: 80%;
+  background-color: var(--light-dark);
   max-width:80%;
+  padding:20px;
+  gap: 15px;
+}
+
+.project-information-card h4{
+  color: var(--pink);
+  font-weight: bold;
+  font-size: 5rem;
+}
+
+.project-information-card p, .project-information-card a{
+  color: var(--light-gray);
+}
+
+.project-information-card p{
+  font-size: 4rem;
+}
+
+.project-information-card a{
+  font-size: 4.2rem;
+}
+.project-information-card .project-links{
+  display: flex;
+  gap: 10px;
+}
+
+
+.project-information-card .project-links svg{
+  color: white;
+  height: 25px;
+  width:25px;
+}
+
+.project-information-card .stack{
+  /* display: grid; */
+  /* grid-template-columns: repeat(2, auto); */
+  display: flex;
+  flex-flow: column wrap;
+  gap: 5px;
+}
+
+.project-information-card .stack p{
+  font-size:3.2rem;
+  color: var(--light-gray);
+  list-style: inside;
+  font-weight:700;
 }

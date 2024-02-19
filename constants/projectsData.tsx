@@ -1,13 +1,16 @@
+export type LinksType = {
+  name: string;
+  url: string;
+  icon: React.ReactElement;
+};
+
 export interface ProjectInterface {
   name: string;
   synopsis: string;
   description: string;
   stack: string[];
   image: StaticImageData | "";
-  links: {
-    website: string;
-    repository: string;
-  };
+  links: LinksType[];
 }
 
 import { StaticImageData } from "next/image";
@@ -15,6 +18,8 @@ import feedImg from "../assets/images/projects/momentz/feed.jpg";
 import gymImg from "../assets/images/projects/gym-landing-page/image.png";
 import ecommerceImg from "../assets/images/projects/ecommerce/ecommerce.jpg";
 import calendarImg from "../assets/images/projects/calendar-system/calendar-img.png";
+import { FaGithub, FaGlobe } from "react-icons/fa";
+import { ReactComponentElement } from "react";
 
 export const projectsData: ProjectInterface[] = [
   {
@@ -37,10 +42,18 @@ export const projectsData: ProjectInterface[] = [
       "S3",
     ],
     image: feedImg,
-    links: {
-      website: "https://momentz-ten.vercel.app/",
-      repository: "https://github.com/Matheus-Rodrigues-Araujo/Momentz",
-    },
+    links: [
+      {
+        name: "Website",
+        url: "https://momentz-ten.vercel.app/",
+        icon: <FaGlobe />,
+      },
+      {
+        name: "Github",
+        url: "https://github.com/Matheus-Rodrigues-Araujo/Momentz",
+        icon: <FaGithub />,
+      },
+    ],
   },
   {
     name: "Ecommerce App",
@@ -53,22 +66,38 @@ export const projectsData: ProjectInterface[] = [
                    and enjoyable shopping experience from start to finish.`,
     stack: ["JavaScript", "TypeScript", "Next", "React", "Styled Components"],
     image: ecommerceImg,
-    links: {
-      website: "https://mks-ecommerce-red.vercel.app/",
-      repository: "https://github.com/Matheus-Rodrigues-Araujo/ecommerce-app",
-    },
+    links: [
+      {
+        name: "Website",
+        url: "https://mks-ecommerce-red.vercel.app/",
+        icon: <FaGlobe />,
+      },
+      {
+        name: "Github",
+        url: "https://github.com/Matheus-Rodrigues-Araujo/ecommerce-app",
+        icon: <FaGithub />,
+      },
+    ],
   },
   {
     name: "Calendar System",
     synopsis: "App with the aim of assisting and managing user appointments.",
-    description: "",
+    description: `Revolutionize your daily scheduling with our cutting-edge appointment management app! Engineered to simplify the complexities of scheduling, our intuitive interface and advanced features make organizing appointments effortless. Take control of your day with ease - seamlessly schedule, track, and manage appointments like never before. Don't let scheduling chaos dictate your productivity.
+    `,
     stack: ["HTML", "CSS", "JavaScript", "SQL", "Node.js", "Express"],
     image: calendarImg,
-    links: {
-      website: "",
-      repository:
-        "https://github.com/Matheus-Rodrigues-Araujo/Sistema-web-calendario",
-    },
+    links: [
+      {
+        name: "Website",
+        url: "https://github.com/Matheus-Rodrigues-Araujo/Sistema-web-calendario",
+        icon: <FaGlobe />,
+      },
+      {
+        name: "Github",
+        url: "https://github.com/Matheus-Rodrigues-Araujo/ecommerce-app",
+        icon: <FaGithub />,
+      },
+    ],
   },
   {
     name: "Gym landing page",
@@ -76,9 +105,17 @@ export const projectsData: ProjectInterface[] = [
     description: "",
     stack: ["HTML", "CSS", "JavaScript"],
     image: gymImg,
-    links: {
-      website: "https://academiabruta.vercel.app/",
-      repository: "https://github.com/Matheus-Rodrigues-Araujo/Training-Gym",
-    },
+    links: [
+      {
+        name: "Website",
+        url: "https://academiabruta.vercel.app/",
+        icon: <FaGlobe />,
+      },
+      {
+        name: "Github",
+        url: "https://github.com/Matheus-Rodrigues-Araujo/Training-Gym",
+        icon: <FaGithub />,
+      },
+    ],
   },
 ];
