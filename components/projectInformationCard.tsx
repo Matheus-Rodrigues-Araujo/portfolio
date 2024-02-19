@@ -23,16 +23,17 @@ export default function ProjectInformationCard({
         <div className="w-6/12 p-4 flex flex-col gap-10">
           <h4>{name}</h4>
           <p>{description}</p>
-          <div className="stack">
+          <h5>Technologies</h5>
+          <ul className="stack">
             {stack.map((item) => (
-              <p key={item}>
-                - {item}
-              </p>
+              <li key={item}>
+                {item}
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
 
-        <button className="text-white text-[5rem] font-bold absolute top-0 right-10">
+        <button className="text-white text-[5rem] font-bold absolute top-0 right-10 hover:text-pink">
           X
         </button>
       </div>

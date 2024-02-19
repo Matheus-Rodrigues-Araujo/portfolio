@@ -19,7 +19,6 @@ import gymImg from "../assets/images/projects/gym-landing-page/image.png";
 import ecommerceImg from "../assets/images/projects/ecommerce/ecommerce.jpg";
 import calendarImg from "../assets/images/projects/calendar-system/calendar-img.png";
 import { FaGithub, FaGlobe } from "react-icons/fa";
-import { ReactComponentElement } from "react";
 
 export const projectsData: ProjectInterface[] = [
   {
@@ -62,8 +61,7 @@ export const projectsData: ProjectInterface[] = [
     description: `E-commerce application powered by Next.js, React, and TypeScript,
                    offering users a simulated yet immersive shopping journey. Step into a virtual marketplace designed to provide
                    an intuitive and lifelike experience, where browsing, selecting, and purchasing products feels just like the real
-                   thing. Whether you're exploring the latest trends or making thoughtful purchases, our platform ensures a seamless
-                   and enjoyable shopping experience from start to finish.`,
+                   thing. This software ensures a seamless and enjoyable shopping experience from start to finish.`,
     stack: ["JavaScript", "TypeScript", "Next", "React", "Styled Components"],
     image: ecommerceImg,
     links: [
@@ -102,7 +100,10 @@ export const projectsData: ProjectInterface[] = [
   {
     name: "Gym landing page",
     synopsis: "Customized landing page for a gym platform.",
-    description: "",
+    description: `Introducing a landing page designed for gym platforms. Every detail is optimized
+                  for a visually stunning experience. From the intricacy of the design to the
+                  captivating content, it's designed to leave a lasting impression and drive engagement.
+                  The project has adaptive responsiveness for both mobile and desktop devices.`,
     stack: ["HTML", "CSS", "JavaScript"],
     image: gymImg,
     links: [

@@ -10,9 +10,9 @@ export default function ProjectCard(project: ProjectInterface) {
   return (
     <li
       key={project.name}
-      onClick={() =>
-        setProjectInformationVisibility(!projectInformationVisibility)
-      }
+      // onClick={() =>
+      //   setProjectInformationVisibility(!projectInformationVisibility)
+      // }
       className="project-item h-[300px] relative cursor-pointer"
     >
         <Image
@@ -20,7 +20,11 @@ export default function ProjectCard(project: ProjectInterface) {
           className="w-full object-git h-full object-cover"
           alt={`Screenshot of the Social media app called ${project.name}`}
         />
-        <div className="project-detail h-full w-full text-white text-[5rem]">
+        <div 
+        onClick={() =>
+          setProjectInformationVisibility(!projectInformationVisibility)
+        }
+        className="project-detail h-full w-full text-white text-[5rem]">
           <h3 className="flex-1 text-white text-center font-bold">
             {project.name}
           </h3>
