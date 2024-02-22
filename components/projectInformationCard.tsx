@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ProjectInterface } from "../constants/projectsData";
-import { technologies } from "../constants/technologies";
+import { useEffect } from "react";
 
 interface ProjectInformationCardProps extends ProjectInterface {
   handleProjectVisibility: () => void;
@@ -15,18 +15,22 @@ export default function ProjectInformationCard({
   links,
   handleProjectVisibility,
 }: ProjectInformationCardProps) {
+
+
   return (
-    <div className="project-information-container">
+    <div
+      className="project-information-container"
+    >
       <div className="project-information-card">
-        <div className="flex gap-20">
-          <div className="w-6/12 h-50 relative">
+        <div className="flex flex-col lg:flex-row gap-20">
+          <div className="lg:w-6/12 h-50 relative mt-5 lg:mt-0">
             <Image
-              className="object-cover h-full"
+              className="object-cover h-full "
               src={image}
               alt={`Image of the ${name} project.`}
             />
           </div>
-          <div className="w-6/12 p-4 flex flex-col gap-10">
+          <div className="lg:w-6/12 p-4 flex flex-col gap-10">
             <h4>{name}</h4>
             <p>{description}</p>
             <h5>Technologies</h5>
@@ -39,7 +43,7 @@ export default function ProjectInformationCard({
 
           <button
             onClick={handleProjectVisibility}
-            className="text-white text-[5rem] font-bold absolute top-0 right-10 hover:text-pink"
+            className="text-white text-[5rem] font-bold absolute top-0 mr-20 right-10  hover:text-pink"
           >
             X
           </button>
