@@ -51,6 +51,7 @@ export default function ProjectInformationCard({
         <div className="project-links">
           {links.map((link) => (
             <Link
+              key={link.name}
               className="flex gap-5 bg-purple rounded-md p-5 transition 200 ease-in-out hover:bg-pink"
               href={link.url}
               title={link.name}
