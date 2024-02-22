@@ -82,7 +82,7 @@ export const projectsData: ProjectInterface[] = [
     synopsis: "App with the aim of assisting and managing user appointments.",
     description: `Revolutionize your daily scheduling with our cutting-edge appointment management app! Engineered to simplify the complexities of scheduling, our intuitive interface and advanced features make organizing appointments effortless. Take control of your day with ease - seamlessly schedule, track, and manage appointments like never before. Don't let scheduling chaos dictate your productivity.
     `,
-    stack: ["HTML", "CSS", "JavaScript", "SQL", "Node.js", "Express"],
+    stack: ["HTML", "CSS", "JavaScript", "SQL", "MySQL", "Node.js", "Express"],
     image: calendarImg,
     links: [
       {
