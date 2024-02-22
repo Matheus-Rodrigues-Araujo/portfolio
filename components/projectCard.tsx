@@ -1,29 +1,32 @@
-'use client';
+"use client";
 import { ProjectInterface } from "../constants/projectsData";
 import { useState } from "react";
 import Image from "next/image";
 import ProjectInformationCard from "./projectInformationCard";
 
 export default function ProjectCard(project: ProjectInterface) {
-  const [projectInformationVisibility, setProjectInformationVisibility] = useState(false);
+  const [projectInformationVisibility, setProjectInformationVisibility] =
+    useState(false);
 
   const handleProjectVisibility = () => {
-    setProjectInformationVisibility(!projectInformationVisibility)
-  }
+    setProjectInformationVisibility(!projectInformationVisibility);
+  };
 
   return (
-    <li
-      key={project.name}
-      className="project-item h-[300px] relative cursor-pointer"
-    >
+    <>
+      <li
+        key={project.name}
+        className="project-item h-[300px] relative cursor-pointer"
+      >
         <Image
           src={project.image}
           className="w-full object-git h-full object-cover"
           alt={`Screenshot of the Social media app called ${project.name}`}
         />
-        <div 
-        onClick={handleProjectVisibility}
-        className="project-detail h-full w-full text-white text-[5rem]">
+        <div
+          onClick={handleProjectVisibility}
+          className="project-detail h-full w-full text-white text-[5rem]"
+        >
           <h3 className="flex-1 text-white text-center font-bold">
             {project.name}
           </h3>
@@ -34,6 +37,7 @@ export default function ProjectCard(project: ProjectInterface) {
             EXPLORE
           </button>
         </div>
+      </li>
 
       {projectInformationVisibility && (
         <ProjectInformationCard
@@ -46,6 +50,6 @@ export default function ProjectCard(project: ProjectInterface) {
           handleProjectVisibility={handleProjectVisibility}
         />
       )}
-    </li>
+    </>
   );
 }
