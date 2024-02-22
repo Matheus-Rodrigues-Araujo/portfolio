@@ -98,17 +98,16 @@
   top:0;
   left:0;
   z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .project-information-card {
   display: flex;
   flex-flow: column;
   justify-content: center;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  z-index: 1000;
-  transform: translate(-50%, -50%);
+  position: relative;
   width: 80%;
   background-color: var(--light-dark);
   max-width: 80%;
