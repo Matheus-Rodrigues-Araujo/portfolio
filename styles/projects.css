@@ -180,10 +180,21 @@
   .project-information-card{
     width:100%;
     max-width:100%;
+    height:90vh;
+  }
+
+  .project-information-card p{
+    font-size:3.8rem;
   }
 
   .project-information-card .container{
     flex-flow: column;
+  }
+
+  .project-information-card .stack {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 3px;
   }
 
 }
