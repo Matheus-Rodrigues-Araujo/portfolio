@@ -18,11 +18,9 @@ export default function ProjectInformationCard({
 
 
   return (
-    <div
-      className="project-information-container"
-    >
+    <div className="project-information-container">
       <div className="project-information-card">
-        <div className="flex flex-col lg:flex-row gap-20">
+        <div className="container">
           <div className="lg:w-6/12 h-50 relative mt-5 lg:mt-0">
             <Image
               className="object-cover h-full "
