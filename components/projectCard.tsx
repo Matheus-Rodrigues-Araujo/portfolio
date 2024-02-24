@@ -9,7 +9,11 @@ export default function ProjectCard(project: ProjectInterface) {
     useState(false);
 
   const handleProjectVisibility = () => {
+    const bodyStyle = document.body.style;
     setProjectInformationVisibility(!projectInformationVisibility);
+    projectInformationVisibility
+      ? (bodyStyle.overflow = "auto")
+      : (bodyStyle.overflow = "hidden");
   };
 
   return (

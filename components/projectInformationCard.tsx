@@ -15,6 +15,7 @@ export default function ProjectInformationCard({
   links,
   handleProjectVisibility,
 }: ProjectInformationCardProps) {
+
   return (
     <div className="fixed z-10 h-screen w-screen top-0 left-0 bg-[#000000cc]">
       <div className="project-information-card">
