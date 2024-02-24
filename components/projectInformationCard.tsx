@@ -19,6 +19,14 @@ export default function ProjectInformationCard({
   return (
     <div className="fixed z-10 h-screen w-screen top-0 left-0 bg-[#000000cc]">
       <div className="project-information-card">
+      <div className="flex justify-end" >
+          <button
+            onClick={handleProjectVisibility}
+            className="text-white text-[5rem] font-bold hover:text-pink"
+          >
+            X
+          </button>
+          </div>
         <div className="container">
           <div className="lg:w-6/12 h-50 relative mt-5 lg:mt-0">
             <Image
@@ -38,12 +46,12 @@ export default function ProjectInformationCard({
             </ul>
           </div>
 
-          <button
+          {/* <button
             onClick={handleProjectVisibility}
             className="text-white text-[5rem] font-bold absolute top-0 mr-20 right-10  hover:text-pink"
           >
             X
-          </button>
+          </button> */}
         </div>
         <div className="project-links">
           {links.map((link) => (
