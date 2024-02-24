@@ -30,15 +30,12 @@ export const projectsData: ProjectInterface[] = [
        Whether it's sharing cherished memories, connecting with loved ones, or discovering new perspectives, Momentz provides the perfect canvas
        for fostering genuine connections and preserving life's most precious experiences.`,
     stack: [
-      "HTML",
-      "CSS",
       "JavaScript",
       "TypeScript",
       "React",
       "Next",
       "Tailwind",
       "MongoDB",
-      "S3",
     ],
     image: feedImg,
     links: [

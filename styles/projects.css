@@ -115,7 +115,7 @@
   background-color: var(--light-dark);
   max-width: 80%;
   padding: 15px;
-  gap: 15px;
+  /* gap: 15px; */
 }
 
 .project-information-card .container {

@@ -15,18 +15,17 @@ export default function ProjectInformationCard({
   links,
   handleProjectVisibility,
 }: ProjectInformationCardProps) {
-
   return (
     <div className="fixed z-10 h-screen w-screen top-0 left-0 bg-[#000000cc]">
       <div className="project-information-card">
-      <div className="flex justify-end" >
+        <div className="hidden min-[700px]:flex justify-end">
           <button
             onClick={handleProjectVisibility}
             className="text-white text-[5rem] font-bold hover:text-pink"
           >
             X
           </button>
-          </div>
+        </div>
         <div className="container">
           <div className="lg:w-6/12 h-50 relative mt-5 lg:mt-0">
             <Image
@@ -66,6 +65,12 @@ export default function ProjectInformationCard({
               {link.name}
             </Link>
           ))}
+          <button
+            onClick={handleProjectVisibility}
+            className="bg-red-600 text-white py-5 transition 200 ease-in-out hover:bg-red-500 min-[700px]:hidden"
+          >
+            Close
+          </button>
         </div>
       </div>
     </div>
