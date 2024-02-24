@@ -44,13 +44,6 @@ export default function ProjectInformationCard({
               ))}
             </ul>
           </div>
-
-          {/* <button
-            onClick={handleProjectVisibility}
-            className="text-white text-[5rem] font-bold absolute top-0 mr-20 right-10  hover:text-pink"
-          >
-            X
-          </button> */}
         </div>
         <div className="project-links">
           {links.map((link) => (

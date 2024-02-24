@@ -29,14 +29,7 @@ export const projectsData: ProjectInterface[] = [
        Immerse yourself in a digital realm designed for meaningful social interactions and the seamless exchange of unforgettable moments.
        Whether it's sharing cherished memories, connecting with loved ones, or discovering new perspectives, Momentz provides the perfect canvas
        for fostering genuine connections and preserving life's most precious experiences.`,
-    stack: [
-      "JavaScript",
-      "TypeScript",
-      "React",
-      "Next",
-      "Tailwind",
-      "MongoDB",
-    ],
+    stack: ["JavaScript", "TypeScript", "React", "Next", "Tailwind", "MongoDB"],
     image: feedImg,
     links: [
       {

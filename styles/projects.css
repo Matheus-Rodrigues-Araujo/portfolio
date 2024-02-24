@@ -115,7 +115,7 @@
   background-color: var(--light-dark);
   max-width: 80%;
   padding: 15px;
-  /* gap: 15px; */
+  gap: 8px;
 }
 
 .project-information-card .container {
@@ -175,10 +175,9 @@
 
 @media screen and (max-width: 900px) {
   .project-information-card {
-    max-width: 95%;
-    width: 100%;
     top: 60px;
     transform: translate(-50%, 0%);
+    gap: 4px;
   }
 
   .project-information-card p {
