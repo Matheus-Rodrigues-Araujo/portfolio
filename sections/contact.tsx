@@ -49,7 +49,8 @@ export default async function Contact() {
           <Image
             src={dancingCoffee}
             alt="A coffee dancing"
-            className="w-[100px] h-[80px] md:w-[300px] md:h-[280px]"
+            width={200}
+            height={200}
           />
         </div>
 

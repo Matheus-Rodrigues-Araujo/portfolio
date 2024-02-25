@@ -29,14 +29,14 @@ export default async function Introduction() {
         <div className="contact-buttons flex gap-20 mt-10">
           <a
             href="mailto:matheusrodriguesaraujo13@gmail.com"
-            className="text-[6rem] text-white cursor-pointer border-0 p-8 md:text-[7rem]"
+            className="text-[6rem] bg-purple text-white cursor-pointer border-0 p-8 hover:scale-110 transition 200 ease-in-out md:text-[7rem]"
           >
             Let's Talk
           </a>
           <a
             href="/resumes/en-us/Resume _ Matheus Rodrigues Araujo - Frontend Developer.pdf"
             download="Resume _ Matheus Rodrigues Araujo - Frontend Developer.pdf"
-            className="flex items-center text-[6rem] cursor-pointer border-0 p-8 md:text-[7rem]"
+            className="flex items-center text-[6rem] text-purple cursor-pointer border-0 p-8 hover:scale-110 transition 200 ease-in-out md:text-[7rem]"
           >
             <FaFileDownload />
             Resume
@@ -49,21 +49,21 @@ export default async function Introduction() {
             target="_blank"
             title="Linkedin"
           >
-            <FaLinkedin className="w-32 h-32 md:w-40 md:h-40 text-purple" />
+            <FaLinkedin className="w-32 h-32 hover:scale-110 transition 200 ease-in-out hover:text-white md:w-40 md:h-40 text-purple" />
           </Link>
           <Link
             href="https://github.com/Matheus-Rodrigues-Araujo"
             target="_blank"
             title="Github"
           >
-            <FaGithub className="w-32 h-32 md:w-40 md:h-40  text-purple" />
+            <FaGithub className="w-32 h-32 hover:scale-110 transition 200 ease-in-out hover:text-white md:w-40 md:h-40  text-purple" />
           </Link>
           <Link
             href="https://www.instagram.com/_matheus_rodrigues_araujo_/"
             target="_blank"
             title="Instagram"
           >
-            <RiInstagramFill className="w-32 h-32 md:w-40 md:h-40  text-purple" />
+            <RiInstagramFill className="w-32 h-32 hover:scale-110 transition 200 ease-in-out hover:text-white md:w-40 md:h-40  text-purple" />
           </Link>
         </div>
       </div>
@@ -73,10 +73,12 @@ export default async function Introduction() {
           src={profileImg}
           alt="Thumb photo"
           priority={true}
-          width={400}
+          width={360}
+          height={400}
+          layout="responsive"
           style={{
-            height: "auto",
-            objectFit: "fill",
+            objectFit: "cover",
+            aspectRatio: '9/6 auto',
             objectPosition: "top",
           }}
         />

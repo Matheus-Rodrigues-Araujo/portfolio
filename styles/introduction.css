@@ -1,32 +1,8 @@
-.introduction h1{
-  font-family: var(--font-orbitron);
-}
-
-.introduction p{
-  font-family: var(--font-raleway);
-}
-
-.contact-buttons {
-  display: flex;
-  font-family: var(--font-orbitron);
-  
-}
-
-.contact-buttons a {
-  transition: 0.2s ease-in-out;
-}
-
-.contact-buttons a:first-child {
-  background-color: var(--purple);
-}
+.introduction{font-family: var(--font-orbitron);}
+.introduction p{font-family: var(--font-raleway);}
 
 .contact-buttons a:nth-child(2) {
-  color: var(--purple);
   outline: 1px solid var(--purple);
-}
-
-.contact-buttons a:first-child:hover, .contact-buttons a:nth-child(2):hover {
-  transform: scale(1.1);
 }
 
 .contact-buttons a:nth-child(2):hover {
@@ -34,30 +10,3 @@
   background-color: var(--purple);
   outline: none;
 }
-
-.social-links a {
-  text-decoration: none;
-  color: none;
-  cursor: pointer;
-}
-
-.social-links a:hover {
-  border-radius: 2em;
-  transition: 0.2s ease-in-out;
-}
-
-.social-links a svg {
-  transition: 0.2s ease-in-out;
-}
-
-.social-links a:hover svg {
-  color: white;
-  transform: scale(1.2);
-}
-
-
-/* @media screen and (max-width:720px){
-  .thumb{
-    width: 400px;
-  }
-} */

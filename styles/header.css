@@ -2,32 +2,30 @@
   font-family: var(--font-orbitron);
   font-size: 7rem;
   color: white;
-  font-weight:700;
-  transition: .2s ease-in-out;
+  font-weight: 700;
+  transition: 0.2s ease-in-out;
   text-shadow: -2px 3px 0px var(--purple);
 }
 
-.brand span{
+.brand span {
   color: var(--pink);
 }
 
 nav .brand:hover {
-  /* font-size: 8.2rem; */
   transform: scale(1.1);
-
 }
 
-nav  .item{
+nav .item {
   font-family: var(--font-orbitron);
   font-size: 5rem;
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
   text-shadow: -2px 3px 0px var(--purple);
   text-decoration: none;
 }
 
-nav .item:hover{
+nav .item:hover {
   transform: scale(1.2);
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .active {
@@ -35,85 +33,73 @@ nav .item:hover{
   padding: 1px 4px;
 }
 
-.toggle div{
+.toggle div {
   height: 8px;
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
   box-shadow: 5px 4px 2px var(--purple);
 }
 
-.toggle:hover div{
+.toggle:hover div {
   box-shadow: none;
   box-shadow: 6px 7px 2px var(--purple);
   height: 10px;
 }
 
-.close-toggle-btn{
+.close-toggle-btn {
   color: white;
   font-size: 10rem;
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
   text-shadow: 4px 2px 2px var(--purple);
 }
 
-.close-toggle-btn:hover{
+.close-toggle-btn:hover {
   text-shadow: 5px 3px 2px var(--purple);
   font-weight: 700;
 }
 
-.sidebar{
+.sidebar {
   width: 320px;
-  transition: .2s ease-in-out;
-  animation: displayElement .02s ease-in-out ;
+  transition: 0.2s ease-in-out;
+  animation: displayElement 0.02s ease-in-out;
 }
 
-.sidebar .item{
+.sidebar .item {
   font-size: 6rem;
   font-family: var(--font-orbitron);
   text-shadow: 3px 2px 0px var(--purple);
 }
 
-.sidebar .item:hover{
+.sidebar .item:hover {
   transform: scale(1.1);
   text-decoration: none;
 }
 
-.sidebar-social-links  a svg{
+.sidebar-social-links a svg {
   color: var(--purple);
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
-.sidebar-social-links  a:hover svg{
+.sidebar-social-links a:hover svg {
   color: white;
   transform: scale(1.2);
 }
 
-
 @keyframes displayElement {
-  0%{
-    width: 0px;
-  }
-
-  50%{
-    width:160px;
-  }
-
-  100% {
-    bottom: 320px;
-  }
-
+  0% { width: 0px;}
+  100% { bottom: 320px;}
 }
 
-@media screen and (max-width: 430px){
+@media screen and (max-width: 430px) {
   .brand {
     font-size: 5.5rem;
     color: white;
-    font-weight:700;
-    transition: .2s ease-in-out;
+    font-weight: 700;
+    transition: 0.2s ease-in-out;
     text-shadow: -2px 3px 0px var(--purple);
   }
-  
+
   nav .brand:hover {
     text-shadow: -2px 4px 0px var(--purple);
-    /* font-size: 6.2rem; */
-  transform: scale(1.05);
+    transform: scale(1.05);
   }
 }
