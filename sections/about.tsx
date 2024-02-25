@@ -1,6 +1,7 @@
+"use server";
 import { technologies } from "../constants/technologies";
 
-export default function About() {
+export default async function About() {
   return (
     <section className="about  bg-dark py-40 md:py-0" id="about">
       <div className="about-content grid grid-cols-1">

@@ -1,10 +1,11 @@
+"use server";
 import { FaLinkedin, FaGithub, FaFileDownload } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import Link from "next/link";
 import Image from "next/image";
 import profileImg from "../assets/images/purple-thumb.png";
 
-export default function Introduction() {
+export default async function Introduction() {
   return (
     <section
       id="main"
@@ -72,6 +73,7 @@ export default function Introduction() {
           src={profileImg}
           alt="Thumb photo"
           className="rounded-full w-[50%] xl:w-auto"
+          priority={true}
         />
       </figure>
     </section>

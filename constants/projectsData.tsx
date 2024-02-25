@@ -26,9 +26,8 @@ export const projectsData: ProjectInterface[] = [
     synopsis:
       "Social media platform created for social interaction and sharing unforgettable moments.",
     description: `Welcome to Momentz, a vibrant social media platform meticulously crafted with Next.js, React, TypeScript, MongoDB, and more.
-       Immerse yourself in a digital realm designed for meaningful social interactions and the seamless exchange of unforgettable moments.
-       Whether it's sharing cherished memories, connecting with loved ones, or discovering new perspectives, Momentz provides the perfect canvas
-       for fostering genuine connections and preserving life's most precious experiences.`,
+                  Immerse yourself in a digital realm designed for meaningful social interactions and the seamless exchange of unforgettable moments.
+                  Whether it's sharing cherished memories, connecting with loved ones, or discovering new perspectives.`,
     stack: ["JavaScript", "TypeScript", "React", "Next", "Tailwind", "MongoDB"],
     image: feedImg,
     links: [

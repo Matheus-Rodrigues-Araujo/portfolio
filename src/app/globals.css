@@ -61,17 +61,6 @@ section h4 {
   text-transform: uppercase;
 }
 
-@keyframes moveElement {
-  0%,
-  100% {
-    bottom: 10px;
-  }
-
-  50% {
-    bottom: 20px;
-  }
-}
-
 section {
   font-size: 2em;
   font-family: sans-serif;
@@ -99,45 +88,6 @@ section {
   top: 50%;
   right: 0px;
   transform: translateY(-50%);
-}
-
-.scroll-helper div {
-  width: 15px;
-  height: 15px;
-  background-color: cyan;
-}
-
-.scroll-helper div:first-child {
-  background-color: white;
-}
-
-.scroll-helper div:hover {
-  transform: rotate(34deg, 0);
-  background-color: var(--pink);
-}
-
-.scroll-mouse {
-  display: grid;
-  gap: 10px;
-  width: 30px;
-  height: 40px;
-  border-radius: 1em;
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  border: 1px solid var(--light-green);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: moveElement 1.5s ease-in infinite;
-}
-
-.scroll-mouse div {
-  width: 10px;
-  height: 10px;
-  background-color: white;
-  border-radius: 0.3em;
 }
 
 nav,

@@ -1,5 +1,4 @@
-'use server'
-
+'use server';
 import About from "../../sections/about";
 import Projects from "../../sections/projects";
 import Contact from "../../sections/contact";

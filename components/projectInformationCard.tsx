@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ProjectInterface } from "../constants/projectsData";
-import { useEffect } from "react";
 
 interface ProjectInformationCardProps extends ProjectInterface {
   handleProjectVisibility: () => void;

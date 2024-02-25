@@ -26,6 +26,7 @@ export default function ProjectCard(project: ProjectInterface) {
           src={project.image}
           className="w-full object-git h-full object-cover"
           alt={`Screenshot of the Social media app called ${project.name}`}
+          priority={true}
         />
         <div
           onClick={handleProjectVisibility}

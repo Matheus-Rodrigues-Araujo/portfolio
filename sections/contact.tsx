@@ -1,3 +1,4 @@
+"use server";
 import Link from "next/link";
 import Image from "next/image";
 import dancingCoffee from "../assets/images/dancing-coffee.gif";
@@ -5,7 +6,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import ContactForm from "../forms/contactForm";
 
-export default function Contact() {
+export default async function Contact() {
   return (
     <section className="contact bg-dark py-20 md:py-0" id="contact">
       <h2 className="text-[10rem] md:text-[12rem] font-bold">Contact</h2>
@@ -48,7 +49,7 @@ export default function Contact() {
           <Image
             src={dancingCoffee}
             alt="A coffee dancing"
-            className="max-w-[50%] h-auto"
+            className="w-[100px] h-[80px] md:w-[300px] md:h-[280px]"
           />
         </div>
 
