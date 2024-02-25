@@ -20,17 +20,21 @@ export default function ProjectCard(project: ProjectInterface) {
     <>
       <li
         key={project.name}
-        className="project-item h-[300px] relative cursor-pointer"
+        className="flex-1 project-item  relative cursor-pointer mx-auto "
       >
         <Image
           src={project.image}
-          className="w-full object-git h-full object-cover"
+          // className="object-cover"
           alt={`Screenshot of the Social media app called ${project.name}`}
           priority={true}
+          width={370}
+          style={{
+            height: '300px', 
+            objectFit: 'cover', objectPosition: 'top'}}
         />
         <div
           onClick={handleProjectVisibility}
-          className="project-detail h-full w-full text-white text-[5rem]"
+          className="project-detail h-[300px] w-[370px] text-white text-[5rem]"
         >
           <h3 className="flex-1 text-white text-center font-bold">
             {project.name}

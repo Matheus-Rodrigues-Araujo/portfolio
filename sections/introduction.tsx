@@ -68,14 +68,19 @@ export default async function Introduction() {
         </div>
       </div>
 
-      <figure className="w-full flex justify-center xl:justify-end">
+      <div className="relative w-full flex justify-center xl:justify-end">
         <Image
           src={profileImg}
           alt="Thumb photo"
-          className="rounded-full w-[50%] xl:w-auto"
           priority={true}
+          width={400}
+          style={{
+            height: "auto",
+            objectFit: "fill",
+            objectPosition: "top",
+          }}
         />
-      </figure>
+      </div>
     </section>
   );
 }
