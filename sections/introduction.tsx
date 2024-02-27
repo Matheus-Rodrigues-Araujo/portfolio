@@ -73,12 +73,11 @@ export default async function Introduction() {
           src={profileImg}
           alt="Thumb photo"
           priority={true}
-          width={360}
-          height={400}
-          layout="responsive"
+          width={380}
+          height={420}
+          layout="intrinsic"
           style={{
             objectFit: "cover",
-            aspectRatio: '9/6 auto',
             objectPosition: "top",
           }}
         />

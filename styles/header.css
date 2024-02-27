@@ -57,11 +57,11 @@ nav .item:hover {
   font-weight: 700;
 }
 
-.sidebar {
+/* .sidebar {
   width: 320px;
   transition: 0.2s ease-in-out;
   animation: displayElement 0.02s ease-in-out;
-}
+} */
 
 .sidebar .item {
   font-size: 6rem;

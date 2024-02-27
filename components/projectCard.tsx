@@ -1,8 +1,8 @@
 "use client";
 import { ProjectInterface } from "../constants/projectsData";
-import { useState } from "react";
+import { useState, lazy, Suspense } from "react";
 import Image from "next/image";
-import ProjectInformationCard from "./projectInformationCard";
+const ProjectInformationCard = lazy(() => import("./projectInformationCard"));
 
 export default function ProjectCard(project: ProjectInterface) {
   const [projectInformationVisibility, setProjectInformationVisibility] =
@@ -24,13 +24,14 @@ export default function ProjectCard(project: ProjectInterface) {
       >
         <Image
           src={project.image}
-          // className="object-cover"
           alt={`Screenshot of the Social media app called ${project.name}`}
           priority={true}
           width={370}
           style={{
-            height: '300px', 
-            objectFit: 'cover', objectPosition: 'top'}}
+            height: "300px",
+            objectFit: "cover",
+            objectPosition: "top",
+          }}
         />
         <div
           onClick={handleProjectVisibility}
@@ -47,18 +48,19 @@ export default function ProjectCard(project: ProjectInterface) {
           </button>
         </div>
       </li>
-
-      {projectInformationVisibility && (
-        <ProjectInformationCard
-          name={project.name}
-          synopsis={project.synopsis}
-          description={project.description}
-          stack={project.stack}
-          image={project.image}
-          links={project.links}
-          handleProjectVisibility={handleProjectVisibility}
-        />
-      )}
+      <Suspense>
+        {projectInformationVisibility && (
+          <ProjectInformationCard
+            name={project.name}
+            synopsis={project.synopsis}
+            description={project.description}
+            stack={project.stack}
+            image={project.image}
+            links={project.links}
+            handleProjectVisibility={handleProjectVisibility}
+          />
+        )}
+      </Suspense>
     </>
   );
 }
