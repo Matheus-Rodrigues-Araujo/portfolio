@@ -72,18 +72,13 @@ export default async function Introduction() {
         </div>
       </div>
 
-      <div className="relative w-full flex justify-center xl:justify-end">
+      <div className="relative w-full flex justify-center h-[25vh] lg:h-[50vh] xl:justify-end">
         <Image
           src={loadProfilImg()}
           alt="Thumb photo"
-          priority={true}
-          width={380}
-          height={420}
-          layout="intrinsic"
-          style={{
-            objectFit: "cover",
-            objectPosition: "top",
-          }}
+          priority
+          objectFit="contain"
+          fill
         />
       </div>
     </section>

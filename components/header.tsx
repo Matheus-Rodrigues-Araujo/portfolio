@@ -57,7 +57,7 @@ export default function Header() {
           <div className="ml-auto w-10/12 bg-white"></div>
           <div className="ml-auto w-8/12 bg-white"></div>
         </div>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense>
           {isSidebarActive && (
             <Sidebar handleSidebarVisibility={handleSidebarVisibility} />
           )}
