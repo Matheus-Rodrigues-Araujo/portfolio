@@ -1,17 +1,14 @@
 import { Orbitron, Raleway } from "next/font/google";
-import "./globals.css";
 import { Metadata } from "next";
-
-import "../../styles/header.css";
-import "../../styles/footer.css";
-
-import "../../styles/introduction.css";
-import "../../styles/about.css";
-import "../../styles/projects.css";
-import "../../styles/contact.css";
-
 import Header from "../../components/header";
 import Footer from "../../components/footer";
+
+import './globals.css'
+import '../../styles/introduction.css'
+import '../../styles/about.css'
+import '../../styles/projects.css'
+import '../../styles/contact.css'
+import '../../styles/header.css'
 
 const orbitron = Orbitron({
   subsets: ["latin"],
@@ -45,7 +42,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Matheus Rodrigues Araujo",
-      url: "https://matheuswebcoder.vercel.app"
+      url: "https://matheuswebcoder.vercel.app",
     },
   ],
   creator: "Matheus Rodrigues Araujo",
@@ -112,9 +109,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
   metadataBase: new URL("https://matheuswebcoder.vercel.app"),
@@ -140,16 +137,18 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+
+
   return (
     <html lang="en" className={`${orbitron.variable} ${raleway.variable}`}>
       <body>
         <Header />
-          {children}
+        {children}
         <Footer />
         <script
           type="application/ld+json"

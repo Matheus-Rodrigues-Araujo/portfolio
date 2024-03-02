@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export type LinksType = {
   name: string;
   url: string;
@@ -13,11 +15,10 @@ export interface ProjectInterface {
   links: LinksType[];
 }
 
-import { StaticImageData } from "next/image";
-import feedImg from "../assets/images/projects/momentz/feed.jpg";
-import gymImg from "../assets/images/projects/gym-landing-page/image.png";
-import ecommerceImg from "../assets/images/projects/ecommerce/ecommerce.jpg";
-import calendarImg from "../assets/images/projects/calendar-system/calendar-img.png";
+import feedImg from "../public/assets/images/projects/momentz/feed.jpg";
+import gymImg from "../public/assets/images/projects/gym-landing-page/image.png";
+import ecommerceImg from "../public/assets/images/projects/ecommerce/ecommerce.jpg";
+import calendarImg from "../public/assets/images/projects/calendar-system/calendar-img.png";
 import { FaGithub, FaGlobe } from "react-icons/fa";
 
 export const projectsData: ProjectInterface[] = [

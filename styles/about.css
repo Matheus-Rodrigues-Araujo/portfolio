@@ -2,24 +2,17 @@
   font-family: var(--font-raleway);
   color: var(--light-gray);
 }
-
-.job {
-  color: var(--pink);
-  font-weight: 600;
-}
-
+.job,
 .techs strong {
   color: var(--pink);
   font-weight: 600;
 }
-
 .technologies-list {
   display: flex;
   flex-flow: row wrap;
   gap: 10px;
   margin-top: 5px;
 }
-
 .technologies-list svg {
   width: 45px;
   object-fit: cover;
@@ -27,7 +20,6 @@
   padding: 2px;
   transition: 0.2s ease-in-out;
 }
-
 .tech-item {
   cursor: pointer;
   background-color: #1e1a1a;
@@ -39,33 +31,24 @@
   align-content: center;
   justify-content: center;
   border-bottom: 2px solid var(--purple);
-  border-radius: 1px 10px 0px 10px;
-  transition: .2s ease-in-out;
+  border-radius: 1px 10px 0;
+  transition: 0.2s ease-in-out;
 }
-
-.tech-item p{
+.tech-item p {
   font-family: var(--font-orbitron);
   text-align: center;
   font-size: 3rem;
-  color: white;
+  color: #fff;
   font-weight: 800;
 }
-
-.tech-item svg{
+.tech-item svg {
   align-self: center;
 }
-
 .tech-item:hover {
-  border: 2px solid white;
+  border: 2px solid #fff;
   transform: scale(1.1);
 }
-
-.tech-item:hover svg{
-  color: white;
+.tech-item:hover p,
+.tech-item:hover svg {
+  color: #fff;
 }
-
-
-.tech-item:hover p{
-  color: white;
-}
-

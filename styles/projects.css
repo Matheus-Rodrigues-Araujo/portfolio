@@ -1,51 +1,45 @@
 .description .phrase span {
   color: var(--light-green);
-  font-weight: bold;
+  font-weight: 700;
 }
-
 .projects-links a {
-  font-family: "Orbitron", sans-serif;
+  font-family: Orbitron, sans-serif;
   text-decoration: none;
   padding: 15px;
   font-weight: bolder;
   text-align: center;
   transition: 0.2s ease-in-out;
 }
-
 .projects-links a:first-child {
-  background-color: white;
+  background-color: #fff;
   color: var(--dark);
 }
-
+.projects-links a:first-child:hover,
 .projects-links a:nth-child(2) {
   background-color: var(--light-dark);
   outline: 1px solid var(--light-green);
-  color: white;
 }
-
+.projects-links a:nth-child(2) {
+  color: #fff;
+}
 .projects-links a:first-child:hover {
-  background-color: var(--light-dark);
-  color: white;
+  color: #fff;
   transform: rotate(34deg, 0);
-  box-shadow: -5px 0px 0px beige;
-  text-shadow: -1px 0px 0px black;
+  box-shadow: -5px 0 0 beige;
+  text-shadow: -1px 0 0 #000;
   box-shadow: 1px -1px 20px var(--light-green);
-  outline: 1px solid var(--light-green);
 }
-
 .projects-links a:nth-child(2):hover {
   background-color: #030000;
   transform: rotate(34deg, 34deg);
-  text-shadow: -1px 0px 0px white;
+  text-shadow: -1px 0 0 #fff;
   box-shadow: 1px -1px 20px var(--light-green);
 }
-
 .filter {
   display: flex;
   flex-flow: row wrap;
   gap: 15px;
 }
-
 .filter button {
   flex-grow: 1;
   font-size: 4rem;
@@ -54,15 +48,13 @@
   outline: 1.5px outset var(--pink);
   color: var(--pink);
   transition: 0.2s ease-in-out;
-  border-radius: 1px 0px 0px 10px;
+  border-radius: 1px 0 0 10px;
 }
-
 .filter button:hover {
-  outline: 3px outset white;
-  color: white;
+  outline: white outset 3px;
+  color: #fff;
   transform: scale(1.05);
 }
-
 .project-detail {
   display: flex;
   opacity: 0;
@@ -73,22 +65,18 @@
   flex-flow: column;
   transition: bottom 0.3s ease-in-out;
 }
-
 .project-detail h3 {
   font-size: 8rem;
   font-family: var(--font-orbitron);
 }
-
 .project-detail p {
   font-size: 3.8rem;
   font-family: var(--font-raleway);
 }
-
 .project-item:hover .project-detail {
   bottom: 0;
   opacity: 0.95;
 }
-
 .project-information-container {
   min-height: 100vh;
   width: 100%;
@@ -101,7 +89,6 @@
   align-items: center;
   justify-content: center;
 }
-
 .project-information-card {
   position: fixed;
   top: 50%;
@@ -116,92 +103,74 @@
   max-width: 80%;
   padding: 15px;
   gap: 8px;
+  font-size: 4.2rem;
 }
-
 .project-information-card .container {
   display: flex;
   gap: 20px;
 }
-
 .project-information-card h4,
 .project-information-card h5 {
   color: var(--pink);
-  font-weight: bold;
+  font-weight: 700;
 }
-
 .project-information-card h4 {
   font-size: 5rem;
 }
-
 .project-information-card h5 {
   font-size: 4.5rem;
 }
-
-.project-information-card p,
-.project-information-card a {
+.project-information-card a,
+.project-information-card p {
   color: var(--light-gray);
 }
-
 .project-information-card p {
   font-size: 4rem;
-}
-
-.project-information-card {
-  font-size: 4.2rem;
 }
 .project-information-card .project-links {
   display: flex;
   gap: 10px;
 }
-
 .project-information-card .project-links svg {
-  color: white;
+  color: #fff;
   height: 25px;
   width: 25px;
 }
-
 .project-information-card .stack {
   display: flex;
   flex-flow: column wrap;
   gap: 5px;
 }
-
 .project-information-card .stack li {
   font-size: 3.2rem;
   color: var(--light-gray);
   list-style: inside;
   font-weight: 700;
 }
-
 @media screen and (max-width: 900px) {
   .project-information-card {
     top: 60px;
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, 0);
     gap: 4px;
   }
-
   .project-information-card p {
     font-size: 3.5rem;
   }
-
   .project-information-card .container {
     flex-flow: column;
-    gap: 0px;
+    gap: 0;
   }
-
   .project-information-card .stack {
     display: flex;
     flex-flow: row wrap;
     gap: 5px;
   }
 }
-
 @media screen and (max-width: 700px) {
   .project-links {
     flex-direction: column;
     text-align: center;
   }
-
   .project-links a {
     justify-content: center;
   }

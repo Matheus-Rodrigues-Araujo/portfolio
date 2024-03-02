@@ -1,7 +1,8 @@
-"use client";
-import Link from "next/link";
+'use client'
+import dynamic from "next/dynamic";
+const DynamicLink = dynamic(() => import('next/link'))
 import { useState, lazy, Suspense } from "react";
-// import Sidebar from "./sidebar";
+
 const Sidebar = lazy(() => import("./sidebar"));
 
 export default function Header() {
@@ -12,36 +13,54 @@ export default function Header() {
   };
 
   return (
-    <header>
+    <header style={{ fontFamily: "var(--font-orbitron)" }}>
       <nav className="fixed navbar bg-dark font-orbitron h-[60px] z-10 flex items-center justify-between gap-12 my-auto w-full">
-        <Link href="/" className="brand">
-          &lt;Matheus<span>WebCoder</span>/&gt;
-        </Link>
+        <DynamicLink
+          href="/"
+          className="brand text-white font-[700] text-[5rem] md:text-[5.5rem] lg:text-[7rem] hover:scale-110 hover:transition 200 ease-in-out"
+          style={{ textShadow: "-2px 3px 0px var(--purple)" }}
+        >
+          &lt;Matheus<span className="text-pink">WebCoder</span>/&gt;
+        </DynamicLink>
         <ul className="hidden lg:flex gap-20 text-[4rem]">
-          <li className="item">
-            <Link href="#main">Home</Link>
+          <li
+            className="item hover:scale-110 hover:transition 200 ease-in-out"
+            style={{ textShadow: "-2px 3px 0px var(--purple)" }}
+          >
+            <DynamicLink href="#main">Home</DynamicLink>
           </li>
-          <li className="item">
-            <Link href="#about">About</Link>
+          <li
+            className="item hover:scale-110 hover:transition 200 ease-in-out"
+            style={{ textShadow: "-2px 3px 0px var(--purple)" }}
+          >
+            <DynamicLink href="#about">About</DynamicLink>
           </li>
-          <li className="item">
-            <Link href="#projects">Projects</Link>
+          <li
+            className="item hover:scale-110 hover:transition 200 ease-in-out"
+            style={{ textShadow: "-2px 3px 0px var(--purple)" }}
+          >
+            <DynamicLink href="#projects">Projects</DynamicLink>
           </li>
-          <li className="item">
-            <Link href="#contact">Contact</Link>
+          <li
+            className="item hover:scale-110 hover:transition 200 ease-in-out"
+            style={{ textShadow: "-2px 3px 0px var(--purple)" }}
+          >
+            <DynamicLink href="#contact">Contact</DynamicLink>
           </li>
         </ul>
 
         <div
-          onClick={() => setIsSidebarActive(!isSidebarActive)}
-          className="toggle cursor-pointer grid gap-3 w-40 lg:hidden"
+          onClick={handleSidebarVisibility}
+          className="toggle cursor-pointer grid gap-3 w-40 lg:hidden hover:transition 200 ease-in-out"
         >
-          <div className="ml-auto w-full bg-white" onClick={() => setIsSidebarActive(!isSidebarActive)}></div>
-          <div className="ml-auto w-10/12 bg-white" onClick={() => setIsSidebarActive(!isSidebarActive)}></div>
-          <div className="ml-auto w-8/12 bg-white" onClick={() => setIsSidebarActive(!isSidebarActive)}></div>
+          <div className="ml-auto w-full bg-white"></div>
+          <div className="ml-auto w-10/12 bg-white"></div>
+          <div className="ml-auto w-8/12 bg-white"></div>
         </div>
-        <Suspense>
-          {isSidebarActive && <Sidebar handleSidebarVisibility={handleSidebarVisibility}/>}
+        <Suspense fallback={<div>Loading...</div>}>
+          {isSidebarActive && (
+            <Sidebar handleSidebarVisibility={handleSidebarVisibility} />
+          )}
         </Suspense>
       </nav>
     </header>

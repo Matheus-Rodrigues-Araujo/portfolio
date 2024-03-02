@@ -1,9 +1,13 @@
 "use server";
+import "../styles/introduction.css";
 import { FaLinkedin, FaGithub, FaFileDownload } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import Link from "next/link";
 import Image from "next/image";
-import profileImg from "../assets/images/purple-thumb.png";
+
+const loadProfilImg = () => {
+  return '/assets/images/purple-thumb.png'
+}
 
 export default async function Introduction() {
   return (
@@ -70,7 +74,7 @@ export default async function Introduction() {
 
       <div className="relative w-full flex justify-center xl:justify-end">
         <Image
-          src={profileImg}
+          src={loadProfilImg()}
           alt="Thumb photo"
           priority={true}
           width={380}

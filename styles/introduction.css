@@ -1,12 +1,14 @@
-.introduction{font-family: var(--font-orbitron);}
-.introduction p{font-family: var(--font-raleway);}
-
+.introduction {
+  font-family: var(--font-orbitron);
+}
+.introduction p {
+  font-family: var(--font-raleway);
+}
 .contact-buttons a:nth-child(2) {
   outline: 1px solid var(--purple);
 }
-
 .contact-buttons a:nth-child(2):hover {
-  color: white;
+  color: #fff;
   background-color: var(--purple);
-  outline: none;
+  outline: 0;
 }

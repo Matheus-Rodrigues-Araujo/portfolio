@@ -1,10 +1,13 @@
 "use server";
 import Link from "next/link";
 import Image from "next/image";
-import dancingCoffee from "../assets/images/dancing-coffee.gif";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import ContactForm from "../forms/contactForm";
+
+const imageLoader = () =>{
+  return "/dancing-coffee.gif"
+}
 
 export default async function Contact() {
   return (
@@ -47,7 +50,7 @@ export default async function Contact() {
             </div>
           </div>
           <Image
-            src={dancingCoffee}
+            src={imageLoader()}
             alt="A coffee dancing"
             width={200}
             height={200}

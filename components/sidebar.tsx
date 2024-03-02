@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 
-export default async function Sidebar({
+export default function Sidebar({
   handleSidebarVisibility,
 }: {
   handleSidebarVisibility: () => void;
@@ -14,21 +14,21 @@ export default async function Sidebar({
         <ul className="grid justify-end gap-16 text-[4rem] text-end">
           <div
             onClick={handleSidebarVisibility}
-            className="close-toggle-btn cursor-pointer text-end"
+            className="close-toggle-btn cursor-pointer text-end hover:transition 200 ease-in-out"
           >
             <span>X</span>
           </div>
 
-          <li className="item">
+          <li className="item hover:scale-110 hover:transition 200 ease-in-out">
             <Link href="#main">Home</Link>
           </li>
-          <li className="item">
+          <li className="item hover:scale-110 hover:transition 200 ease-in-out ">
             <Link href="#about">About</Link>
           </li>
-          <li className="item">
+          <li className="item hover:scale-110 hover:transition 200 ease-in-out ">
             <Link href="#projects">Projects</Link>
           </li>
-          <li className="item">
+          <li className="item hover:scale-110 hover:transition 200 ease-in-out ">
             <Link href="#contact">Contact</Link>
           </li>
         </ul>

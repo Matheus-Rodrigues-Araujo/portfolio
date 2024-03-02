@@ -12,37 +12,37 @@ export default function Footer() {
             target="_blank"
             title="Linkedin"
           >
-            <FaLinkedin className="icon" />
+            <FaLinkedin className="icon p-0 hover:text-purple hover:bg-white hover:rounded-[5em]" />
           </Link>
           <Link
             href="https://github.com/Matheus-Rodrigues-Araujo"
             target="_blank"
             title="Github"
           >
-            <FaGithub className="icon" />
+            <FaGithub className="icon text-white hover:text-purple hover:bg-white hover:rounded-[5em]"  />
           </Link>
           <Link
             href="https://www.instagram.com/_matheus_rodrigues_araujo_/"
             target="_blank"
             title="Instagram"
           >
-            <RiInstagramFill className="icon" />
+            <RiInstagramFill className="icon hover:text-purple hover:bg-white hover:rounded-[5em]" />
           </Link>
         </div>
         <ul className="flex gap-10">
           <li>
-            <Link className="item text-dark font-600 text-[4rem]" href="#main">
+            <Link className="item text-dark font-600 text-[4rem] hover:underline" href="#main">
               Home
             </Link>
           </li>
           <li>
-            <Link className="item text-dark font-600 text-[4rem]" href="#about">
+            <Link className="item text-dark font-600 text-[4rem] hover:underline" href="#about">
               About
             </Link>
           </li>
           <li>
             <Link
-              className="item text-dark font-600 text-[4rem]"
+              className="item text-dark font-600 text-[4rem] hover:underline"
               href="#projects"
             >
               Projects
@@ -50,7 +50,7 @@ export default function Footer() {
           </li>
           <li>
             <Link
-              className="item text-dark font-600 text-[4rem] "
+              className="item text-dark font-600 text-[4rem] hover:underline"
               href="#contact"
             >
               Contact
