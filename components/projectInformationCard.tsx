@@ -1,8 +1,7 @@
 'use client';
 import { ProjectInterface } from "../constants/projectsData";
-import dynamic from "next/dynamic";
-const DynamicLink = dynamic(() => import('next/link'))
-const DynamicImage = dynamic(() => import('next/image'))
+import { DynamicLink } from "./dynamicLink";
+import { DynamicImage } from "./dynamicImage";
 
 interface ProjectInformationCardProps extends ProjectInterface {
   handleProjectVisibility: () => void;

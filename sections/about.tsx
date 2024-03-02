@@ -1,7 +1,5 @@
 "use server";
-import path from "path";
 import { technologies } from "../constants/technologies";
-import dynamic from "next/dynamic";
 
 export default async function About() {
   return (

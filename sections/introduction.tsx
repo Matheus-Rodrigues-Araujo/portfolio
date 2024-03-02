@@ -1,13 +1,8 @@
 "use server";
 import "../styles/introduction.css";
-import { FaLinkedin, FaGithub, FaFileDownload } from "react-icons/fa";
-import { RiInstagramFill } from "react-icons/ri";
-import Link from "next/link";
-import Image from "next/image";
-
-const loadProfilImg = () => {
-  return '/assets/images/purple-thumb.png'
-}
+import { FaFileDownload } from "react-icons/fa";
+import DynamicIntroductionLinks from "../components/dynamicIntroductionLinks";
+import DynamicPersonalPicture from "../components/dynamicPersonalPicture";
 
 export default async function Introduction() {
   return (
@@ -46,42 +41,10 @@ export default async function Introduction() {
             Resume
           </a>
         </div>
-
-        <div className="mt-10 social-links flex gap-10">
-          <Link
-            href="https://www.linkedin.com/in/matheus-rodrigues-araujo/"
-            target="_blank"
-            title="Linkedin"
-          >
-            <FaLinkedin className="w-32 h-32 hover:scale-110 transition 200 ease-in-out hover:text-white md:w-40 md:h-40 text-purple" />
-          </Link>
-          <Link
-            href="https://github.com/Matheus-Rodrigues-Araujo"
-            target="_blank"
-            title="Github"
-          >
-            <FaGithub className="w-32 h-32 hover:scale-110 transition 200 ease-in-out hover:text-white md:w-40 md:h-40  text-purple" />
-          </Link>
-          <Link
-            href="https://www.instagram.com/_matheus_rodrigues_araujo_/"
-            target="_blank"
-            title="Instagram"
-          >
-            <RiInstagramFill className="w-32 h-32 hover:scale-110 transition 200 ease-in-out hover:text-white md:w-40 md:h-40  text-purple" />
-          </Link>
-        </div>
+        <DynamicIntroductionLinks/>
       </div>
 
-      <div className="relative w-full flex justify-center h-[25vh] lg:h-[50vh] xl:justify-end">
-        <Image
-          src={loadProfilImg()}
-          alt="Thumb photo"
-          priority
-          objectFit="contain"
-          fill
-          sizes="(max-width: 768px) 50vw, (max-width: 1200px) 80vw"
-        />
-      </div>
+      <DynamicPersonalPicture />
     </section>
   );
 }

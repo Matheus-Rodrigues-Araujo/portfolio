@@ -1,9 +1,8 @@
 'use client';
-import Image from "next/image";
 import { ProjectInterface } from "../constants/projectsData";
 import { useState, lazy, Suspense } from "react";
 const ProjectInformationCard = lazy(() => import("./projectInformationCard"));
-
+import { DynamicImage } from "./dynamicImage";
 interface ProjectCardProps {
   project: ProjectInterface;
 }
@@ -20,7 +19,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <>
       <li key={project.name} className="flex-1 project-item  relative cursor-pointer mx-auto ">
-        <Image
+        <DynamicImage
           src={project.image}
           alt={`Screenshot of the Social media app called ${project.name}`}
           loading="lazy"

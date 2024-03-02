@@ -1,6 +1,4 @@
-'use client';
-import dynamic from "next/dynamic";
-const DynamicImage = dynamic(() => import('next/image'))
+import { DynamicImage } from "./dynamicImage";
 
 const imageLoader = () =>{
     return "/dancing-coffee.gif"

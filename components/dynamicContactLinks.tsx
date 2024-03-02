@@ -1,9 +1,6 @@
-'use client';
-import dynamic from "next/dynamic";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
-const DynamicLink = dynamic(() => import('next/link'))
-
+import { DynamicLink } from "./dynamicLink";
 
 export default function DynamicContactLinks(){
     return (

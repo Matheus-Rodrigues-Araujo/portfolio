@@ -17,8 +17,7 @@ export default async function Contact() {
             <p className="text-[4.5rem] md:text-[5rem] text-light-gray w-50">
               The time has come to transform your ideas into concrete actions!
             </p>
-
-            <DynamicContactLinks/>
+            <DynamicContactLinks />
           </div>
           <DynamicGif />
         </div>
