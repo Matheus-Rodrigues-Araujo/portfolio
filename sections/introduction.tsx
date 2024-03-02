@@ -79,6 +79,7 @@ export default async function Introduction() {
           priority
           objectFit="contain"
           fill
+          sizes="(max-width: 768px) 50vw, (max-width: 1200px) 80vw"
         />
       </div>
     </section>

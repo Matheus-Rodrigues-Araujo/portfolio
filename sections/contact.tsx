@@ -11,11 +11,11 @@ const imageLoader = () =>{
 
 export default async function Contact() {
   return (
-    <section className="contact bg-dark py-20 md:py-0" id="contact">
+    <section className="contact bg-dark py-20" id="contact">
       <h2 className="text-[10rem] md:text-[12rem] font-bold">Contact</h2>
 
       <div className="contact-container grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-0">
-        <div className="flex justify-between lg:flex-col">
+        <div className="flex justify-between flex-col">
           <div className="flex flex-col gap-5">
             <h3 className="text-[7rem] text-purple font-200 ">
               Let's grap a coffee!
@@ -49,12 +49,15 @@ export default async function Contact() {
               </Link>
             </div>
           </div>
-          <Image
-            src={imageLoader()}
-            alt="A coffee dancing"
-            width={200}
-            height={200}
-          />
+          <div className="relative w-[150px] flex h-[150px] mx-auto lg:mx-0" >
+            <Image
+              src={imageLoader()}
+              alt="A coffee dancing"
+              fill
+              objectFit="contain"
+              sizes="(max-width: 768px) 20vw, (max-width: 1200px) 50vw"
+            />
+          </div>
         </div>
 
         <ContactForm />
