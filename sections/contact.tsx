@@ -1,13 +1,7 @@
 "use server";
-import Link from "next/link";
-import Image from "next/image";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { RiInstagramFill } from "react-icons/ri";
 import ContactForm from "../forms/contactForm";
-
-const imageLoader = () =>{
-  return "/dancing-coffee.gif"
-}
+import DynamicGif from "../components/dynamicGIF";
+import DynamicContactLinks from "../components/dynamicContactLinks";
 
 export default async function Contact() {
   return (
@@ -24,42 +18,10 @@ export default async function Contact() {
               The time has come to transform your ideas into concrete actions!
             </p>
 
-            <div className="flex gap-12 contact-links">
-              <Link
-                href="https://www.linkedin.com/in/matheus-rodrigues-araujo"
-                title="Linkedin"
-                className="flex flex-col items-center gap-5 lg:flex-row"
-              >
-                <FaLinkedin className="w-32 h-32 md:w-40 md:h-40  text-purple max-w-full " />
-              </Link>
-
-              <Link
-                href="https://github.com/Matheus-Rodrigues-Araujo/"
-                className="flex flex-col items-center gap-5 lg:flex-row"
-                title="Github"
-              >
-                <FaGithub className="w-32 h-32 md:w-40 md:h-40  text-purple max-w-full " />
-              </Link>
-              <Link
-                className="flex flex-col items-center gap-5 lg:flex-row"
-                href="https://www.linkedin.com/in/matheus-rodrigues-araujo"
-                title="Instagram"
-              >
-                <RiInstagramFill className="w-32 h-32 md:w-40 md:h-40  text-purplemax-w-full " />
-              </Link>
-            </div>
+            <DynamicContactLinks/>
           </div>
-          <div className="relative w-[150px] flex h-[150px] mx-auto lg:mx-0" >
-            <Image
-              src={imageLoader()}
-              alt="A coffee dancing"
-              fill
-              objectFit="contain"
-              sizes="(max-width: 768px) 20vw, (max-width: 1200px) 50vw"
-            />
-          </div>
+          <DynamicGif />
         </div>
-
         <ContactForm />
       </div>
     </section>
