@@ -1,8 +1,10 @@
 'use client';
 import { ProjectInterface } from "../constants/projectsData";
-import { useState, lazy, Suspense } from "react";
-const ProjectInformationCard = lazy(() => import("./projectInformationCard"));
+import { useCallback, useEffect, useState } from "react";
+import dynamic from "next/dynamic";
 import { DynamicImage } from "./dynamicImage";
+const ProjectInformationCard = dynamic(() => import("./projectInformationCard"));
+
 interface ProjectCardProps {
   project: ProjectInterface;
 }
@@ -10,11 +12,14 @@ interface ProjectCardProps {
 export default function ProjectCard({ project }: ProjectCardProps) {
   const [projectInformationVisibility, setProjectInformationVisibility] = useState(false);
 
-  const handleProjectVisibility = () => {
-    const bodyStyle = document.body.style;
-    setProjectInformationVisibility(!projectInformationVisibility);
-    projectInformationVisibility ? (bodyStyle.overflow = "auto") : (bodyStyle.overflow = "hidden");
-  };
+  const handleProjectVisibility = useCallback(() => {
+    setProjectInformationVisibility(prevVisibility => !prevVisibility);
+  }, [])
+
+  useEffect(() => {
+    projectInformationVisibility ? document.body.classList.add('overflow-hidden') : document.body.classList.remove('overflow-hidden');
+    return () => document.body.classList.remove('overflow-hidden');
+  }, [projectInformationVisibility])
 
   return (
     <>
@@ -32,7 +37,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           <button className="text-white bg-pink flex-1 p-3 text-[4.5rem] font-bold">EXPLORE</button>
         </div>
       </li>
-      <Suspense>
         {projectInformationVisibility && (
           <ProjectInformationCard
             name={project.name}
@@ -44,7 +48,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             handleProjectVisibility={handleProjectVisibility}
           />
         )}
-      </Suspense>
     </>
   );
 }
