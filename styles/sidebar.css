@@ -1,0 +1,24 @@
+.close-toggle-btn {
+  color: #fff;
+  font-size: 10rem;
+  text-shadow: 4px 2px 2px var(--purple);
+}
+.close-toggle-btn:hover {
+  text-shadow: 5px 3px 2px var(--purple);
+  font-weight: 700;
+}
+.sidebar .item {
+  font-size: 6rem;
+  text-shadow: 3px 2px 0 var(--purple);
+}
+.sidebar .item:hover {
+  text-decoration: none;
+}
+.sidebar-social-links a svg {
+  color: var(--purple);
+  transition: 0.2s ease-in-out;
+}
+.sidebar-social-links a:hover svg {
+  color: #fff;
+  transform: scale(1.2);
+}

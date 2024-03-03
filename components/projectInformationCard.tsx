@@ -2,6 +2,7 @@
 import { ProjectInterface } from "../constants/projectsData";
 import { DynamicLink } from "./dynamicLink";
 import { DynamicImage } from "./dynamicImage";
+import '../styles/projectInformationCard.css'
 
 interface ProjectInformationCardProps extends ProjectInterface {
   handleProjectVisibility: () => void;

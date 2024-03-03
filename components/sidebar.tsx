@@ -2,6 +2,7 @@
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { DynamicLink } from "./dynamicLink";
+import '../styles/sidebar.css'
 
 export default function Sidebar({
   handleSidebarVisibility,
