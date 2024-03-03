@@ -1,7 +1,3 @@
-.description .phrase span {
-  color: var(--light-green);
-  font-weight: 700;
-}
 .projects-links a {
   font-family: Orbitron, sans-serif;
   text-decoration: none;
