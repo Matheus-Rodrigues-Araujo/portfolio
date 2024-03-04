@@ -9,8 +9,6 @@ const resend_to = String(process.env.RESEND_TO);
 export async function POST(req: NextRequest): Promise<NextResponse> {
   try {
     const formData = FormSchema.parse(await req.json())
-    // const body = await req.json()
-    // const { name, email, message } = body;
     const { name, email, message } = formData;
     const { data, error } = await resend.emails.send({
       from: "onboarding@resend.dev",
