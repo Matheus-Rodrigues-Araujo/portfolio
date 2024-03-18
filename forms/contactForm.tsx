@@ -203,7 +203,6 @@ export default function ContactForm() {
           </button>
         </div>
       </form>
-
       {showNotification && <Notification/>}
     </div>
   );
